@@ -1,0 +1,448 @@
+/* "lato" font: */
+@import url("https://use.typekit.net/bdv5kew.css");
+
+@font-face {
+  font-family: "MX";
+  src: url("https://blightningpower.github.io/Portfolio_Code/mx-2-font/MX-Regular.woff2") format("woff2"),
+    url("https://blightningpower.github.io/Portfolio_Code/mx-2-font/MX-Regular.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --portfolioWhite: #f2f2f2;
+  --portfolioGrey: #595959;
+  --portfolioDarkRed: #3f0202;
+  --portfolioBlack: #0D0D0D;
+  --portfolioRed: #590404;
+  --hyperLinkBlue: #0000ff;
+}
+
+* {
+  /*code applied to all HTML tags*/
+  font-family: "lato", Arial, Helvetica, sans-serif, "MX";
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+html {
+  min-height: 100%;
+  min-width: 100%;
+  background-image: url(https://blightningpower.github.io/Portfolio_Code/img/background.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  /*code applied to the whole body of the page*/
+  min-width: 100%;
+  min-height: -webkit-fill-available;
+  margin: 0;
+}
+
+p {
+  color: var(--portfolioWhite);
+  line-height: 22px;
+  padding: 0 5%;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+li {
+  padding: 1% 4%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+::marker {
+  display: none;
+}
+
+h3,
+h4 {
+  color: var(--portfolioWhite);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 0 2%;
+  text-align: center;
+  max-width: fit-content;
+  margin: auto 0 0 0;
+}
+
+/* Homepagecode */
+
+/* fade out effect Wolf Eyes*/
+
+.homepageDiv {
+  width: auto;
+  min-height: 94vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.fade-out-image {
+  transition: opacity 2s ease-out;
+  min-width: 30%;
+  max-width: 30%;
+  position: absolute;
+  margin: auto;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+/* fade in elements*/
+
+.fadeInElements {
+  opacity: 0;
+}
+
+.fadeIn {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+  height: 100%;
+  margin: 0;
+}
+
+.homePageTitle {
+  font-family: "lato", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 3%;
+  color: var(--portfolioWhite);
+}
+
+.BAlogo {
+  width: 98vw;
+  max-height: 24vh;
+  display: flex;
+  justify-content: center;
+  margin: 9% 0 0 0;
+}
+
+.textRestFname,
+.textRestLname {
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  height: 21.105vh;
+  margin-top: 1%;
+}
+
+.logoLink {
+  transition: 0s;
+}
+
+.logoHover:hover {
+  cursor: pointer;
+}
+
+.logoB,
+.logoA {
+  position: relative;
+  z-index: 1;
+  min-width: 10%;
+  max-width: 10%;
+  margin: 0;
+  left: 0;
+  right: 0;
+  transition: all 1s linear;
+}
+
+@media screen and (min-width: 1279px) {
+  .logoB {
+    left: -24%;
+  }
+
+  .logoA {
+    left: -5%;
+  }
+
+  .textRestFname,
+  .textRestLname {
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    height: 21.105vh;
+    margin-top: 1%;
+  }
+
+  .textRestFname {
+    left: 24%;
+  }
+
+  .textRestLname {
+    right: 11%;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+
+  .textRestFname,
+  .textRestLname {
+    transform: scale(0.5);
+
+  }
+
+  .logoB {
+    left: -20%;
+  }
+
+  .logoA {
+    right: 5%;
+  }
+
+  .textRestFname {
+    top: 16%;
+    left: 22%;
+    opacity: 1;
+    font-size: 2rem;
+  }
+
+  .textRestLname {
+    top: 16%;
+    left: 42%;
+    opacity: 1;
+    font-size: 2rem;
+  }
+}
+
+.homeMenuButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 8% auto;
+  text-decoration: none;
+}
+
+.homeMenuButtons a {
+  margin: 0 5%;
+}
+
+.overMijText,
+.leeruitkomstenText {
+  color: var(--portfolioWhite);
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.overMijText:hover,
+.leeruitkomstenText:hover {
+  color: var(--portfolioGrey);
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: var(--portfolioDarkRed);
+}
+
+.overMijText:active,
+.leeruitkomstenText:active {
+  color: var(--portfolioBlack);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--portfolioWhite);
+}
+
+.copyrightText {
+  font-size: small;
+  color: var(--portfolioWhite);
+  text-align: center;
+  margin: auto;
+  padding-top: 1%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  min-width: -webkit-fill-available;
+}
+
+.linkMenu {
+  float: left;
+  width: -webkit-fill-available;
+  padding: 1% 3% 3% 0 !important;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  color: var(--portfolioWhite);
+  font-size: larger;
+  text-decoration: none;
+  font-weight: 600;
+  align-items: baseline;
+  max-height: 7vh;
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+
+.linkMenu a {
+  color: var(--portfolioWhite);
+  text-decoration: none;
+  font-family: "lato", Arial, Helvetica, sans-serif;
+  font-weight: revert;
+}
+
+@media screen and (max-width: 1279px) {
+  .linkMenu {
+    flex-wrap: wrap;
+    margin-bottom: 7%;
+  }
+
+  .linkMenu a {
+    padding: 2% !important;
+  }
+}
+
+.link {
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: #919191;
+  font-style: italic;
+}
+
+.link:hover {
+  color: var(--portfolioWhite)
+}
+
+.homepageLink,
+.activeLink {
+  padding: 0 1% !important;
+}
+
+.homepageLink:hover,
+.activeLink:hover {
+  color: var(--portfolioGrey);
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: var(--portfolioDarkRed);
+}
+
+.homepageLink:active,
+.activeLink:active {
+  color: var(--portfolioBlack);
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: var(--portfolioDarkRed);
+}
+
+.homepageLink.active,
+.activeLink.active {
+  color: var(--portfolioBlack);
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: var(--portfolioDarkRed);
+  text-shadow: 0 0 10px var(--portfolioWhite), 0 0 20px var(--portfolioWhite), 0 0 30px var(--portfolioWhite),
+    0 0 40px var(--portfolioWhite), 0 0 50px var(--portfolioWhite), 0 0 60px var(--portfolioWhite), 0 0 70px var(--portfolioWhite);
+}
+
+.h1Title {
+  text-align: center;
+  height: fit-content;
+  max-height: fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  color: var(--portfolioWhite);
+  display: flex;
+  font-family: 'lato';
+  font-size: xx-large;
+  font-weight: revert;
+  padding-bottom: 5%;
+}
+
+.overMijSubtitle {
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 auto 5%;
+  padding-top: 5%;
+  color: var(--portfolioWhite);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+}
+
+/* --- */
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  z-index: 99;
+  border: 2px solid var(--portfolioWhite);
+  outline: none;
+  background-color: var(--portfolioRed);
+  color: var(--portfolioWhite);
+  cursor: pointer;
+  padding: 1%;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1279px) {
+  #scrollToTopBtn {
+    padding: 2%;
+  }
+}
+
+#scrollToTopBtn:hover {
+  background-color: var(--portfolioGrey);
+  border: 2px solid var(--portfolioDarkRed);
+}
+
+#scrollToTopBtn:active {
+  background-color: var(--portfolioBlack);
+}
+
+.arrow.up {
+  border-color: var(--portfolioWhite);
+}
+
+.arrow {
+  border: solid var(--portfolioWhite);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: var(--portfolioGrey);
+  border: 2px solid var(--portfolioWhite);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--portfolioWhite);
+  border: 2px solid var(--portfolioRed);
+}

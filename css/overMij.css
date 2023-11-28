@@ -1,0 +1,152 @@
+div {
+    padding: 3%;
+}
+
+ul {
+    max-height: 94vh;
+    flex-direction: column;
+}
+
+.image {
+    width: 20vw;
+    height: fit-content;
+    max-height: 47vh;
+    float: right;
+    margin: 1% 5%;
+    opacity: 1;
+}
+
+  
+.textSpace1 {
+    background-color: black;
+    border: 2px solid #595959;
+    display: table-caption;
+    margin: 10% 5%;
+    width: 68vw;
+}
+
+.textSpace1 p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 2px;
+    text-align: inherit;
+}
+
+.textSpace2 {
+    background-color: black;
+    border: 2px solid #595959;
+    display: table-caption;
+    margin: 20% 40%;
+    width: 68vw;
+}
+
+.textSpace2 p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 2px;
+    text-align: inherit;
+    min-width: max-content;
+}
+
+.marker::marker {
+    color: #f2f2f2;
+}
+
+.marker p {
+    margin: 0;
+}
+
+.flexImgAndTextSpace {
+    display: flex;
+}
+
+.textSpace3 {
+    background-color: black;
+    border: 2px solid #595959;
+    display: table-caption;
+    margin: 20% 5%;
+    width: 68vw;
+}
+
+.textSpace3 p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 2px;
+    text-align: inherit;
+    margin: auto 0;
+}
+
+.textSpace4 {
+    background-color: black;
+    border: 2px solid #595959;
+    display: table-caption;
+    margin: 20% 40%;
+    width: 68vw;
+}
+
+.textSpace4 p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 2px;
+    text-align: inherit;
+    margin: auto 0;
+}
+
+.textSpace4 ul li {
+    padding: 1%;
+    margin: auto 0;
+}
+
+.textSpace5 {
+    background-color: black;
+    border: 2px solid #595959;
+    display: table-caption;
+    margin: 20% 5%;
+    width: 68vw;
+}
+
+.textSpace5 p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 2px;
+    text-align: inherit;
+    margin: auto 0;
+}
+
+.textSpace6 {
+    background-color: black;
+    border: 2px solid #595959;
+    display: table-caption;
+    margin: 20% 40%;
+    width: 68vw;
+}
+
+.textSpace6 p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 2px;
+    text-align: inherit;
+    min-width: max-content;
+    margin: 20px 0;
+}
+
+.talenDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyrightText {
+    padding-bottom: 1%;
+  }
