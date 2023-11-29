@@ -6,12 +6,9 @@
     <title>Portfolio Bavli Armanyous</title>
 
     <!--links for the Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="img/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="img/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
 
     <!--meta tags for responsiveness-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -24,7 +21,7 @@
     <!--Link to scriptfiles-->
     <script src="js/script.js" defer></script>
     <script src="js/scroll.js" defer></script>
-    
+
 
     <style>
         @media screen and (max-width: 700px) {
@@ -36,32 +33,86 @@
 </head>
 
 <body>
-    <div class="homepageDiv">
-        <img src="img/Angry Wolf eyes 2 cut.png" class="fade-out-image"
-            alt="Wolf_eyes">
-        <div class="fadeInElements">
-            <!--Under here comes everything that fades in-->
-            <h1 class="homePageTitle">ICT & Media Design Portfolio</h1>
-            <div class="BAlogo">
+    <div class="fadeInElements">
+        <!--Under here comes everything that fades in-->
+        <header>
+            <div class="headerLeftCorner">
+                    <h1 class="homePageTitle">ICT & Media Design Portfolio</h1>
+                <div class="BAlogo">
 
-                <img src="img/logo 3.3.1 Character 'B'_New.png"
-                    alt="Logo_Character_'B'" class="logoB logoHover">
-                <img src="img/avli.png" alt="avli.png"
-                    class="textRestFname">
+                    <img src="img/logo 3.3.1 Character 'B'_New.png" alt="Logo_Character_'B'" class="logoB logoHover">
+                    <img src="img/avli.png" alt="avli.png" class="textRestFname">
 
-                <img src="img/logo 3.3.1 Character 'A'_New.png"
-                    alt="Logo_Character_'A'" class="logoA logoHover">
-                <img src="img/rmanyous.png" alt="rmanyous.png"
-                    class="textRestLname">
+                    <img src="img/logo 3.3.1 Character 'A'_New.png" alt="Logo_Character_'A'" class="logoA logoHover">
+                    <img src="img/rmanyous.png" alt="rmanyous.png" class="textRestLname">
 
+                </div>
             </div>
-            <div class="homeMenuButtons">
-                <a href="/Portfolio_Code//html/overMij.html"><span class="overMijText ">Over mij</span></a>
-                <a href="/Portfolio_Code/html/leeruitkomsten.html"><span class="leeruitkomstenText ">Leeruitkomsten</span></a>
-            </div>
+            <nav class="headerNavigation">
+                <a href="index.html" class="homeText navButton">Home</a>
+                <a href="html/overMij.html" class="overMijText navButton">Over mij</a>
+                <a href="html/leeruitkomsten.html" class="higlightButton">Leeruitkomsten<span class="dropDownIcon">❯</span></a>
+                <div class="dropdown-content">
+                    <a href="#">Interactive Media</a>
+                    <a href="#">Development</a>
+                    <a href="#">Design</a>
+                    <a href="#">Research</a>
+                    <a href="#">Communication</a>
+                    <a href="#">Professional Identity</a>
+                  </div>
+            </nav>
+        </header>
+        <div class="homepageDiv">
+
+
+            <img src="img/Angry Wolf eyes 2 cut.png" class="fade-out-image" alt="Wolf_eyes">
         </div>
         <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
     </div>
+    <script>
+// Function to create and show the dropdown menu
+function showDropdown() {
+  // Create the dropdown container
+  const dropdown = document.createElement('div');
+  dropdown.className = 'dropdown';
+
+  // Create an array of links for the dropdown
+  const dropdownLinks = [
+    'Interactive Media',
+    'Development',
+    'Design',
+    'Research',
+    'Communication',
+    'Professional Identity',
+  ];
+
+  // Create and append the links to the dropdown
+  dropdownLinks.forEach((linkText) => {
+    const link = document.createElement('a');
+    link.href = `#${linkText.toLowerCase().replace(' ', '-')}`;
+    link.textContent = linkText;
+    link.className = 'navButton';
+    dropdown.appendChild(link);
+  });
+
+  // Append the dropdown to the body
+  document.body.appendChild(dropdown);
+}
+
+// Function to hide the dropdown menu
+function hideDropdown() {
+  const dropdown = document.querySelector('.dropdown');
+  if (dropdown) {
+    dropdown.remove();
+  }
+}
+
+// Add event listeners for mouseover and mouseout
+const highlightButton = document.querySelector('.highlightButton');
+
+highlightButton.addEventListener('mouseover', showDropdown);
+highlightButton.addEventListener('mouseout', hideDropdown);
+    </script>
 </body>
 
 </html>

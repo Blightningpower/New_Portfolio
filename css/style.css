@@ -16,6 +16,7 @@
   --portfolioBlack: #0D0D0D;
   --portfolioRed: #590404;
   --hyperLinkBlue: #0000ff;
+  --portfolioGold: #FCBB1D;
 }
 
 * {
@@ -78,19 +79,17 @@ h4 {
   margin: auto 0 0 0;
 }
 
+header {
+  background: rgb(89, 89, 89);
+  background: linear-gradient(0deg, rgba(89, 89, 89, 1) 0%, rgba(38, 2, 2, 0) 100%);
+  min-width: -webkit-fill-available;
+  display: flex;
+  align-items: flex-end;
+}
+
 /* Homepagecode */
 
 /* fade out effect Wolf Eyes*/
-
-.homepageDiv {
-  width: auto;
-  min-height: 94vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-}
 
 .fade-out-image {
   transition: opacity 2s ease-out;
@@ -117,32 +116,31 @@ h4 {
   margin: 0;
 }
 
+.headerLeftCorner {
+  max-width: fit-content;
+  margin-left: 1%;
+}
+
 .homePageTitle {
   font-family: "lato", Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-align: center;
   height: fit-content;
   width: fit-content;
-  margin: 0 auto;
-  padding-top: 3%;
+  margin: 0;
+  padding: 1%;
   color: var(--portfolioWhite);
+  font-size: larger;
 }
 
 .BAlogo {
-  width: 98vw;
-  max-height: 24vh;
+  max-width: min-content;
+  max-height: 12vh;
   display: flex;
   justify-content: center;
-  margin: 9% 0 0 0;
-}
-
-.textRestFname,
-.textRestLname {
-  position: absolute;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-  height: 21.105vh;
-  margin-top: 1%;
+  align-items: center;
+  padding: 2%;
+  transition: left 3s linear;
 }
 
 .logoLink {
@@ -157,105 +155,132 @@ h4 {
 .logoA {
   position: relative;
   z-index: 1;
-  min-width: 10%;
-  max-width: 10%;
-  margin: 0;
-  left: 0;
-  right: 0;
-  transition: all 1s linear;
+  min-width: 4vw;
+  max-width: 4vw;
+  min-height: 10vh;
+  margin-top: 1%;
 }
 
-@media screen and (min-width: 1279px) {
-  .logoB {
-    left: -24%;
+.logoA {
+  min-height: 10vh;
+}
+
+.logoA.slide-in-animation,
+.logoB.slide-in-animation {
+  animation-name: slide-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    right: 0;
   }
 
-  .logoA {
-    left: -5%;
-  }
-
-  .textRestFname,
-  .textRestLname {
-    position: absolute;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    height: 21.105vh;
-    margin-top: 1%;
-  }
-
-  .textRestFname {
-    left: 24%;
-  }
-
-  .textRestLname {
-    right: 11%;
+  100% {
+    right: 26%;
   }
 }
 
-@media screen and (max-width: 1230px) {
-
-  .textRestFname,
-  .textRestLname {
-    transform: scale(0.5);
-
-  }
-
-  .logoB {
-    left: -20%;
-  }
-
-  .logoA {
-    right: 5%;
-  }
-
-  .textRestFname {
-    top: 16%;
-    left: 22%;
-    opacity: 1;
-    font-size: 2rem;
-  }
-
-  .textRestLname {
-    top: 16%;
-    left: 42%;
-    opacity: 1;
-    font-size: 2rem;
-  }
+.textRestFname,
+.textRestLname {
+  position: relative;
+  max-width: 10vw;
+  max-height: 14vh;
+  transition: opacity 1s ease-out;
 }
 
-.homeMenuButtons {
+.textRestFname {
+  right: 1%;
+}
+
+.textRestLname {
+  min-width: 21vw;
+  min-height: 14vh;
+  right: 1%;
+}
+
+.headerNavigation {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  margin: 8% auto;
-  text-decoration: none;
+  margin: 0 0 1% 20%;
 }
 
-.homeMenuButtons a {
-  margin: 0 5%;
-}
-
-.overMijText,
-.leeruitkomstenText {
+.navButton {
   color: var(--portfolioWhite);
   font-size: x-large;
   font-weight: 700;
+  margin: 0 5%;
+  min-width: fit-content;
+  text-shadow: 0 3px 6px var(--portfolioRed);
 }
 
-.overMijText:hover,
-.leeruitkomstenText:hover {
-  color: var(--portfolioGrey);
-  -webkit-text-stroke-width: 0.2px;
-  -webkit-text-stroke-color: var(--portfolioDarkRed);
-}
-
-.overMijText:active,
-.leeruitkomstenText:active {
+.navButton:hover {
   color: var(--portfolioBlack);
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 0.2px;
   -webkit-text-stroke-color: var(--portfolioWhite);
+}
+
+.navButton:active {
+  color: var(--portfolioGrey);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--portfolioDarkRed);
+  text-shadow: none;
+}
+
+
+.higlightButton {
+  color: var(--portfolioGold);
+  font-size: x-large;
+  font-weight: 700;
+  margin: 0 5%;
+  min-width: fit-content;
+  text-shadow: 0 3px 6px var(--portfolioRed);
+}
+
+.higlightButton:hover {
+  color: var(--hyperLinkBlue);
+}
+
+.higlightButton:active{
+  text-shadow: none;
+}
+
+.dropDownIcon {
+  font-size: 15px;
+  padding-left: 3%;
+}
+
+/* Hide the dropdown content by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Show the dropdown content when the button is hovered */
+#leeruitkomstenDropdown:hover+#leeruitkomstenContent,
+#leeruitkomstenContent:hover {
+  display: block;
+}
+
+.homepageDiv {
+  width: auto;
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
 }
 
 .copyrightText {
@@ -410,11 +435,6 @@ h4 {
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 4px;
-}
-
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
 }
 
 .up {
