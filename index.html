@@ -20,8 +20,6 @@
 
     <!--Link to scriptfiles-->
     <script src="js/script.js" defer></script>
-    <script src="js/scroll.js" defer></script>
-
 
     <style>
         @media screen and (max-width: 700px) {
@@ -32,12 +30,13 @@
     </style>
 </head>
 
-<body>
+<body id="Home">
     <div class="fadeInElements">
         <!--Under here comes everything that fades in-->
+        <!-- header -->
         <header>
             <div class="headerLeftCorner">
-                    <h1 class="homePageTitle">ICT & Media Design Portfolio</h1>
+                <h1 class="homePageTitle">ICT & Media Design Portfolio</h1>
                 <div class="BAlogo">
 
                     <img src="img/logo 3.3.1 Character 'B'_New.png" alt="Logo_Character_'B'" class="logoB logoHover">
@@ -49,19 +48,22 @@
                 </div>
             </div>
             <nav class="headerNavigation">
-                <a href="index.html" class="homeText navButton">Home</a>
-                <a href="html/overMij.html" class="overMijText navButton">Over mij</a>
-                <a href="html/leeruitkomsten.html" class="higlightButton">Leeruitkomsten<span class="dropDownIcon">❯</span></a>
+
+                <a href="index.html" class="navButton" data-active="Home">Home</a>
+                <a href="html/overMij.html" class="navButton" data-active="aboutMe">Over mij</a>
+                <a href="html/leeruitkomsten.html" class="navButton" id="learningOutcomes"
+                    data-active="learningoutcomes">Leeruitkomsten<span class="dropDownIcon">▶</span></a>
                 <div class="dropdown-content">
-                    <a href="#">Interactive Media</a>
-                    <a href="#">Development</a>
-                    <a href="#">Design</a>
-                    <a href="#">Research</a>
-                    <a href="#">Communication</a>
-                    <a href="#">Professional Identity</a>
-                  </div>
+                    <a href="html/interactiveMedia.html" class="navButton">Interactive Media</a>
+                    <a href="html/development.html" class="navButton">Development</a>
+                    <a href="html/design.html" class="navButton">Design</a>
+                    <a href="html/research.html" class="navButton">Research</a>
+                    <a href="html/communication.html" class="navButton">Communication</a>
+                    <a href="html/professionalIdentity.html" class="navButton">Professional Identity</a>
+                </div>
             </nav>
         </header>
+        <!-- --- -->
         <div class="homepageDiv">
 
 
@@ -69,50 +71,6 @@
         </div>
         <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
     </div>
-    <script>
-// Function to create and show the dropdown menu
-function showDropdown() {
-  // Create the dropdown container
-  const dropdown = document.createElement('div');
-  dropdown.className = 'dropdown';
-
-  // Create an array of links for the dropdown
-  const dropdownLinks = [
-    'Interactive Media',
-    'Development',
-    'Design',
-    'Research',
-    'Communication',
-    'Professional Identity',
-  ];
-
-  // Create and append the links to the dropdown
-  dropdownLinks.forEach((linkText) => {
-    const link = document.createElement('a');
-    link.href = `#${linkText.toLowerCase().replace(' ', '-')}`;
-    link.textContent = linkText;
-    link.className = 'navButton';
-    dropdown.appendChild(link);
-  });
-
-  // Append the dropdown to the body
-  document.body.appendChild(dropdown);
-}
-
-// Function to hide the dropdown menu
-function hideDropdown() {
-  const dropdown = document.querySelector('.dropdown');
-  if (dropdown) {
-    dropdown.remove();
-  }
-}
-
-// Add event listeners for mouseover and mouseout
-const highlightButton = document.querySelector('.highlightButton');
-
-highlightButton.addEventListener('mouseover', showDropdown);
-highlightButton.addEventListener('mouseout', hideDropdown);
-    </script>
 </body>
 
 </html>
