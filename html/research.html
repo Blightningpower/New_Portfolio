@@ -5,9 +5,12 @@
     <title>Research</title>
 
     <!--links for the Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/favicon-16x16.png">
 
     <!--meta tags for responsiveness-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -15,51 +18,59 @@
     <meta name="HandheldFriendly" content="true">
     <meta charset="utf-8">
 
-     <!-- Link to stylesheets -->
-     <link rel="stylesheet" href="../css/style.css">
-     <link rel="stylesheet" href="../css/container.css">
- 
-     <!-- Link to scriptfiles -->
-     <script src="../js/scroll.js" defer></script>
-     <script src="../js/video.js" defer></script>
-     <script src="../js/containers.js" defer></script>
+    <!-- Link to stylesheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/container.css">
+
+    <!-- Link to scriptfiles -->
+    <script src="../js/header2.js" defer></script>
+    <script src="../js/scroll.js" defer></script>
+    <script src="../js/video.js" defer></script>
+    <script src="../js/containers.js" defer></script>
 
     <style>
-        [alt="smallGoogle_Forms_2020_Logo.png"],
-        [alt="Youtube_Logo.png"] {
-            max-width: 4vw;
-            min-width: fit-content;
-            display: flex;
-            flex-direction: column;
-            max-height: 15vh;
-            margin: auto;
-        }
 
-        [alt="smallLogotjewit.png"],
-        [alt="Double Life Challenge.zip"] {
-            max-width: 4vw;
-            min-width: fit-content;
-            display: flex;
-            flex-direction: column;
-            max-height: 15vh;
-        }
     </style>
 
 </head>
 
-<body>
+<body id="rS">
     <section class="f1Section">
-        <div class=linkMenu>
-            <a href="../../Portfolio_Code/index.html" class="homepageLink">Home</a>
-            <span><i class="arrow right"></i></span>
-            <a href="leeruitkomsten.html" class="activeLink">Leeruitkomsten</a>
-            <span><i class="arrow right"></i></span>
-            <a href="research.html" class="activeLink active">Research</a>
+        <!-- header -->
+    <header>
+        <div class="headerLeftCorner">
+            <h1 class="homePageTitle">ICT & Media Design Portfolio</h1>
+            <div class="BAlogo">
+
+                <img src="../../img/logo 3.3.1 Character 'B'_New.png" alt="Logo_Character_'B'" class="logoB logoHover">
+                <img src="../../img/avli.png" alt="avli.png" class="textRestFname">
+
+                <img src="../../img/logo 3.3.1 Character 'A'_New.png" alt="Logo_Character_'A'" class="logoA logoHover">
+                <img src="../../img/rmanyous.png" alt="rmanyous.png" class="textRestLname">
+
+            </div>
         </div>
+        <nav class="headerNavigation">
+
+            <a href="../../index.html" class="navButton" data-active="Home">Home</a>
+            <a href="../../html/overMij.html" class="navButton" data-active="aboutMe">Over mij</a>
+            <a href="../../html/leeruitkomsten.html" class="navButton LO"
+                data-active="learningOutcomes">Leeruitkomsten<span class="dropDownIcon">▶</span></a>
+            <div class="dropdown-content">
+                <a href="../../html/interactiveMedia.html" class="navButton" data-active="iM">Interactive Media</a>
+                <a href="../../html/development.html" class="navButton" data-active="dV">Development</a>
+                <a href="../../html/design.html" class="navButton" data-active="dS">Design</a>
+                <a href="../../html/research.html" class="navButton" data-active="rS">Research</a>
+                <a href="../../html/communication.html" class="navButton" data-active="cM">Communication</a>
+                <a href="../../html/professionalIdentity.html" class="navButton" data-active="pI">Professional Identity</a>
+            </div>
+        </nav>
+    </header>
+    <!-- --- -->
         <div class="flexTitle">
             <h1 class="h1Title">Research</h1>
         </div>
-     <!-- project1 -->
+        <!-- project1 -->
         <!-- <div class='container'>
             <div class="container_content">
                 <div class="container_content_inner">
@@ -108,11 +119,13 @@
                 </div>
             </div>
         </div>
-    <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+    <footer>
+            <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+        </footer>
     </section> -->
-    <!-- --- -->
-        
-    <button id="scrollToTopBtn"><i class="arrow up"></i></button>
+        <!-- --- -->
+
+        <button id="scrollToTopBtn"><i class="arrow up"></i></button>
 </body>
 
 </html>

@@ -31,6 +31,7 @@ body {
   outline: 2px solid #595959;
   text-align: center;
   box-shadow: 0px 4px 8px var(--portfolioGrey);
+  transform: scale(0.8);
 }
 
 .learningOutcome:hover {
@@ -54,11 +55,11 @@ body {
 [alt="Research_Icon"],
 [alt="Communication_Icon"],
 [alt="Professional_Identity_Icon"] {
-  max-width: 8vw;
+  max-width: 5vw;
 }
 
 .copyrightText {
-  padding-top: 2%;
+  padding-top: 1%;
 }
 
 @media screen and (max-width: 1279px) {

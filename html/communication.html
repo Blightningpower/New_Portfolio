@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../css/container.css">
 
     <!-- Link to scriptfiles -->
+    <script src="../js/header2.js" defer></script>
     <script src="../js/scroll.js" defer></script>
     <script src="../js/video.js" defer></script>
     <script src="../js/containers.js" defer></script>
@@ -50,15 +51,39 @@
 
 </head>
 
-<body>
+<body id="cM"> 
     <section class="f1Section">
-        <div class=linkMenu>
-            <a href="../../Portfolio_Code/index.html" class="homepageLink">Home</a>
-            <span><i class="arrow right"></i></span>
-            <a href="leeruitkomsten.html" class="activeLink">Leeruitkomsten</a>
-            <span><i class="arrow right"></i></span>
-            <a href="communication.html" class="activeLink active">Communication</a>
+    <!-- header -->
+    <header>
+        <div class="headerLeftCorner">
+            <h1 class="homePageTitle">ICT & Media Design Portfolio</h1>
+            <div class="BAlogo">
+
+                <img src="../../img/logo 3.3.1 Character 'B'_New.png" alt="Logo_Character_'B'" class="logoB logoHover">
+                <img src="../../img/avli.png" alt="avli.png" class="textRestFname">
+
+                <img src="../../img/logo 3.3.1 Character 'A'_New.png" alt="Logo_Character_'A'" class="logoA logoHover">
+                <img src="../../img/rmanyous.png" alt="rmanyous.png" class="textRestLname">
+
+            </div>
         </div>
+        <nav class="headerNavigation">
+
+            <a href="../../index.html" class="navButton" data-active="Home">Home</a>
+            <a href="../../html/overMij.html" class="navButton" data-active="aboutMe">Over mij</a>
+            <a href="../../html/leeruitkomsten.html" class="navButton LO"
+                data-active="learningOutcomes">Leeruitkomsten<span class="dropDownIcon">▶</span></a>
+            <div class="dropdown-content">
+                <a href="../../html/interactiveMedia.html" class="navButton" data-active="iM">Interactive Media</a>
+                <a href="../../html/development.html" class="navButton" data-active="dV">Development</a>
+                <a href="../../html/design.html" class="navButton" data-active="dS">Design</a>
+                <a href="../../html/research.html" class="navButton" data-active="rS">Research</a>
+                <a href="../../html/communication.html" class="navButton" data-active="cM">Communication</a>
+                <a href="../../html/professionalIdentity.html" class="navButton" data-active="pI">Professional Identity</a>
+            </div>
+        </nav>
+    </header>
+    <!-- --- -->
         <div class="flexTitle">
             <h1 class="h1Title">Communication</h1>
         </div>
@@ -81,7 +106,7 @@
                             verschillende mensen in diverse groepen.
                         </p>
                     </div>
-                    <a href="/Portfolio_Code/html/communicationProjects/cmProject1.html" class='btns_more'>Bekijk
+                    <a href="../html/communicationProjects/cmProject1.html" class='btns_more'>Bekijk
                         Project</a>
                 </div>
                 <div class="flexFlexImgAndSrcWithArrows">
@@ -139,7 +164,7 @@
                             Dit semester heb ik geleerd dat feedback, zelfs als het kritisch is, een waardevolle kans biedt voor groei. 
                         </p>
                     </div>
-                    <a href="/Portfolio_Code/html/communicationProjects/cmProject2.html" class='btns_more'>Bekijk
+                    <a href="../html/communicationProjects/cmProject2.html" class='btns_more'>Bekijk
                         Project</a>
                 </div>
                 <div class="flexFlexImgAndSrcWithArrows">
@@ -180,7 +205,9 @@
                 </div>
             </div>
         </div>
-        <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+        <footer>
+            <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+        </footer>
     </section>
     <!-- --- -->
     <button id="scrollToTopBtn"><i class="arrow up"></i></button>

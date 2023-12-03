@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../css/container.css">
 
     <!-- Link to scriptfiles -->
+    <script src="../js/header2.js" defer></script>
     <script src="../js/scroll.js" defer></script>
     <script src="../js/video.js" defer></script>
     <script src="../js/containers.js" defer></script>
@@ -37,20 +38,42 @@
 
 </head>
 
-<body>
+<body id="dS">
     <section class="f1Section">
-        <div class=linkMenu>
-            <a href="../../Portfolio_Code/index.html" class="homepageLink">Home</a>
-            <span><i class="arrow right"></i></span>
-            <a href="leeruitkomsten.html" class="activeLink">Leeruitkomsten</a>
-            <span><i class="arrow right"></i></span>
-            <a href="design.html" class="activeLink active">Design</a>
+        <!-- header -->
+    <header>
+        <div class="headerLeftCorner">
+            <h1 class="homePageTitle">ICT & Media Design Portfolio</h1>
+            <div class="BAlogo">
+
+                <img src="../../img/logo 3.3.1 Character 'B'_New.png" alt="Logo_Character_'B'" class="logoB logoHover">
+                <img src="../../img/avli.png" alt="avli.png" class="textRestFname">
+
+                <img src="../../img/logo 3.3.1 Character 'A'_New.png" alt="Logo_Character_'A'" class="logoA logoHover">
+                <img src="../../img/rmanyous.png" alt="rmanyous.png" class="textRestLname">
+
+            </div>
         </div>
+        <nav class="headerNavigation">
+
+            <a href="../../index.html" class="navButton" data-active="Home">Home</a>
+            <a href="../../html/overMij.html" class="navButton" data-active="aboutMe">Over mij</a>
+            <a href="../../html/leeruitkomsten.html" class="navButton LO"
+                data-active="learningOutcomes">Leeruitkomsten<span class="dropDownIcon">▶</span></a>
+            <div class="dropdown-content">
+                <a href="../../html/interactiveMedia.html" class="navButton" data-active="iM">Interactive Media</a>
+                <a href="../../html/development.html" class="navButton" data-active="dV">Development</a>
+                <a href="../../html/design.html" class="navButton" data-active="dS">Design</a>
+                <a href="../../html/research.html" class="navButton" data-active="rS">Research</a>
+                <a href="../../html/communication.html" class="navButton" data-active="cM">Communication</a>
+                <a href="../../html/professionalIdentity.html" class="navButton" data-active="pI">Professional Identity</a>
+            </div>
+        </nav>
+    </header>
+    <!-- --- -->
         <div class="flexTitile">
             <h1 class="h1Title">Design</h1>
         </div>
-
-
         <!-- project1 -->
         <!-- <div class='container'>
             <div class="container_content">
@@ -107,7 +130,6 @@
     </section> -->
         <!-- --- -->
         <!-- project2 -->
-
         <div class='container'>
             <div class="container_content">
                 <div class="container_content_inner">
@@ -296,15 +318,17 @@
                             </div>
                         </div>
                     </div>
-                    <svg class="sideArrows" style="display: none;">
+                    <!-- <svg class="sideArrows" style="display: none;">
                         <path class="a1" d="M0 0 L30 32 L60 0"></path>
                         <path class="a2" d="M0 20 L30 52 L60 20"></path>
                         <path class="a3" d="M0 40 L30 72 L60 40"></path>
-                    </svg>
+                    </svg> -->
                 </div>
             </div>
         </div>
-        <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+        <footer>
+            <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+        </footer>
     </section>
     <!-- --- -->
     <button id="scrollToTopBtn"><i class="arrow up"></i></button>

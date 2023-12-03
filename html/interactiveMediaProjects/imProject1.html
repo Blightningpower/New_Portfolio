@@ -23,7 +23,9 @@
     <link rel="stylesheet" href="../../css/generalProjectStyle.css">
 
     <!--Link to scriptfiles -->
+    <script src="../../js/header3.js" defer></script>
     <script src="../../js/scroll.js" defer></script>
+    <script src="../../dropDownim.js" defer></script>
 
     <style>
         .h1Title {
@@ -146,17 +148,51 @@
 
 </head>
 
-<body>
+<body id="im1">
 
-    <div class=linkMenu>
-        <a href="../../index.html" class="homepageLink">Home</a>
-        <span><i class="arrow right"></i></span>
-        <a href="/Portfolio_Code/html/leeruitkomsten.html" class="activeLink">Leeruitkomsten</a>
-        <span><i class="arrow right"></i></span>
-        <a href="/Portfolio_Code/html/interactiveMedia.html" class="activeLink">Interactive Media</a>
-        <span><i class="arrow right"></i></span>
-        <a href="imProject1.html" class="activeLink active">www.autoverhuurincuracao.nl Wireframes</a>
-    </div>
+    <!-- header -->
+    <header>
+        <div class="headerLeftCorner">
+            <h1 class="homePageTitle">ICT & Media Design Portfolio</h1>
+            <div class="BAlogo">
+
+                <img src="../../img/logo 3.3.1 Character 'B'_New.png" alt="Logo_Character_'B'" class="logoB logoHover">
+                <img src="../../img/avli.png" alt="avli.png" class="textRestFname">
+
+                <img src="../../img/logo 3.3.1 Character 'A'_New.png" alt="Logo_Character_'A'" class="logoA logoHover">
+                <img src="../../img/rmanyous.png" alt="rmanyous.png" class="textRestLname">
+
+            </div>
+        </div>
+        <nav class="headerNavigation">
+
+            <a href="../../index.html" class="navButton" data-active="Home">Home</a>
+            <a href="../../html/overMij.html" class="navButton" data-active="aboutMe">Over mij</a>
+            <a href="../../html/leeruitkomsten.html" class="navButton LO"
+                data-active="learningOutcomes">Leeruitkomsten<span class="dropDownIcon">▶</span></a>
+
+            <div class="dropdown-content">
+                <a href="../../html/interactiveMedia.html" class="navButton LOim" data-active="im">Interactive Media</a>
+                <div class="dropdown-contentim">
+                    <a href="../../html/developmentProjects/imProject1.html" class="navButton small"
+                        data-active="im1">www.autoverhuurincuracao.nl Wireframes</a>
+                </div>
+
+                <a href="../../html/development.html" class="navButton LOdv" data-active="dv">Development</a>
+                <div class="dropdown-contentdv">
+                    <a href="../../html/developmentProjects/dvProject1.html" class="navButton small"
+                        data-active="dv1">www.autoverhuurincuracao.nl Development</a>
+                </div>
+
+                <a href="../../html/design.html" class="navButton" data-active="dS">Design</a>
+                <a href="../../html/research.html" class="navButton" data-active="rS">Research</a>
+                <a href="../../html/communication.html" class="navButton" data-active="cM">Communication</a>
+                <a href="../../html/professionalIdentity.html" class="navButton" data-active="pI">Professional
+                    Identity</a>
+            </div>
+        </nav>
+    </header>
+    <!-- --- -->
     <h1 class="h1Title">www.autoverhuurincuracao.nl Wireframes</h1>
     <!-- --- -->
     <div class="textSpace">
@@ -178,8 +214,7 @@
             </p>
             <div class="flexImages">
                 <div class="imageDiv">
-                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding1.png"
-                        alt="Afbeelding1">
+                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding1.png" alt="Afbeelding1">
                     <p class="imageUndertitle">Afbeelding 1</p>
                 </div>
             </div>
@@ -197,14 +232,12 @@
             </p>
             <div class="flexImages">
                 <div class="imageDiv">
-                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding2.png"
-                        alt="Afbeelding2.png">
+                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding2.png" alt="Afbeelding2.png">
                     <p class="imageUndertitle">Afbeelding 2 (Desktop Header Wireframe)</p>
                 </div>
 
                 <div class="imageDiv">
-                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding3.png"
-                        alt="Afbeelding3.png">
+                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding3.png" alt="Afbeelding3.png">
                     <p class="imageUndertitle">Afbeelding 3 (Mobile Header Wireframe)</p>
                 </div>
             </div>
@@ -217,8 +250,7 @@
                 staan. Op <cite>Afbeelding 4</cite> kan je zien hoe de header er uit ziet.
             </p>
             <div class="imageDiv">
-                <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding4.png"
-                    alt="Afbeelding4.png">
+                <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding4.png" alt="Afbeelding4.png">
                 <p class="imageUndertitle">Afbeelding 4 (Desktop Header website stakeholder)</p>
             </div>
         </div>
@@ -229,8 +261,7 @@
                     5)</cite>.
             </p>
             <div class="imageDiv">
-                <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding5.png"
-                    alt="Afbeelding5.png">
+                <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding5.png" alt="Afbeelding5.png">
                 <p class="imageUndertitle">Afbeelding 5 (Desktop Header Sixt.nl)</p>
             </div>
         </div>
@@ -266,8 +297,7 @@
                 rechts een vertaalknopje. In de tweede balk bevindt zich het menu met alle pagina's.
             </p>
             <div class="imageDiv">
-                <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding6.png"
-                    alt="Afbeelding6.png">
+                <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding6.png" alt="Afbeelding6.png">
                 <p class="imageUndertitle">Afbeelding 6 (Desktop menu Wireframe)</p>
             </div>
         </div>
@@ -275,8 +305,7 @@
             <p class="sideText">Bij de mobiele variant zie je pas de zoekbalk, de vertaalknop en het menu van de header
                 wanneer je op het hamburgermenu-icoontje klikt <cite>(Afbeelding 7)</cite>.</p>
             <div class="imageDiv">
-                <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding7.png"
-                    alt="Afbeelding7.png">
+                <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding7.png" alt="Afbeelding7.png">
                 <p class="imageUndertitle">Afbeelding 7 (Mobile menu Wireframe)</p>
             </div>
         </div>
@@ -361,13 +390,11 @@
             </p>
             <div class="flexImages layout2">
                 <div class="imageDiv">
-                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding8.png"
-                        alt="Afbeelding8.png">
+                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding8.png" alt="Afbeelding8.png">
                     <p class="imageUndertitle">Afbeelding 8 (Mobile Header Wireframe)</p>
                 </div>
                 <div class="imageDiv">
-                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding9.png"
-                        alt="Afbeelding9.png">
+                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding9.png" alt="Afbeelding9.png">
                     <p class="imageUndertitle">Afbeelding 9 (Desktop Footer Wireframe)</p>
                 </div>
             </div>
@@ -380,8 +407,7 @@
                 Op <cite>Afbeelding 10</cite> kan je zien hoe de footer van de stakeholder er uit ziet.
             </p>
             <div class="imageDiv">
-                <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding10.png"
-                    alt="Afbeelding10.png">
+                <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding10.png" alt="Afbeelding10.png">
                 <p class="imageUndertitle">Afbeelding 10 (Desktop Footer Stakeholder)</p>
             </div>
         </div>
@@ -391,8 +417,7 @@
                     11)</cite>.
             </p>
             <div class="imageDiv">
-                <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding11.png"
-                    alt="Afbeelding11.png">
+                <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding11.png" alt="Afbeelding11.png">
                 <p class="imageUndertitle">Afbeelding 11 (Desktop Footer Sixt.nl)</p>
             </div>
         </div>
@@ -434,20 +459,17 @@
 
             <div class="flexImages layout2">
                 <div class="imageDiv">
-                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding12.png"
-                        alt="Afbeelding12.png">
+                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding12.png" alt="Afbeelding12.png">
                     <p class="imageUndertitle">Afbeelding 12 (Mobile Contactpagina Wireframe)</p>
                 </div>
 
                 <div class="imageDiv">
-                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding13.png"
-                        alt="Afbeelding13.png">
+                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding13.png" alt="Afbeelding13.png">
                     <p class="imageUndertitle">Afbeelding 13 (Desktop Contactpagina Wireframe)</p>
                 </div>
 
                 <div class="imageDiv">
-                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding14.png"
-                        alt="Afbeelding14.png">
+                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding14.png" alt="Afbeelding14.png">
                     <p class="imageUndertitle">Afbeelding 14 (Desktop Contactpagina Weldas.nl)</p>
                 </div>
             </div>
@@ -481,14 +503,12 @@
             </p>
             <div class="flexImages">
                 <div class="imageDiv">
-                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding15.png"
-                        alt="Afbeelding15.png">
+                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding15.png" alt="Afbeelding15.png">
                     <p class="imageUndertitle">Afbeelding 15 (Old Mobile menu Wireframe)</p>
                 </div>
 
                 <div class="imageDiv">
-                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding16.png"
-                        alt="Afbeelding16.png">
+                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding16.png" alt="Afbeelding16.png">
                     <p class="imageUndertitle">Afbeelding 16 (New Mobile menu Wireframe)</p>
                 </div>
             </div>
@@ -539,11 +559,12 @@
         </ul>
         <p class="middleText">Ik heb alle wireframes interactief met elkaar verbonden, hoewel het niet verplicht was.
             Onderaan <cite><a href="#srces">de bronnenlijst</a></cite> kan je het Figma prototype bekijken als je een
-            Figma account hebt. 
+            Figma account hebt.
             <br>
             <br>
-             Om van prototype te veranderen moet je op <img
-                src="../../img/www.autoverhuurincuracao.nl Wireframes/FigmaButton.png" alt="FigmaButton.png"> klikken links
+            Om van prototype te veranderen moet je op <img
+                src="../../img/www.autoverhuurincuracao.nl Wireframes/FigmaButton.png" alt="FigmaButton.png"> klikken
+            links
             bovenaan je scherm.
         </p>
     </div>
@@ -563,25 +584,25 @@
         <p>Je kunt de wireframes en meerdere bronnen die bij dit project horen hieronder vinden.</p>
         <div class="srcLinks">
             <a href="../../Linked_Files/www.autoverhuurincuracao.nl Wireframes/Wireframes Verantwoording.pdf"
-                target="_blank" class="webLink"><img
-                    src="../../img/Algemene Afbeeldingen/pdf_Logo.png"
+                target="_blank" class="webLink"><img src="../../img/Algemene Afbeeldingen/pdf_Logo.png"
                     alt="pdf_Logo.png"><br><span>Wireframes
                     Verantwoording</span></a>
 
-            <a href="../../Linked_Files/www.autoverhuurincuracao.nl Wireframes/Website verdeling.pdf"
-                target="_blank" class="webLink"><img
-                    src="../../img/Algemene Afbeeldingen/pdf_Logo.png"
+            <a href="../../Linked_Files/www.autoverhuurincuracao.nl Wireframes/Website verdeling.pdf" target="_blank"
+                class="webLink"><img src="../../img/Algemene Afbeeldingen/pdf_Logo.png"
                     alt="pdf_Logo.png"><br><span>Websiteverdeling</span></a>
 
             <a href="https://www.figma.com/proto/HVPNxvqwzPJNZw1lBQnpKU/https%3A%2F%2Fwww.autoverhuurincuracao.nl?type=design&node-id=118-73&t=42vkFvvqXhDcSy39-1&scaling=scale-down-width&page-id=3%3A6&starting-point-node-id=118%3A73&mode=design"
-                class="webLink" target="_blank"><img
-                    src="../../img/Algemene Afbeeldingen/figmaLogo.png"
+                class="webLink" target="_blank"><img src="../../img/Algemene Afbeeldingen/figmaLogo.png"
                     alt="pdf_Logo.png"><br><span>Wireframes Prototype</span></a>
         </div>
     </div>
     <!-- --- -->
     <button id="scrollToTopBtn"><i class="arrow up"></i></button>
     <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+    <script>
+
+    </script>
 </body>
 
 </html>
