@@ -143,7 +143,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2%;
   transition: left 3s linear;
 }
 
@@ -207,35 +206,46 @@ header {
 
 .headerNavigation {
   display: flex;
-  margin: 0 0 1% 20%;
+  margin: 0 0 0 20%;
 }
 
 .navButton {
   color: var(--portfolioWhite);
   font-size: 2vw;
   font-weight: 700;
-  margin: 0 5%;
+  margin: 0 5% 3%;
   min-width: fit-content;
   text-shadow: 0 3px 6px var(--portfolioRed);
   display: flex;
   align-items: center;
+  min-width: max-content;
 }
 
 .navButton:hover {
   color: var(--portfolioBlack);
-  -webkit-text-stroke-width: 0.2px;
   -webkit-text-stroke-color: var(--portfolioWhite);
+}
+
+.navButton:active {
+  box-shadow: none;
+}
+
+.small {
+  font-size: 1vw;
 }
 
 .active {
   color: var(--portfolioGold);
-  font-size: 2vw;
   font-weight: 700;
-  margin: 0 5%;
-  min-width: fit-content;
   text-shadow: none;
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important; 
 }
 
+.active:hover {
+  text-shadow: 0 3px 6px var(--portfolioRed);
+}
 
 .dropDownIcon {
   font-size: 1.3vw;
@@ -249,27 +259,50 @@ header {
 
 /* Hide the dropdown content by default */
 .dropdown-content {
-  display: none;
-  position: fixed;
-  background-color: rgba(112, 112, 112, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  position: fixed !important;
   min-width: 22vw;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  flex-direction: column;
   top: 10%;
   right: 1%;
   border-radius: 2px;
 }
 
-.dropdown-content a {
-  padding: 4% 2% 4% 0;
-  min-width: max-content;
+.dropdown-content>a {
+  border-bottom: 2px solid var(--portfolioWhite);
 }
 
-/* Show the dropdown content when the button is hovered */
-#leeruitkomstenDropdown:hover+#leeruitkomstenContent,
-#leeruitkomstenContent:hover {
-  display: block;
+/* Apply transition to the dropdown content */
+.dropdown-content,
+.dropdown-contentim,
+.dropdown-contentdv,
+.dropdown-contentds,
+.dropdown-contentrs,
+.dropdown-contentcm,
+.dropdown-contentpi {
+  background-color: rgba(112, 112, 112, 0.9);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  flex-direction: column;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* Hide the dropdown content by default */
+.dropdown-contentim,
+.dropdown-contentdv,
+.dropdown-contentds,
+.dropdown-contentrs,
+.dropdown-contentcm,
+.dropdown-contentpi {
+  position: relative;
+  min-width: 22vw;
+  top: 10%;
+}
+
+.headerNavigation>div>div>a {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
 }
 
 .homepageDiv {
@@ -289,7 +322,6 @@ header {
   position: relative;
   bottom: 0;
   min-width: -webkit-fill-available;
-  /* padding-top: 1%; */
   margin: 0 auto;
 }
 
@@ -347,21 +379,21 @@ header {
 .homepageLink:hover,
 .activeLink:hover {
   color: var(--portfolioGrey);
-  -webkit-text-stroke-width: 0.2px;
+
   -webkit-text-stroke-color: var(--portfolioDarkRed);
 }
 
 .homepageLink:active,
 .activeLink:active {
   color: var(--portfolioBlack);
-  -webkit-text-stroke-width: 0.2px;
+
   -webkit-text-stroke-color: var(--portfolioDarkRed);
 }
 
 .homepageLink.active,
 .activeLink.active {
   color: var(--portfolioBlack);
-  -webkit-text-stroke-width: 0.2px;
+
   -webkit-text-stroke-color: var(--portfolioDarkRed);
   text-shadow: 0 0 10px var(--portfolioWhite), 0 0 20px var(--portfolioWhite), 0 0 30px var(--portfolioWhite),
     0 0 40px var(--portfolioWhite), 0 0 50px var(--portfolioWhite), 0 0 60px var(--portfolioWhite), 0 0 70px var(--portfolioWhite);
