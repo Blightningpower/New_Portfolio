@@ -23,55 +23,115 @@
     <script src="js/script.js" defer></script>
 
     <style>
-        @media screen and (max-width: 700px) {
-            .copyrightText {
-                padding-top: 35%;
-            }
-        }
+
     </style>
 </head>
 
 <body id="Home">
-    <div class="fadeInElements">
-        <!--Under here comes everything that fades in-->
-        <!-- header -->
-        <header>
-            <div class="headerLeftCorner">
-                <h1 class="homePageTitle">ICT & Media Design Portfolio</h1>
-                <div class="BAlogo">
+    <!-- header -->
+    <header>
 
-                    <img src="img/logo 3.3.1 Character 'B'_New.png" alt="Logo_Character_'B'" class="logoB logoHover">
-                    <img src="img/avli.png" alt="avli.png" class="textRestFname">
-
-                    <img src="img/logo 3.3.1 Character 'A'_New.png" alt="Logo_Character_'A'" class="logoA logoHover">
-                    <img src="img/rmanyous.png" alt="rmanyous.png" class="textRestLname">
-
-                </div>
-            </div>
-            <nav class="headerNavigation">
-
-                <a href="index.html" class="navButton" data-active="Home">Home</a>
-                <a href="html/overMij.html" class="navButton" data-active="aboutMe">Over mij</a>
-                <a href="html/leeruitkomsten.html" class="navButton LO" id="learningOutcomes"
-                    data-active="learningoutcomes">Leeruitkomsten<span class="dropDownIcon">▶</span></a>
-                <div class="dropdown-content">
-                    <a href="html/interactiveMedia.html" class="navButton">Interactive Media</a>
-                    <a href="html/development.html" class="navButton">Development</a>
-                    <a href="html/design.html" class="navButton">Design</a>
-                    <a href="html/research.html" class="navButton">Research</a>
-                    <a href="html/communication.html" class="navButton">Communication</a>
-                    <a href="html/professionalIdentity.html" class="navButton">Professional Identity</a>
-                </div>
-            </nav>
-        </header>
-        <!-- --- -->
-        <div class="homepageDiv">
-
-
-            <img src="img/Angry Wolf eyes 2 cut.png" class="fade-out-image" alt="Wolf_eyes">
-            <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+        <div class="headerLeftCorner">
+            <h1><span class="nameHighlight">&lt;/</span>Bavli Armanyous<span class="nameHighlight">&gt;</span></h1>
         </div>
-    </div>
+
+        <nav class="headerNavigation">
+
+            <a href="index.html" class="navButton" data-active="Home"><span class="highlight">&lt;/</span>Home<span
+                    class="highlight">&gt;</span></a>
+
+            <a href="html/leeruitkomsten.html" class="navButton" id="learningOutcomes"
+                data-active="learningoutcomes"><span class="highlight">&lt;/</span>Leeruitkomsten<span
+                    class="highlight">&gt;</span></a>
+
+            <div class="dropdown-content">
+
+                <a href="html/interactiveMedia.html" class="navButton" data-active="im"><span
+                        class="highlight">&lt;/</span>Interactive
+                    Media<span class="highlight">&gt;</span></a>
+
+                <a href="html/development.html" class="navButton" data-active="dv"><span
+                        class="highlight">&lt;/</span>Development<span class="highlight">&gt;</span></a>
+
+                <a href="html/design.html" class="navButton" data-active="dS"><span
+                        class="highlight">&lt;/</span>Design<span class="highlight">&gt;</span></a>
+
+                <a href="html/research.html" class="navButton" data-active="rS"><span
+                        class="highlight">&lt;/</span>Research<span class="highlight">&gt;</span></a>
+
+                <a href="html/communication.html" class="navButton" data-active="cM"><span
+                        class="highlight">&lt;/</span>Communication<span class="highlight">&gt;</span></a>
+
+                <a href="html/professionalIdentity.html" class="navButton" data-active="pI"><span
+                        class="highlight">&lt;/</span>Professional
+                    Identity<span class="highlight">&gt;</span></a>
+
+            </div>
+
+            <a href="html/overMij.html" class="navButton" data-active="aboutMe"><span class="highlight">&lt;/</span>Over
+                mij<span class="highlight">&gt;</span></a>
+
+        </nav>
+    </header>
+    <!-- --- -->
+    <section class="homepageSection">
+        <div class="welcomeElements">
+            <h1 class="welcomeTitle">
+                Hoi!
+                <span>
+                    Mijn naam is Bavli
+                    <br>
+                    en dit is mijn portfolio.
+                </span>
+            </h1>
+            <img src="img/Algemene_Afbeeldingen/ai_Me.png" alt="ai_Me.png" class="aiMeImg">
+        </div>
+        <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+    </section>
+
+    <script>
+         const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let interval = null;
+    let iteration = 0;
+
+    function animateText(selector) {
+      const element = document.querySelector(selector);
+      
+      if (!element) {
+        console.error(`Element with selector '${selector}' not found.`);
+        return;
+      }
+
+      const text = element.innerText;
+      clearInterval(interval);
+
+      interval = setInterval(() => {
+        element.innerText = text
+          .split("")
+          .map((letter, index) => {
+            if (index < iteration) {
+              return text[index];
+            }
+            return letters[Math.floor(Math.random() * 26)];
+          })
+          .join("");
+
+        if (iteration >= text.length) {
+          clearInterval(interval);
+        }
+
+        iteration += 1 / 3;
+      }, 30);
+    }
+
+
+    animateText("#paragraph"); // animate element with id 'paragraph'
+
+    </script>
 </body>
 
 </html>

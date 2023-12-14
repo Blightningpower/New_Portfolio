@@ -5,12 +5,9 @@
     <title>www.autoverhuurincuracao.nl Development</title>
 
     <!--links for the Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon_io/favicon-16x16.png">
 
     <!--meta tags for responsiveness-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -25,15 +22,22 @@
     <!--Link to scriptfiles -->
     <script src="../../js/header3.js" defer></script>
     <script src="../../js/scroll.js" defer></script>
-    <script src="../../js/dropDownim.js" defer></script>
-    <script src="../../js/dropDowndv.js" defer></script>
-    <script src="../../js/dropDownds.js" defer></script>
-    <script src="../../js/dropDownrs.js" defer></script>
-    <script src="../../js/dropDowncm.js" defer></script>
-    <script src="../../js/dropDownpi.js" defer></script>
 
     <style>
+        iframe {
+            width: 800px;
+            height: 450px;
+            margin: auto;
+            transform: scale(1.5);
+            margin-top: 5%;
+        }
 
+        .iframe-container {
+            width: 60vw;
+            height: 85vh;
+            overflow: hidden;
+            border: 1px solid grey;
+        }
     </style>
 
 </head>
@@ -43,37 +47,27 @@
     <!-- header -->
     <header>
         <div class="headerLeftCorner">
-            <h1 class="homePageTitle">ICT & Media Design Portfolio</h1>
             <div class="BAlogo">
 
-                <img src="../../img/logo 3.3.1 Character 'B'_New.png" alt="Logo_Character_'B'" class="logoB logoHover">
-                <img src="../../img/avli.png" alt="avli.png" class="textRestFname">
+                <img src="../../img/Algemene_Afbeeldingen/logo 3.3.1 Character 'B'_New.png" alt="Logo_Character_'B'"
+                    class="logoB logoHover">
+                <img src="../../img/Algemene_Afbeeldingen/avli.png" alt="avli.png" class="textRestFname">
 
-                <img src="../../img/logo 3.3.1 Character 'A'_New.png" alt="Logo_Character_'A'" class="logoA logoHover">
-                <img src="../../img/rmanyous.png" alt="rmanyous.png" class="textRestLname">
+                <img src="../../img/Algemene_Afbeeldingen/logo 3.3.1 Character 'A'_New.png" alt="Logo_Character_'A'"
+                    class="logoA logoHover">
+                <img src="../../img/Algemene_Afbeeldingen/rmanyous.png" alt="rmanyous.png" class="textRestLname">
 
             </div>
         </div>
         <nav class="headerNavigation">
 
-            <a href="../../index.html" class="navButton" data-active="Home">Home</a>
+            <a href="index.html" class="navButton" data-active="Home">Home</a>
             <a href="../../html/overMij.html" class="navButton" data-active="aboutMe">Over mij</a>
-            <a href="../../html/leeruitkomsten.html" class="navButton LO"
-                data-active="learningOutcomes">Leeruitkomsten<span class="dropDownIcon">▶</span></a>
-
+            <a href="../../html/leeruitkomsten.html" class="navButton" id="learningOutcomes"
+                data-active="learningoutcomes">Leeruitkomsten<span class="dropDownIcon">▶</span></a>
             <div class="dropdown-content">
-                <a href="../../html/interactiveMedia.html" class="navButton LOim" data-active="im">Interactive Media</a>
-                <div class="dropdown-contentim">
-                    <a href="../../html/developmentProjects/imProject1.html" class="navButton small"
-                        data-active="im1">www.autoverhuurincuracao.nl Wireframes</a>
-                </div>
-
-                <a href="../../html/development.html" class="navButton LOdv" data-active="dv">Development</a>
-                <div class="dropdown-contentdv">
-                    <a href="../../html/developmentProjects/dvProject1.html" class="navButton small"
-                        data-active="dv1">www.autoverhuurincuracao.nl Development</a>
-                </div>
-
+                <a href="../../html/interactiveMedia.html" class="navButton" data-active="im">Interactive Media</a>
+                <a href="../../html/development.html" class="navButton" data-active="dv">Development</a>
                 <a href="../../html/design.html" class="navButton" data-active="dS">Design</a>
                 <a href="../../html/research.html" class="navButton" data-active="rS">Research</a>
                 <a href="../../html/communication.html" class="navButton" data-active="cM">Communication</a>
@@ -83,98 +77,129 @@
         </nav>
     </header>
     <!-- --- -->
-    <h1 class="h1Title">www.autoverhuurincuracao.nl Development</h1>
-    <!-- --- -->
-    <div class="textSpace">
-        <h2 class="subtitle">Inleiding</h2>
+    <main>
+        <h1 class="h1Title">www.autoverhuurincuracao.nl Development</h1>
+        <!-- --- -->
+        <div class="textSpace">
+            <h2 class="subtitle">Inleiding</h2>
+            <br>
+            <div class="alignTextandImg">
+                <p>
+                    Bij het derde project hebben we ons gericht op het tot leven brengen van onderzoeken en ontwerpen
+                    uit
+                    eerdere projecten voor www.autoverhuurincuracao.nl. Samen met mijn groepsgenoten Danny en Thammy
+                    hebben
+                    we
+                    ons beziggehouden met het omzetten van deze ideeën naar concrete webpagina's met behulp van HTML,
+                    CSS en
+                    indien nodig, JavaScript. Binnen ons team had ik de verantwoordelijkheid voor het creëren van de
+                    homepagina.
+                    Hoewel het grootste deel van het werk soepel verliep, kwam ik een aantal uitdagingen tegen bij
+                    bepaalde
+                    elementen die ik wellicht wat had onderschat. In dit verslag neem ik je mee door mijn ervaringen en
+                    de
+                    leermomenten tijdens dit proces.
+                    <br><br>
+                    Ik heb deze keer geen logo of speciale naam opgezocht voor ons groepje, omdat ik me alleen bezig
+                    wilde
+                    houden met programmeren en omdat we het gewoon simpel wilde houden als groepje. We hebben onszelf
+                    gewoon
+                    voorgesteld als B, D & T Development (Bavli, Danny & Thammy). Het was echter eerst B & D
+                    Development.
+                    Thammy
+                    heeft zich iets later bij de groep gevoegd, omdat ze bij nog geen groepje had.
+                </p>
+                <div class="imageDiv">
+                    <img src="../../img/www.autoverhuurincuracao.nl Development/Afbeelding1.png" alt="Afbeelding1.png">
+                </div>
+            </div>
+        </div>
         <br>
-        <div class="alignTextandImg">
+        <br>
+        <br>
+        <br>
+        <div class="textSpace">
+            <h2 class="subtitle">Welk design?</h2>
+            <br>
             <p>
-                Bij het derde project hebben we ons gericht op het tot leven brengen van onderzoeken en ontwerpen uit
-                eerdere projecten voor www.autoverhuurincuracao.nl. Samen met mijn groepsgenoten Danny en Thammy hebben
-                we
-                ons beziggehouden met het omzetten van deze ideeën naar concrete webpagina's met behulp van HTML, CSS en
-                indien nodig, JavaScript. Binnen ons team had ik de verantwoordelijkheid voor het creëren van de
-                homepagina.
-                Hoewel het grootste deel van het werk soepel verliep, kwam ik een aantal uitdagingen tegen bij bepaalde
-                elementen die ik wellicht wat had onderschat. In dit verslag neem ik je mee door mijn ervaringen en de
-                leermomenten tijdens dit proces.
-                <br><br>
-                Ik heb deze keer geen logo of speciale naam opgezocht voor ons groepje, omdat ik me alleen bezig wilde
-                houden met programmeren en omdat we het gewoon simpel wilde houden als groepje. We hebben onszelf gewoon
-                voorgesteld als B, D & T Development (Bavli, Danny & Thammy). Het was echter eerst B & D Development.
-                Thammy
-                heeft zich iets later bij de groep gevoegd, omdat ze bij nog geen groepje had.
+                Voor het programmeren van de website mochten we het design dat je eerder hebt gemaakt gebruiken. Danny,
+                Thammy en ik zaten allemaal in een aparte groepjes voor het design project, dus we konden kiezen uit 3
+                designs om te ontwikkelen. Om beetje een idee te krijgen hoe het design eruit zag van de groepjes laat
+                ik
+                hieronder 3 afbeeldingen van de homepagina zien:
             </p>
-            <div class="imageDiv">
-                <img src="../../img/www.autoverhuurincuracao.nl Development/Afbeelding1.png" alt="Afbeelding1.png">
+            <div class="flexImagesMiddleFlex">
+                <div class="imageDiv">
+                    <img src="../../img/www.autoverhuurincuracao.nl Development/Afbeelding2.png" alt="Afbeelding2.png">
+                    <p class="imageUndertitle">Afbeelding 2 Homepage Design van Danny’s groepje</p>
+                </div>
+                <div class="imageDiv">
+                    <img src="../../img/www.autoverhuurincuracao.nl Development/Afbeelding3.png" alt="Afbeelding3.png">
+                    <p class="imageUndertitle">Afbeelding 3 Homepage Design van mijn groepje</p>
+                </div>
+                <div class="imageDiv">
+                    <img src="../../img/www.autoverhuurincuracao.nl Development/Afbeelding4.png" alt="Afbeelding4.png">
+                    <p class="imageUndertitle">Afbeelding 4 Homepage design van Thammy’s groepje</p>
+                </div>
+            </div>
+            <p>
+                En netals bijna elk ander groepje in onze klas kozen we voor het design dat het groepje van Thammy heeft
+                gemaakt. Waarom? Omdat deze de meeste positieve feedback heeft gekregen en omdat wijzelf deze ook het
+                besten
+                vonden.
+            </p>
+            <h2 class="subtitle">Het design</h2>
+            <p>
+                Het Design van Thammy’s groepje bestaat uit 5 pagina’s: ‘Home’, ‘Reserveren/Autocataloges’, ‘Het
+                eiland’,
+                ‘Contact’ en ‘productpagina’ en het is 8 pagina’s als je het boekingsproces meetelt <cite>(3 pagina’s
+                    waar je
+                    langs gaat om je auto te boeken)</cite>. Er was dus nog het een en ander te programmeren dalijk.
+                <br><br>
+                Je kunt het volledige design van Thammy's groepje hieronder bekijken:
+            </p>
+            <br>
+            <div class="iframe-container">
+                <iframe
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwCYpFFkREfOjrQCac41Q2k%2FWeb-curacao%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D74-3360%26viewport%3D-291%252C263%252C0.05%26t%3D6smagg50HRyHiXrz-1%26scaling%3Dscale-down%26starting-point-node-id%3D74%253A3360%26mode%3Ddesign"
+                    allowfullscreen></iframe>
+            </div>
+            <h2 class="subtitle">Development</h2>
+            <p>
+                Zoals eerder aangegeven, was ik verantwoordelijk voor het bouwen van de homepagina. Ik heb echter meer
+                gedaan dan dat, maar daar kom ik nog op terug. Het programmeren van de homepagina heb ik qua tijd zeer
+                onderschat en hiermee bedoel ik te zeggen dat
+                ik aan bepaalde elementen langer heb gedaan dan dat ik dacht dat het zou duren.
+            </p>
+            <p>
+                Als je naar het design van de homepagina kijkt, dan zie je dat aan het begin van de pagina een grote
+                achtergrondfoto
+                van een auto staat met daarboven tekst en een snelboekcontainer.
+            </p>
+        </div>
+        <!-- --- -->
+        <div class="textSpaceSources" id="srces">
+            <h2 class="subtitle">Bronnen</h2>
+            <p>Je kunt de wireframes en meerdere bronnen die bij dit project horen hieronder vinden.</p>
+            <div class="srcLinks">
+                <a href="../../Linked_Files/www.autoverhuurincuracao.nl Wireframes/Wireframes Verantwoording.pdf"
+                    target="_blank" class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br>
+                    <span>Wireframes Verantwoording</span></a>
+
+                <a href="../../Linked_Files/www.autoverhuurincuracao.nl Wireframes/Website verdeling.pdf"
+                    target="_blank" class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Websiteverdeling</span></a>
+
+                <a href="https://www.figma.com/proto/HVPNxvqwzPJNZw1lBQnpKU/https%3A%2F%2Fwww.autoverhuurincuracao.nl?type=design&node-id=118-73&t=42vkFvvqXhDcSy39-1&scaling=scale-down-width&page-id=3%3A6&starting-point-node-id=118%3A73&mode=design"
+                    class="webLink" target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/figmaLogo.png"
+                        alt="pdf_Logo.png"><br><span>Wireframes Prototype</span></a>
             </div>
         </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="textSpace">
-        <h2 class="subtitle">Welk design?</h2>
-        <br>
-        <p>
-            Voor het programmeren van de website mochten we het design dat je eerder hebt gemaakt gebruiken. Danny,
-            Thammy en ik zaten allemaal in een aparte groepjes voor het design project, dus we konden kiezen uit 3
-            designs om te ontwikkelen. Om beetje een idee te krijgen hoe het design eruit zag van de groepjes laat ik
-            hieronder 3 afbeeldingen van de homepagina zien:
-        </p>
-        <div class="flexImagesMiddleFlex">
-            <div class="imageDiv">
-                <img src="../../img/www.autoverhuurincuracao.nl Development/Afbeelding2.png" alt="Afbeelding2.png">
-                <p class="imageUndertitle">Afbeelding 2 Homepage Design van Danny’s groepje</p>
-            </div>
-            <div class="imageDiv">
-                <img src="../../img/www.autoverhuurincuracao.nl Development/Afbeelding3.png" alt="Afbeelding3.png">
-                <p class="imageUndertitle">Afbeelding 3 Homepage Design van mijn groepje</p>
-            </div>
-            <div class="imageDiv">
-                <img src="../../img/www.autoverhuurincuracao.nl Development/Afbeelding4.png" alt="Afbeelding4.png">
-                <p class="imageUndertitle">Afbeelding 4 Homepage design van Thammy’s groepje</p>
-            </div>
-        </div>
-        <p>
-            En netals bijna elk ander groepje in onze klas kozen we voor het design dat het groepje van Thammy heeft
-            gemaakt. Waarom? Omdat deze de meeste positieve feedback heeft gekregen en omdat wijzelf deze ook het besten
-            vonden.
-        </p>
-        <h2 class="subtitle">Het design</h2>
-        <p>
-            Het Design van Thammy’s groepje bestaat uit 5 pagina’s: ‘Home’, ‘Reserveren/Autocataloges’, ‘Het eiland’,
-            ‘Contact’ en ‘productpagina’ en het is 8 pagina’s als je het boekingsproces meetelt <cite>(3 pagina’s waar je
-                langs gaat om je auto te boeken)</cite>. Er was dus nog het een en ander te doen.
-        </p>
-    </div>
-    <!-- --- -->
-    <div class="textSpaceSources" id="srces">
-        <h2 class="subtitle">Bronnen</h2>
-        <p>Je kunt de wireframes en meerdere bronnen die bij dit project horen hieronder vinden.</p>
-        <div class="srcLinks">
-            <a href="../../Linked_Files/www.autoverhuurincuracao.nl Wireframes/Wireframes Verantwoording.pdf"
-                target="_blank" class="webLink"><img src="../../img/Algemene Afbeeldingen/pdf_Logo.png"
-                    alt="pdf_Logo.png"><br><span>Wireframes
-                    Verantwoording</span></a>
-
-            <a href="../../Linked_Files/www.autoverhuurincuracao.nl Wireframes/Website verdeling.pdf" target="_blank"
-                class="webLink"><img src="../../img/Algemene Afbeeldingen/pdf_Logo.png"
-                    alt="pdf_Logo.png"><br><span>Websiteverdeling</span></a>
-
-            <a href="https://www.figma.com/proto/HVPNxvqwzPJNZw1lBQnpKU/https%3A%2F%2Fwww.autoverhuurincuracao.nl?type=design&node-id=118-73&t=42vkFvvqXhDcSy39-1&scaling=scale-down-width&page-id=3%3A6&starting-point-node-id=118%3A73&mode=design"
-                class="webLink" target="_blank"><img src="../../img/Algemene Afbeeldingen/figmaLogo.png"
-                    alt="pdf_Logo.png"><br><span>Wireframes Prototype</span></a>
-        </div>
-    </div>
-    <!-- --- -->
-    <button id="scrollToTopBtn"><i class="arrow up"></i></button>
-    <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
-    <script>
-
-    </script>
+        <!-- --- -->
+        <button id="scrollToTopBtn"><i class="arrow up"></i></button>
+        <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+    </main>
 </body>
 
 </html>
