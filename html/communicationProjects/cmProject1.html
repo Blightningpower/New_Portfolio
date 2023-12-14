@@ -25,6 +25,12 @@
     <!--Link to scriptfiles -->
     <script src="../../js/header3.js" defer></script>
     <script src="../../js/scroll.js" defer></script>
+    <script src="../../js/dropDownim.js" defer></script>
+    <script src="../../js/dropDowndv.js" defer></script>
+    <script src="../../js/dropDownds.js" defer></script>
+    <script src="../../js/dropDownrs.js" defer></script>
+    <script src="../../js/dropDowncm.js" defer></script>
+    <script src="../../js/dropDownpi.js" defer></script>
 
     <style>
         [alt="Afbeelding4.png"] {
@@ -34,7 +40,7 @@
 
 </head>
 
-<body id="learningOutcomes">
+<body id="cm1">
 
     <!-- header -->
     <header>
@@ -56,13 +62,52 @@
             <a href="../../html/overMij.html" class="navButton" data-active="aboutMe">Over mij</a>
             <a href="../../html/leeruitkomsten.html" class="navButton LO"
                 data-active="learningOutcomes">Leeruitkomsten<span class="dropDownIcon">▶</span></a>
+
             <div class="dropdown-content">
-                <a href="../../html/interactiveMedia.html" class="navButton">Interactive Media</a>
-                <a href="../../html/development.html" class="navButton">Development</a>
-                <a href="../../html/design.html" class="navButton">Design</a>
-                <a href="../../html/research.html" class="navButton">Research</a>
-                <a href="../../html/communication.html" class="navButton">Communication</a>
-                <a href="../../html/professionalIdentity.html" class="navButton">Professional Identity</a>
+                <a href="../../html/interactiveMedia.html" class="navButton LOim" data-active="im">Interactive Media</a>
+                <div class="dropdown-contentim">
+                    <a href="../../html/developmentProjects/imProject1.html" class="navButtonSmall"
+                        data-active="im1">www.autoverhuurincuracao.nl Wireframes</a>
+                </div>
+
+                <a href="../../html/development.html" class="navButton LOdv" data-active="dv">Development</a>
+                <div class="dropdown-contentdv">
+                    <a href="../../html/developmentProjects/dvProject1.html" class="navButtonSmall"
+                        data-active="dv1">www.autoverhuurincuracao.nl Development</a>
+                </div>
+
+                <a href="../../html/design.html" class="navButton LOds" data-active="ds">Design</a>
+                <div class="dropdown-contentds">
+                    <a href="../../html/developmentProjects/dsProject1.html" class="navButtonSmall"
+                        data-active="ds1">Double Life Challenge</a>
+
+                        <a href="../../html/developmentProjects/dsProject2.html" class="navButtonSmall"
+                        data-active="ds2">Branding evi</a>
+
+                        <a href="../../html/developmentProjects/dsProject3.html" class="navButtonSmall"
+                        data-active="ds3">www.autoverhuurincuracao.nl Design</a>
+                </div>
+
+                <a href="../../html/research.html" class="navButton LOrs" data-active="rs">Research</a>
+                <div class="dropdown-contentrs">
+            
+                </div>
+
+                <a href="../../html/communication.html" class="navButton LOcm" data-active="cm">Communication</a>
+                <div class="dropdown-contentcm">
+                    <a href="../../html/communicationProjects/cmProject1.html" class="navButtonSmall"
+                        data-active="cm1">Groepscommunicatie</a>
+
+                        <a href="../../html/communicationProjects/cmProject2.html" class="navButtonSmall"
+                        data-active="cm2">FeedPulse</a>
+                </div>
+
+
+                <a href="../../html/professionalIdentity.html" class="navButton LOpi" data-active="pi">Professional
+                    Identity</a>
+                    <div class="dropdown-contentpi">
+                    
+                </div>
             </div>
         </nav>
     </header>
