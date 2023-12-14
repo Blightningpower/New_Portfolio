@@ -1,0 +1,141 @@
+{
+    "header": {
+      "headerLeftCorner": {
+        "homePageTitle": "ICT & Media Design Portfolio",
+        "BAlogo": {
+          "logoB": {
+            "src": "../../img/logo 3.3.1 Character 'B'_New.png",
+            "alt": "Logo_Character_'B'",
+            "class": "logoB logoHover"
+          },
+          "textRestFname": {
+            "src": "../../img/avli.png",
+            "alt": "avli.png",
+            "class": "textRestFname"
+          },
+          "logoA": {
+            "src": "../../img/logo 3.3.1 Character 'A'_New.png",
+            "alt": "Logo_Character_'A'",
+            "class": "logoA logoHover"
+          },
+          "textRestLname": {
+            "src": "../../img/rmanyous.png",
+            "alt": "rmanyous.png",
+            "class": "textRestLname"
+          }
+        }
+      },
+      "headerNavigation": {
+        "navButtons": [
+          {
+            "href": "../../index.html",
+            "text": "Home",
+            "class": "navButton",
+            "data-active": "Home"
+          },
+          {
+            "href": "../../html/overMij.html",
+            "text": "Over mij",
+            "class": "navButton",
+            "data-active": "aboutMe"
+          },
+          {
+            "href": "../../html/leeruitkomsten.html",
+            "text": "Leeruitkomsten",
+            "class": "navButton LO",
+            "data-active": "learningOutcomes",
+            "dropdown": {
+              "LOim": {
+                "href": "../../html/interactiveMedia.html",
+                "text": "Interactive Media",
+                "class": "navButton LOim",
+                "data-active": "im",
+                "dropdown-contentim": {
+                  "im1": {
+                    "href": "../../html/developmentProjects/imProject1.html",
+                    "text": "www.autoverhuurincuracao.nl Wireframes",
+                    "class": "navButton small",
+                    "data-active": "im1"
+                  }
+                }
+              },
+              "LOdv": {
+                "href": "../../html/development.html",
+                "text": "Development",
+                "class": "navButton LOdv",
+                "data-active": "dv",
+                "dropdown-contentdv": {
+                  "dv1": {
+                    "href": "../../html/developmentProjects/dvProject1.html",
+                    "text": "www.autoverhuurincuracao.nl Development",
+                    "class": "navButton small",
+                    "data-active": "dv1"
+                  }
+                }
+              },
+              "LOds": {
+                "href": "../../html/design.html",
+                "text": "Design",
+                "class": "navButton LOds",
+                "data-active": "ds",
+                "dropdown-contentds": {
+                  "ds1": {
+                    "href": "../../html/developmentProjects/dsProject1.html",
+                    "text": "Double Life Challenge",
+                    "class": "navButton small",
+                    "data-active": "ds1"
+                  },
+                  "ds2": {
+                    "href": "../../html/developmentProjects/dsProject2.html",
+                    "text": "Branding evi",
+                    "class": "navButton small",
+                    "data-active": "ds2"
+                  },
+                  "ds3": {
+                    "href": "../../html/developmentProjects/dsProject3.html",
+                    "text": "www.autoverhuurincuracao.nl Design",
+                    "class": "navButton small",
+                    "data-active": "ds3"
+                  }
+                }
+              },
+              "LOrs": {
+                "href": "../../html/research.html",
+                "text": "Research",
+                "class": "navButton LOrs",
+                "data-active": "rs",
+                "dropdown-contentrs": {}
+              },
+              "LOcm": {
+                "href": "../../html/communication.html",
+                "text": "Communication",
+                "class": "navButton LOcm",
+                "data-active": "cm",
+                "dropdown-contentcm": {
+                  "cm1": {
+                    "href": "../../html/communicationProjects/cmProject1.html",
+                    "text": "Groepscommunicatie",
+                    "class": "navButton small",
+                    "data-active": "cm1"
+                  },
+                  "cm2": {
+                    "href": "../../html/communicationProjects/cmProject2.html",
+                    "text": "FeedPulse",
+                    "class": "navButton small",
+                    "data-active": "cm2"
+                  }
+                }
+              },
+              "LOpi": {
+                "href": "../../html/professionalIdentity.html",
+                "text": "Professional Identity",
+                "class": "navButton LOpi",
+                "data-active": "pi",
+                "dropdown-contentim": {}
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
