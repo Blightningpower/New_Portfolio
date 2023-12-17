@@ -3,6 +3,9 @@
 /* 'lato' font: */
 @import url("https://use.typekit.net/bdv5kew.css");
 
+/* inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 /* 'consolas'font: */
 @font-face {
   font-family: 'consolas';
@@ -11,13 +14,13 @@
 
 
 :root {
-  --portfolioWhite: #FFFFFF;
+  --portfolioWhite: #F5F5F5;
   --portfolioGrey: #707070;
   --portfolioOrange: #FA8500;
-  --portfolioBlack: #0D0D0D;
+  --portfolioBlack: #000000;
   --portfolioBlue: #0598E1;
-  --hyperLinkBlue: #0000ff;
-  --portfolioGold: #FCBB1D;
+  --hyperLinkBlue: #0000FF;
+  --portfolioGold: #FDC94F;
 }
 
 * {
@@ -79,8 +82,8 @@ h4 {
 }
 
 header {
-  background: rgb(89, 89, 89);
-  background: linear-gradient(0deg, rgba(89, 89, 89, 1) 0%, rgba(38, 2, 2, 0) 100%);
+  background: var(--portfolioWhite);
+  background: linear-gradient(0deg, var(--portfolioWhite), rgba(5, 152, 225, 1) 100%);
   min-width: -webkit-fill-available;
   display: flex;
   align-items: flex-end;
@@ -90,33 +93,6 @@ header {
 }
 
 /* Homepagecode */
-
-/* fade out effect Wolf Eyes*/
-
-.fade-out-image {
-  transition: opacity 2s ease-out;
-  min-width: 30%;
-  max-width: 30%;
-  position: absolute;
-  margin: auto;
-}
-
-.fadeOut {
-  opacity: 0;
-}
-
-/* fade in elements*/
-
-.fadeInElements {
-  opacity: 0;
-}
-
-.fadeIn {
-  opacity: 1;
-  transition: opacity 1s ease-in;
-  height: 100%;
-  margin: 0;
-}
 
 .headerLeftCorner {
   max-width: fit-content;
@@ -136,85 +112,17 @@ header {
   display: none;
 }
 
-.BAlogo {
-  max-width: min-content;
-  max-height: 12vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2%;
-  transition: left 3s linear;
-}
-
-.logoLink {
-  transition: 0s;
-}
-
-.logoHover:hover {
-  cursor: pointer;
-}
-
-.logoB,
-.logoA {
-  position: relative;
-  z-index: 1;
-  min-width: 4vw;
-  max-width: 4vw;
-  min-height: 10vh;
-  margin-top: 1%;
-}
-
-.logoA {
-  min-height: 10vh;
-}
-
-.logoA.slide-in-animation,
-.logoB.slide-in-animation {
-  animation-name: slide-in;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes slide-in {
-  0% {
-    right: 0;
-  }
-
-  100% {
-    right: 26%;
-  }
-}
-
-.textRestFname,
-.textRestLname {
-  position: relative;
-  max-width: 10vw;
-  max-height: 14vh;
-  transition: opacity 1s ease-out;
-}
-
-.textRestFname {
-  right: 1%;
-  min-height: 14vh;
-}
-
-.textRestLname {
-  min-width: 21vw;
-  min-height: 14vh;
-  right: 1%;
-}
-
 .headerNavigation {
   display: flex;
   margin: 0 0 1% 20%;
 }
 
 .navButton {
-  color: var(--portfolioWhite);
+  color: var(--portfolioBlack);
   font-size: 2vw;
   font-weight: 700;
   margin: 0 5%;
-  min-width: fit-content;
+  min-width: max-content;
   text-shadow: 0 3px 6px var(--portfolioRed);
   display: flex;
   align-items: center;
@@ -360,7 +268,7 @@ header {
 
 /* Hide the dropdown content by default */
 .dropdown-content {
-  opacity: 0;
+  /* opacity: 0;
   display: flex;
   position: fixed !important;
   min-width: 22vw;
@@ -371,8 +279,8 @@ header {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   flex-direction: column;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; */
+  display: none;
 }
 
 .dropdown-content>a {
