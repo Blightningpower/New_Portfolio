@@ -17,10 +17,13 @@
 
   <!--Link to stylesheets-->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/container.css">
 
   <!--Link to scriptfiles-->
   <script src="js/header.js" defer></script>
   <script src="js/script.js" defer></script>
+  <!-- <script src="../js/containers.js" defer></script> -->
+  <script src="../js/scroll.js" defer></script>
 
   <style>
 
@@ -31,107 +34,124 @@
   <!-- header -->
   <header>
 
-    <div class="headerLeftCorner">
-      <h1 class="h1Title navButton paragraph"><span class="highlight paragraph">&lt;/</span>Bavli Armanyous<span
-          class="highlight paragraph">&gt;</span></h1>
-    </div>
+    <a href="index.html" class="h1Title"><span class="nameHighlight">&lt;/</span>Bavli Armanyous<span
+        class="nameHighlight">></span></a>
 
     <nav class="headerNavigation">
 
-      <a href="index.html" class="navButton" data-active="Home"><span class="highlight">&lt;/</span>Home<span
-          class="highlight">&gt;</span></a>
+      <a href="index.html" class="navButton" data-active="Home">Home</a>
 
-      <a href="html/leeruitkomsten.html" class="navButton" id="learningOutcomes" data-active="learningoutcomes"><span
-          class="highlight">&lt;/</span>Leeruitkomsten<span class="highlight">&gt;</span></a>
+      <a href="html/leeruitkomsten.html" class="navButton" id="learningOutcomes"
+        data-active="learningoutcomes">Leeruitkomsten</a>
 
       <div class="dropdown-content">
 
-        <a href="html/interactiveMedia.html" class="navButton" data-active="im"><span
-            class="highlight">&lt;/</span>Interactive
-          Media<span class="highlight">&gt;</span></a>
+        <a href="html/interactiveMedia.html" class="navButton" data-active="im">Interactive
+          Media</a>
 
-        <a href="html/development.html" class="navButton" data-active="dv"><span
-            class="highlight">&lt;/</span>Development<span class="highlight">&gt;</span></a>
+        <a href="html/development.html" class="navButton" data-active="dv">Development</a>
 
-        <a href="html/design.html" class="navButton" data-active="dS"><span class="highlight">&lt;/</span>Design<span
-            class="highlight">&gt;</span></a>
+        <a href="html/design.html" class="navButton" data-active="dS">Design</a>
 
-        <a href="html/research.html" class="navButton" data-active="rS"><span
-            class="highlight">&lt;/</span>Research<span class="highlight">&gt;</span></a>
+        <a href="html/research.html" class="navButton" data-active="rS">Research</a>
 
-        <a href="html/communication.html" class="navButton" data-active="cM"><span
-            class="highlight">&lt;/</span>Communication<span class="highlight">&gt;</span></a>
+        <a href="html/communication.html" class="navButton" data-active="cM">Communication</a>
 
-        <a href="html/professionalIdentity.html" class="navButton" data-active="pI"><span
-            class="highlight">&lt;/</span>Professional
-          Identity<span class="highlight">&gt;</span></a>
+        <a href="html/professionalIdentity.html" class="navButton" data-active="pI">Professional
+          Identity</a>
 
       </div>
 
-      <a href="html/overMij.html" class="navButton" data-active="aboutMe"><span class="highlight">&lt;/</span>Over
-        mij<span class="highlight">&gt;</span></a>
+      <a href="html/overMij.html" class="navButton" data-active="aboutMe">Over
+        mij</a>
 
     </nav>
   </header>
   <!-- --- -->
-  <section class="homepageSection">
-    <div class="welcomeElements">
-      <h1 class="welcomeTitle">
-        Hoi!
-        <span>
-          Mijn naam is Bavli
-          <br>
-          en dit is mijn portfolio.
-        </span>
-      </h1>
-      <img src="img/Algemene_Afbeeldingen/ai_Me.png" alt="ai_Me.png" class="aiMeImg">
-    </div>
-    <svg class="arrows">
-      <path class="a1" d="M0 0 L30 32 L60 0"></path>
-      <path class="a2" d="M0 20 L30 52 L60 20"></path>
-      <path class="a3" d="M0 40 L30 72 L60 40"></path>
-    </svg>
-  </section>
+
+  <main>
+    <section class="homepageSection">
+      <div class="welcomeElements">
+        <div class="welcomeText">
+          <h2 class="welcomeTitle">Welkom!<span>()</span><span>{</span></h2>
+          <h3 class="welcomeUndertitle">
+            Mijn naam is Bavli
+            en dit is mijn portfolio.
+          </h3>
+          <span>}</span>
+        </div>
+        <img src="img/Algemene_Afbeeldingen/ai_Me.png" alt="ai_Me.png" class="aiMeImg">
+      </div>
+
+      <a href="#learningOutcomesSection" class="arrows">
+        <svg>
+          <path class="a1" d="M0 0 L30 32 L60 0"></path>
+          <path class="a2" d="M0 20 L30 52 L60 20"></path>
+          <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+      </a>
+      <hr class="blueLine">
+    </section>
+
+    <section class="learningOutcomesSection" id="learningOutcomesSection">
+      <h2 class="h2Title"><span class="nameHighlight">&lt;/</span>Leeruitkomsten<span class="nameHighlight">></span>
+      </h2>
+
+      <h3 class="h3Title"><span class="nameHighlight">&lt;/</span>Interactive Media<span class="nameHighlight">></span>
+      </h3>
+
+      <div id='imlcontainer'>
+
+      </div>
+
+    </section>
+
+    <button id="scrollToTopBtn"><svg xmlns="http://www.w3.org/2000/svg" class="up-arrow">
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg></button>
+
+  </main>
 
   <script>
-    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    let interval = null;
-    let iteration = 0;
 
-    function animateText(selector) {
-      const element = document.querySelector(selector);
+// Add an event listener to the window's scroll event
+window.onscroll = function() {
+  // Call the function when scrolling occurs
+  scrollToNextSection();
+};
 
-      if (!element) {
-        console.error(`Element with selector '${selector}' not found.`);
-        return;
-      }
+// Modify your scrollToNextSection function
+function scrollToNextSection() {
+  // Determine the current visible section based on the scroll position
+  const currentPosition = window.scrollY;
+  const sections = document.querySelectorAll('section');
 
-      const text = element.innerText;
-      clearInterval(interval);
+  let currentSection;
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionBottom = sectionTop + section.offsetHeight;
 
-      interval = setInterval(() => {
-        element.innerText = text
-          .split("")
-          .map((letter, index) => {
-            if (index < iteration) {
-              return text[index];
-            }
-            return letters[Math.floor(Math.random() * 26)];
-          })
-          .join("");
-
-        if (iteration >= text.length) {
-          clearInterval(interval);
-        }
-
-        iteration += 1 / 3;
-      }, 30);
+    if (currentPosition >= sectionTop && currentPosition < sectionBottom) {
+      currentSection = section;
     }
+  });
 
+  // Get the next section
+  const nextSection = currentSection.nextElementSibling;
 
-    animateText(".paragraph"); // animate element with id 'paragraph'
+  // If there is a next section, scroll to it
+  if (nextSection) {
+    const scrollPosition = nextSection.offsetTop;
 
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: 'smooth',
+      duration: 800 // Adjust the duration as needed
+    });
+  }
+}
   </script>
+
 </body>
 
 </html>
