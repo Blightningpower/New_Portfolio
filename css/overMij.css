@@ -1,5 +1,23 @@
+.aboutMeSection {
+    width: auto;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoSection {
+    width: auto;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 div.textspaceDiv {
     padding: 3%;
+    background-color: var(--portfolioWhite);
+    border: 2px solid var(--portfolioOrange);
 }
 
 ul {
@@ -16,10 +34,7 @@ ul {
     opacity: 1;
 }
 
-  
 .textSpace1 {
-    background-color: black;
-    border: 2px solid #595959;
     display: table-caption;
     margin: 10% 5%;
     width: 68vw;
@@ -35,8 +50,6 @@ ul {
 }
 
 .textSpace2 {
-    background-color: black;
-    border: 2px solid #595959;
     display: table-caption;
     margin: 20% 40%;
     width: 68vw;
@@ -53,7 +66,7 @@ ul {
 }
 
 .marker::marker {
-    color: #f2f2f2;
+    color: var(--portfolioWhite);
 }
 
 .marker p {
@@ -65,8 +78,6 @@ ul {
 }
 
 .textSpace3 {
-    background-color: black;
-    border: 2px solid #595959;
     display: table-caption;
     margin: 20% 5%;
     width: 68vw;
@@ -83,8 +94,6 @@ ul {
 }
 
 .textSpace4 {
-    background-color: black;
-    border: 2px solid #595959;
     display: table-caption;
     margin: 20% 40%;
     width: 68vw;
@@ -106,8 +115,6 @@ ul {
 }
 
 .textSpace5 {
-    background-color: black;
-    border: 2px solid #595959;
     display: table-caption;
     margin: 20% 5%;
     width: 68vw;
@@ -124,8 +131,6 @@ ul {
 }
 
 .textSpace6 {
-    background-color: black;
-    border: 2px solid #595959;
     display: table-caption;
     margin: 20% 40%;
     width: 68vw;
@@ -149,4 +154,4 @@ ul {
 
 .copyrightText {
     padding-bottom: 1%;
-  }
+}

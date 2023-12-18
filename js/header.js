@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
   learningOutcomesLink.addEventListener("mouseenter", function () {
 
     dropdownContent.style.opacity = "1";
+    dropdownContent.style.display = "flex";
 
     // Clear any existing timeout
     clearTimeout(timeoutId);
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Check if the mouse is not over the dropContent before hiding
       if (!isMouseOverElement(dropdownContent, event)) {
         dropdownContent.style.opacity = "0";
+        dropdownContent.style.display = "none";
       }
     }, 100); // 0.1 seconds
   });
@@ -48,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Set a timeout to hide dropdownContent after 0.1 seconds when the mouse leaves dropdownContent
     timeoutId = setTimeout(function () {
       dropdownContent.style.opacity = "0";
+      dropdownContent.style.display = "none";
     }, 100); // 0.1 seconds
   });
 });

@@ -1,43 +1,36 @@
-ol {
-  max-width: fit-content;
+* {
+  font-family: 'lato';
 }
 
-.h1Title {
-  height: fit-content;
-  max-height: fit-content;
-  width: min-content;
-  min-width: 35vw;
-  margin: 5vh auto;
-  color: var(--portfolioWhite);
-  display: flex;
-  font-family: 'lato';
-  font-size: 3.5vw;
-  font-weight: revert;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
+main {
   text-align: center;
+}
+
+ol {
+  max-width: fit-content;
 }
 
 h3 {
   padding: 10% 0 3%;
   margin: 0 auto;
-}
-
-video {
-  outline: 2px solid white;
+  color: var(--portfolioWhite);
+  font-weight: 600;
 }
 
 img {
   max-width: 20vw;
   overflow: hidden;
   transition: transform 0.3s;
+  border: 2px solid var(--portfolioGold);
+  background-color: var(--portfolioGrey);
+  border-radius: 10px;
 }
 
 p {
   text-align: justify;
   max-width: 62vw;
   margin: auto;
+  color: var(--portfolioWhite);
 }
 
 blockquote {
@@ -49,10 +42,17 @@ blockquote {
   font-style: italic;
 }
 
+span {
+  color: var(--portfolioWhite);
+}
+
+.h2Title {
+  margin: 5rem auto 5rem auto;
+}
+
 .alignText {
   max-width: fit-content;
   margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .QandA {
@@ -61,7 +61,6 @@ blockquote {
 
 .middleText {
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
   max-width: 57vw;
   margin: auto;
 }
@@ -74,29 +73,26 @@ blockquote {
   padding-top: 5%;
   padding-bottom: 3%;
   color: #f2f2f2;
-  font-family: "lato", Arial, Helvetica, sans-serif;
-  font-size: xx-large;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 cite,
 cite span {
-  color: #919191;
-  font-family: Arial, Helvetica, sans-serif !important;
+  color: var(--portfolioGold);
   text-decoration: none;
   font-size: medium;
 }
 
 cite a {
   font-style: italic;
-  color: #919191;
-  font-family: Arial, Helvetica, sans-serif !important;
+  color: var(--portfolioGold);
   text-decoration: none;
   font-size: medium;
 }
 
 cite a:hover {
-  color: var(--portfolioGrey);
+  color: var(--hyperLinkBlue);
 }
 
 [alt^=Afbeelding]:hover,
@@ -105,14 +101,12 @@ cite a:hover {
 }
 
 .textSpace {
-  background-color: black;
-  border: 2px solid #595959;
+  background-color: var(--portfolioBlue);
+  border: 2px solid var(--portfolioOrange);
   margin: auto auto 10%;
   min-width: 87vw;
   max-width: 95vw;
   padding: 0 5% 2% 5%;
-  color: #f2f2f2;
-  font-family: Arial, Helvetica, sans-serif !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,12 +145,11 @@ cite a:hover {
   min-width: 31vw;
   max-width: 50vw;
   align-items: center;
-  margin: 10% auto;
 }
 
 .imageUndertitle {
   font-style: italic;
-  font-size: medium;
+  font-size: 1.3vw;
   max-width: fit-content;
   padding: 1% 0 5%;
   margin: 0;
@@ -166,21 +159,14 @@ cite a:hover {
 .textSpaceSources {
   display: flex;
   flex-direction: column;
-  background-color: black;
-  border: 2px solid #595959;
+  background-color: var(--portfolioBlue);
+  border: 2px solid var(--portfolioOrange);
   margin: auto;
   min-width: 90vw;
   max-width: 95vw;
   min-height: 40vh;
   align-items: center;
   justify-content: center;
-}
-
-a span {
-  font-family: Arial, Helvetica, sans-serif !important;
-  display: block;
-  min-width: max-content;
-  color: #f2f2f2;
 }
 
 [alt="pdf_Logo.png"],
@@ -201,11 +187,11 @@ a span {
   align-items: center;
   padding-top: 1%;
   flex-wrap: wrap;
+  min-height: inherit;
 }
 
 .alignTextandImg {
   display: flex;
-  padding: 5% 0 5%;
   align-items: center
 }
 
@@ -220,7 +206,22 @@ a span {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  min-width: 32vw;
+  min-width: fit-content;
+  min-height: min-content;
+  transform: translate(0);
+  transition: 0.4s ease-in-out;
+}
+
+.webLink img {
+  border: none;
+  background-color: var(--portfolioBlue);
+  transition: 0.4s ease-in-out;
+  transform: translate(0);
+}
+
+.webLink:hover {
+  border-bottom: 4px solid var(--portfolioOrange);
+  transform: scale(0.8);
 }
 
 .maxContent {
