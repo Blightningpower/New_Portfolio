@@ -269,54 +269,6 @@ header {
   margin: auto 0;
 }
 
-.copyrightText {
-  font-size: 1vw;
-  color: var(--portfolioWhite);
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  min-width: -webkit-fill-available;
-  margin: 0 auto;
-}
-
-.link {
-  font-family: Arial, Helvetica, sans-serif !important;
-  color: #919191;
-  font-style: italic;
-}
-
-.link:hover {
-  color: var(--portfolioWhite)
-}
-
-.homepageLink,
-.activeLink {
-  padding: 0 1% !important;
-}
-
-.homepageLink:hover,
-.activeLink:hover {
-  color: var(--portfolioGrey);
-
-  -webkit-text-stroke-color: var(--portfolioDarkRed);
-}
-
-.homepageLink:active,
-.activeLink:active {
-  color: var(--portfolioBlack);
-
-  -webkit-text-stroke-color: var(--portfolioDarkRed);
-}
-
-.homepageLink.active,
-.activeLink.active {
-  color: var(--portfolioBlack);
-
-  -webkit-text-stroke-color: var(--portfolioDarkRed);
-  text-shadow: 0 0 10px var(--portfolioWhite), 0 0 20px var(--portfolioWhite), 0 0 30px var(--portfolioWhite),
-    0 0 40px var(--portfolioWhite), 0 0 50px var(--portfolioWhite), 0 0 60px var(--portfolioWhite), 0 0 70px var(--portfolioWhite);
-}
-
 .arrows {
   min-width: 62px;
   max-width: 62px;
@@ -418,4 +370,15 @@ header {
 
 .h3Title {
   font-weight: 600;
+  margin-top: 10rem;
+}
+
+.copyrightText {
+  font-size: .8rem;
+    color: var(--portfolioGrey);
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    min-width: -webkit-fill-available;
+    margin: 10% auto auto auto;
 }
