@@ -15,19 +15,15 @@
     <meta name="HandheldFriendly" content="true">
     <meta charset="utf-8">
 
-    <!--Link to stylesheets-->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/generalProjectStyle.css">
+   <!--Link to stylesheets-->
+   <link rel="stylesheet" href="../../css/style.css">
+   <link rel="stylesheet" href="../../css/generalProjectStyle.css">
 
-    <!--Link to scriptfiles -->
-    <script src="../../js/header3.js" defer></script>
-    <script src="../../js/scroll.js" defer></script>
-    <script src="../../js/dropDownim.js" defer></script>
-    <script src="../../js/dropDowndv.js" defer></script>
-    <script src="../../js/dropDownds.js" defer></script>
-    <script src="../../js/dropDownrs.js" defer></script>
-    <script src="../../js/dropDowncm.js" defer></script>
-    <script src="../../js/dropDownpi.js" defer></script>
+   <!--Link to scriptfiles -->
+   <script src="../../js/header.js" defer></script>
+   <script src="../../js/scroll.js" defer></script>
+   <script src="../../js/script.js" defer></script>
+   <script src="../../js/switchProjects.js"></script>
 
     <style>
         iframe {
@@ -48,42 +44,58 @@
 
 </head>
 
-<body id="dv1">
+<body id="learningOutcomesSection">
 
     <!-- header -->
     <header>
-        <div class="headerLeftCorner">
-            <div class="BAlogo">
 
-                <img src="../../img/Algemene_Afbeeldingen/logo 3.3.1 Character 'B'_New.png" alt="Logo_Character_'B'"
-                    class="logoB logoHover">
-                <img src="../../img/Algemene_Afbeeldingen/avli.png" alt="avli.png" class="textRestFname">
+        <a href="../../index.html" class="logoText"><span class="nameHighlight">&lt;/</span>Bavli Armanyous<span
+                class="nameHighlight">></span></a>
 
-                <img src="../../img/Algemene_Afbeeldingen/logo 3.3.1 Character 'A'_New.png" alt="Logo_Character_'A'"
-                    class="logoA logoHover">
-                <img src="../../img/Algemene_Afbeeldingen/rmanyous.png" alt="rmanyous.png" class="textRestLname">
-
-            </div>
-        </div>
         <nav class="headerNavigation">
 
-            <a href="index.html" class="navButton" data-active="Home">Home</a>
-            <a href="../../html/overMij.html" class="navButton" data-active="aboutMe">Over mij</a>
-            <a href="../../html/leeruitkomsten.html" class="navButton" id="learningOutcomes"
-                data-active="learningoutcomes">Leeruitkomsten<span class="dropDownIcon">▶</span></a>
+            <a href="../../index.html" class="navButton" data-active="Home">Home</a>
+
+            <a href="../../index.html#learningOutcomesSection" class="navButton active" id="learningOutcomes"
+                data-active="learningOutcomesSection">Leeruitkomsten</a>
+
             <div class="dropdown-content">
-                <a href="../../html/interactiveMedia.html" class="navButton" data-active="im">Interactive Media</a>
-                <a href="../../html/development.html" class="navButton" data-active="dv">Development</a>
-                <a href="../../html/design.html" class="navButton" data-active="dS">Design</a>
-                <a href="../../html/research.html" class="navButton" data-active="rS">Research</a>
-                <a href="../../html/communication.html" class="navButton" data-active="cM">Communication</a>
-                <a href="../../html/professionalIdentity.html" class="navButton" data-active="pI">Professional Identity</a>
+
+                <a href="../../index.html#imProjects" class="navButton">Interactive
+                    Media</a>
+
+                <a href="../../index.html#dvProjects" class="navButton">Development</a>
+
+                <a href="../../index.html#dsProjects" class="navButton">Design</a>
+
+                <a href="../../index.html#rsProjects" class="navButton">Research</a>
+
+                <a href="../../index.html#cmProjects" class="navButton">Communication</a>
+
+                <a href="../../index.html#piProjects" class="navButton">Professional
+                    Identity</a>
+
             </div>
+
+            <a href="html/overMij.html" class="navButton" data-active="aboutMe">Over
+                mij</a>
+
         </nav>
     </header>
     <!-- --- -->
-    <h1 class="h1Title">www.autoverhuurincuracao.nl Development</h1>
-    <!-- --- -->
+
+    <main>
+
+        <div class="pagination">
+            <a href="#" class="prevButton">Vorige project</a>
+            <div class="pageIndicator"></div>
+            <a href="#" class="nextButton">Volgende project</a>
+        </div>
+
+    <h1 class="h1Title"><span class="nameHighlight">&lt;/</span>www.autoverhuurincuracao.nl Development<span
+        class="nameHighlight">></span></h1>
+        
+        <!-- --- -->
     <div class="textSpace">
         <h2 class="subtitle">Inleiding</h2>
         <br>
@@ -308,9 +320,22 @@
                 Research</span></a>
     </div>
     </div>
-    <!-- --- -->
-    <button id="scrollToTopBtn"><i class="arrow up"></i></button>
-    <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+
+    <br>
+
+    <div class="pagination">
+        <a href="#" class="prevButton">Vorige project</a>
+        <div class="pageIndicator"></div>
+        <a href="#" class="nextButton">Volgende project</a>
+    </div>
+
+        <!-- --- -->
+        <button id="scrollToTopBtn"><svg xmlns="http://www.w3.org/2000/svg" class="up-arrow">
+                <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg></button>
+
+        <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+    </main>
     <script>
         
     </script>

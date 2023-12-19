@@ -162,7 +162,7 @@ cite a:hover {
   background-color: var(--portfolioBlue);
   border: 2px solid var(--portfolioOrange);
   margin: auto;
-  min-width: 90vw;
+  min-width: 87vw;
   max-width: 95vw;
   min-height: 40vh;
   align-items: center;
@@ -258,4 +258,24 @@ cite a:hover {
 
 .embed_documentation_footer--documentationFooter--pnTqy {
   display: none !important;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.pageIndicator {
+  margin: 0 10px;
+}
+
+.prevButton, .nextButton {
+  background-color: var(--portfolioWhite);
+  font-weight: 600;
+}
+
+.prevButton:hover, .nextButton:hover {
+  color: var(--portfolioOrange)
 }
