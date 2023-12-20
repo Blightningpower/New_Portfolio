@@ -322,3 +322,7 @@ iframe {
   margin: 3em 0;
   justify-content: center;
 }
+
+dd span {
+  color: var(--portfolioBlack)
+}

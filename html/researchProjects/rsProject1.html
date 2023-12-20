@@ -2,12 +2,12 @@
 <html lang="nl">
 
 <head>
-    <title>Online Portfolio Research</title>
+    <title>www.autoverhuurincuracao.nl Research</title>
 
-   <!--links for the Favicons-->
-   <link rel="apple-touch-icon" sizes="180x180" href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/favicon-16x16.png">
+    <!--links for the Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon_io/favicon-16x16.png">
 
     <!--meta tags for responsiveness-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -20,250 +20,356 @@
     <link rel="stylesheet" href="../../css/generalProjectStyle.css">
 
     <!--Link to scriptfiles -->
-    <script src="../../js/header3.js" defer></script>
+    <script src="../../js/header.js" defer></script>
     <script src="../../js/scroll.js" defer></script>
+    <script src="../../js/script.js" defer></script>
+    <script src="../../js/switchProjects.js"></script>
 
     <style>
-        [alt="logotjewit.png"] {
-            max-width: 11vw;
-            display: flex;
-            flex-direction: column;
-            max-height: 15vh;
+        [alt="Afbeelding2.png"],
+        [alt="Afbeelding9.png"],
+        [alt="Afbeelding10.png"] {
+            max-width: 30vw;
         }
 
+        [alt="Afbeelding3.png"] {
+            max-width: 32vw;
+        }
+
+        [alt="Afbeelding11.png"] {
+            max-width: 17vw;
+        }
+
+        [alt="Afbeelding9.png"] {
+            max-width: 29vw;
+        }
+
+        [alt="Afbeelding14.png"] {
+            max-width: 24vw;
+        }
+
+        .mainHeading {
+            font-size: 1rem;
+            padding-left: 0;
+            margin-top: inherit;
+            margin-right: auto;
+            font-weight: 600;
+            color: var(--portfolioBlack);
+        }
+
+        .mainHeading span {
+            font-size: 1rem;
+        }
+
+        .mainHeading::marker {
+            color: var(--portfolioOrange);
+        }
+
+        .subHeading {
+            font-size: 0.8rem;
+            margin: 0 0 1% 3%;
+            padding: 0;
+            color: var(--portfolioWhite);
+        }
+
+        .subHeading::marker {
+            color: var(--portfolioGold);
+        }
+
+        dl {
+            border: 2px solid var(--portfolioGold);
+            padding: 1%;
+            max-width: 60vw;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+        }
+
+        dd {
+            padding: 1%;
+            display: flex;
+            flex-direction: column;
+            max-width: 30vw;
+            color: var(--portfolioWhite);
+        }
+
+        dt {
+            margin: 3% 0;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--portfolioWhite);
+        }
+
+        .alignItems {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .layout1 {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .layout2 {
+            flex-direction: row;
+            margin: 0;
+        }
+
+        .colorRed {
+            color: darkred;
+        }
+
+        .colorGreen {
+            color: lime;
+        }
     </style>
 
 </head>
 
-<body>
+<body id="learningOutcomesSection">
 
-    <div class=linkMenu>
-        <a href="../../index.html" class="homepageLink">Home</a>
-        <span><i class="arrow right"></i></span>
-        <a href="/Portfolio_Code/html/leeruitkomsten.html" class="activeLink">Leeruitkomsten</a>
-        <span><i class="arrow right"></i></span>
-        <a href="/Portfolio_Code/html/interactiveMedia.html" class="activeLink">Interactive Media</a>
-        <span><i class="arrow right"></i></span>
-        <a href="iMProject1.html" class="activeLink active">Online Portfolio UX/UI Research</a>
-    </div>
-    <h1 class="h1Title">Online Portfolio UX/UI Research</h1>
+    <!-- header -->
+    <header>
+
+        <a href="../../index.html" class="logoText"><span class="nameHighlight">&lt;/</span>Bavli Armanyous<span
+                class="nameHighlight">></span></a>
+
+        <nav class="headerNavigation">
+
+            <a href="../../index.html" class="navButton" data-active="Home">Home</a>
+
+            <a href="../../index.html#learningOutcomesSection" class="navButton active" id="learningOutcomes"
+                data-active="learningOutcomesSection">Leeruitkomsten</a>
+
+            <div class="dropdown-content">
+
+                <a href="../../index.html#imProjects" class="navButton">Interactive
+                    Media</a>
+
+                <a href="../../index.html#dvProjects" class="navButton">Development</a>
+
+                <a href="../../index.html#dsProjects" class="navButton">Design</a>
+
+                <a href="../../index.html#rsProjects" class="navButton">Research</a>
+
+                <a href="../../index.html#cmProjects" class="navButton">Communication</a>
+
+                <a href="../../index.html#piProjects" class="navButton">Professional
+                    Identity</a>
+
+            </div>
+
+            <a href="html/overMij.html" class="navButton" data-active="aboutMe">Over
+                mij</a>
+
+        </nav>
+    </header>
     <!-- --- -->
-    <div class="textSpace">
-        <h2 class="subtitle">Inleiding</h2>
-        <br>
-        <p>Om een goed beeld te krijgen van hoe ik een goede portfolio (website) voor mezelf kan opstellen/maken, ben ik
-            eerst onderzoek gaan doen naar wat een ‘goede’ portfolio eigenlijk precies is.
-            <br>De uitwerkingen van dit onderzoek heb ik in een Worddocument staan die ook onderaan deze pagina is te
-            vinden.
-            <br>
-            <br>De bron die ik hiervoor gebruik (naast de docenten op school, internet en Canvas) is Wix.com. Om
-            specifieker te zijn:
-            <br><cite>Romano, J. (2023, 30 januari). How to Create an Online Portfolio: The Ultimate Guide. Creative
-                Blog.
-                <br><a
-                    href="https://www.wix.com/blog/creative/2018/04/how-to-make-online-design-portfolio-guide/"><span>https://www.wix.com/blog/creative/2018/04/how-to-make-online-design-portfolio-guide/</span>.</a></cite>
-            <br>Wix.com staat bekend als online websitetool, zoals Wordpress en dergelijke, waarmee je je eigen website
-            kan ontwerpen, bouwen, publiceren en bewerken.
-            <br>
-            <br>Ze hebben dus nogal wat ervaring met websites en ik gebruik Wix.com ook
-            als tool voor de website van het restaurant dat van ons familiebedrijf in Eindhoven is, daarom zijn zij voor
-            mij een betrouwbare bron.
-            <br>Ook kijk ik naar het portfolio van een wat hogere semester studente van ICT & Media (Mette Ghijssen).
-            Mette heeft mij in het verleden ook een aantal keren geholpen in het startsemester, dus ik ben al een beetje
-            bekend met haar werk. en ik weet dus dat zij goed materiaal levert.
-        </p>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="textSpace">
-        <h2 class="subtitle">Portfolio inspiratie</h2>
-        <br>
-        <p>
-            Ik ben begonnen met het zoeken naar inspiratie voor mijn portfolio.
-            <br>Zo kon ik in ieder geval een goed overzicht maken met wat ik wil terugzien in mijn portfolio.
-            <br>
-            <br>Ik ben door de meerdere voorbeelden van online portfolio’s van Wix.com gegaan en ik ben door de
-            portfolio van Mette genavigeerd en ik heb toen besloten om de structuur van Mette aan te houden.
-            <br>Dit lijkt mij namelijk ook het meest logische om te doen, want uiteindelijk heeft zij dit semester met
-            dat potfolio behaald en daarnaast ziet die er ook heel vet uit.
-        </p>
-        <div class="alignTextandImg">
-            <p class="sideText">Ik wilde netals hoe Mette dat heeft gedaan <cite>(Afbeelding 1)</cite> een achtergrond
-                met
-                een bewegende animatie maken, zodat mensen de aandacht houden bij mijn portfolio en mijn site verder
-                willen
-                verkennen.
-                <br>Dit heb ik uiteindelijk niet gedaan, omdat ik toch een ander idee kreeg. Je hebt waarschijnlijk al
-                bij
-                opstarten van deze pagina gezien hoe die wolven ogen verschenen en vervaagde in een rood met zwarte
-                achtergrond en hoe daarna de rest van de homepagina verscheen <cite>(Afbeelding 2)</cite>.
-                <br>Ik vond dat cooler om te doen, ook omdat dit uiteindelijk ook vanuit mijn design komt. Daarnaast heb
-                ik
-                ervoor gezorgd dat als je over mijn naam hovert, dat mijn initialen naast elkaar komen en de text
-                vervaagt,
-                zodat het op een logo lijkt.
-            </p>
-            <div class="flexImages">
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_UX/Afbeelding1.gif"
-                        alt="Afbeelding1">
-                    <p class="imageUndertitle">Afbeelding 1</p>
-                </div>
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_UX/homepage video.gif"
-                        alt="Afbeelding2">
-                    <p class="imageUndertitle">Afbeelding 2</p>
-                </div>
-            </div>
+
+    <main>
+
+        <div class="pagination">
+            <a href="#" class="prevButton">Vorige project</a>
+            <div class="pageIndicator"></div>
+            <a href="#" class="nextButton">Volgende project</a>
         </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="textSpace">
-        <h2 class="subtitle">Portfolio wireframes</h2>
-        <br>
-        <p>
-            Toen ik mijn inspiratie voor ogen had, kon ik aan de slag gaan met wireframes maken.
-            <br>Dit heb ik gedaan met een tool genaamd ‘WireframePro’.
-            <br>Met WireframePro kan je een schets maken van hoe je ongeveer wilt dat je website is ingedeeld.
-            <br>Wat in mijn wireframes sowieso moet terugkomen zijn de knopjes ‘Over mij’ en ‘Leeruitkomsten’.
-            <br>Ik heb bij mijn eerste portfolioreview meegekregen dat het niet uitmaakt hoeveel knopjes je in je
-            portfolio gebruikt als je het doel van de portfolio maar handhaaft: 'De leeruitkomsten laten zien'.
-            <br>Ook wilde ik knopjes maken voor mijn social media accounts, maar ik kreeg daar als feedback op dat dat
-            niet nodig is voor het doelgroep waarvoor ik het maak (de docenten).
-            <br>Ik wilde het eerst veilig spelen en mijn portfolio als een standaard website maken, namelijk met een
-            header en footer waarmee je kan navigeren.
-        </p>
-        <div class="alignTextandImg">
-            <p class="sideText">Op <cite>Afbeelding 3</cite> zie je hoe de wireframe van dat idee eruit zou zien.
-                <br>In het midden van de pagina wilde ik eerst een afbeelding van mijzelf plaatsen en daarna was het
-                idee om
-                i.p.v. een foto, in het groot het logo dat ik voor mezelf heb gemaakt te plaatsen <cite>(Afbeelding
-                    4)</cite>.<br><br>
-                Maar na feedback van docenten daarover gekregen te hebben, heb ik besloten om mijn naam in het groot te
-                vertonen en het logo als Favicon te gebruiken, netals hoe Mette dat ook in haar online portfolio heeft
-                gedaan <cite>(Afbeelding 5)</cite>.
-            </p>
-            <div class="flexImages">
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_UX/Afbeelding3.png"
-                        alt="Afbeelding3">
-                    <p class="imageUndertitle">Afbeelding 3</p>
-                </div>
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_UX/Afbeelding4.png"
-                        alt="Afbeelding4">
-                    <p class="imageUndertitle">Afbeelding 4</p>
-                    <div class="imageDiv">
-                        <img src="../../img/Online_Portfolio_UX/Afbeelding5.png"
-                            alt="Afbeelding5">
-                        <p class="imageUndertitle">Afbeelding 5</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="alignTextandImg">
-            <p class="sideText">De titel van mijn portfolio (‘ICT & Media Design Portfolio’) gaat daar boven staan.
-                <br>Je ziet dat er ook telkens een welkomsttekst staat, maar dit heb ik ook niet meer gedaan, omdat de
-                homepagina anders te druk werd.
-                <br>
-                <br>Ook ik ga ongeveer dezelfde navigatiemethode als Mette aanhouden <cite>(Afbeelding 6)</cite>.
-                <br>Mijn idee was dus een header, maar hoe Mette dat heeft aangepakt, heeft mij geïnspireerd om dat ook
-                anders te doen.
-                <br>Het navigeren op de site is zeg maar netals hoe je op de verkenner van je computer navigeert. Heel
-                slim
-                aangepakt!
-                <br>
-                <br>Ik heb trouwens besloten om het portfolio in het Nederlands te maken.
-                <br>Het idee was eerst om het in het Engels te doen, maar omdat al mijn projecten ook in het Nederlands
-                zijn, wordt alles gewoon Nederlands.
-                <br>Als er tijd voor is, kan ik er nog eventueel een vertaalknopje bij doen als dat gewenst is.
-                Voorlopig
-                sluit ik deze uit van mijn ontwerpen, omdat dit geen verplichting is.
-            </p>
-            <div class="imageDiv">
-                <img src="../../img/Online_Portfolio_UX/Afbeelding6.png"
-                    alt="Afbeelding6">
-                <p class="imageUndertitle">Afbeelding 6</p>
-            </div>
-        </div>
-        <div class="alignTextandImg">
-            <p class="sideText">Op de ‘Over mij’ pagina wilde ik een soort CV van mijzelf neerzetten, zodat men mij goed kan leren
-                kennen en om te laten weten wat mijn vaardigheden zijn <cite>(Afbeelding 7)</cite>.
-                <br>Ik heb als feedback van docenten gekregen dat het geen CV hoeft te zijn, omdat solliciteren voor een
-                baan niet het doel is van dit portfolio.
-                <br>Toch heb ik het zo gedaan, omdat ondanks dat het wat formeel is, het toch heel veel van mij laat zien.
-                <br>Rechtsonder heb ik een pijltje toegevoegd om snel naar de bovenkant van de pagina te gaan, zodat je niet
-                teveel hoeft te scrollen.
-                <br>Zal je vast ook wel gezien hebben op elke pagina van deze site als die lang is.
-                <br>
-                <br>Ik was nog aan het twijfelen over hoe ik mijn leeruitkomsten wilde laten zien op de site. Doe ik dit per
-                project? Per leeruitkomst? Met iframes? Of alles op 1 pagina? Veel vragen had ik.
-                <br>Dit had ik toen ook bij de eerste portfolioreview aangegeven.
-                <br>Het advies dat ik tijdens die review heb ontvangen was om al mijn (goeie) projecten in te delen per
-                leeruitkomst, maar niks is fout, zolang de leeruitkomsten duidelijk worden aangetoond.
-                <br>Na deze feedback was ik er nog niet helemaal uit.
-                <br>Ik wilde al mijn projecten als knopjes op 1 pagina weergeven en dan in het project zelf aangeven onder
-                welke leeruitkomst deze valt.
-                <br>Dat zou alleen niet zo handig zijn geweest, want dat betekent dat je eerst alle projecten moet openen om
-                te weten to welke leeruitkomst deze valt.
-                <br>
-                <br>Na gezien te hebben hoe een paar van mijn klasgenoten en hoe Mette zelf dit heeft aangepakt, heb ik
-                besloten om hun manier aan te houden.
-                <br>Zij hebben dus zoals de docenten al geadviseerd hadden aan mij, de projecten onder de leeruikomsten
-                verdeeld d.m.v. knopjes. Netals dit project.
-                <br>Dit lijkt mij ook wel de meest logische wijze om dit aan te pakken.
-            </p>
-            <div class="imageDiv">
-                <img src="../../img/Online_Portfolio_UX/Afbeelding7.png"
-                    alt="Afbeelding7">
-                <p class="imageUndertitle">Afbeelding 7</p>
-            </div>
-        </div>
-        <div class="alignTextandImg">
+
+        <h1 class="h1Title"><span class="nameHighlight">&lt;/</span>www.autoverhuurincuracao.nl Research<span
+                class="nameHighlight">></span></h1>
+
+        <!-- --- -->
+        <div class="textSpace">
+            <h2 class="subtitle">Introductie</h2>
             <p class="sideText">
-                Op <cite>Afbeelding 8</cite> kan je zien hoe het in zijn werk gaat. Je klikt op de leeruitkomst en dan
-                vind je allerlei projecten die daar onder vallen.
-                <br>Je klikt op een project en dan vind je de info over het project op een aparte pagina. Vrij simpel
-                eigenlijk.
-                <br>Ik wist ook niet zeker of je dezelfde projecten aan meerdere leeruitkomsten mocht linken, maar ik heb
-                het nagevraagd bij een docent en dat mag dus wel gewoon.
+                Bij dit project zijn we als groep (Lucas, Rens, Rogier en ik) bezig geweest met onderzoeken
+                uitvoeren om vervolgens wireframes en een design te kunnen maken voor een autoverhuurbedrijf in
+                Curaçao.
             </p>
-            <div class="imageDiv">
-                <img src="../../img/Online_Portfolio_UX/Afbeelding8.png"
-                    alt="Afbeelding8">
-                <p class="imageUndertitle">Afbeelding 8</p>
-            </div>
-            <div class="imageDiv">
-                <img src="../../img/Online_Portfolio_UX/Portfolio wireframes.png"
-                    alt="Portfolio_wireframes">
-                <p class="imageUndertitle">Afbeelding 9</p>
+        </div>
+        <!-- --- -->
+
+        <div class="textSpace">
+            <h2 class="subtitle">Inleiding</h2>
+            <br>
+            <p>
+                In dit verslag leg ik uit over mijn proces bij onderzoeken die ik heb uitgevoerd voor het creëren van
+                wireframes voor onze stakeholder.
+            </p>
+        </div>
+
+        <!-- --- -->
+        <div class="textSpace">
+            <h2 class="subtitle">UX onderzoek</h2>
+            <p>
+                Omdat ik vorig semester al eens onderzoek heb gedaan naar inspiratie voor de website van een andere
+                opdrachtgever <cite><a
+                        href="https://www.weldaseurope.com/nl/">(https://www.weldaseurope.com/nl/)</a></cite>, had ik al
+                een idee van hoe de wireframes er ongeveer
+                uit moeten zien.
+            </p>
+            <p>
+                In het kort geeft het onderzoek dat ik toen heb gedaan inzicht in hoe de UX- en UI-elementen van
+                Coolblue zijn geanalyseerd en formuleert concrete aanbevelingen voor het verbeteren van de
+                gebruikerservaring op de fictieve website van Weldas.
+            </p>
+            <p class="middleText">
+                Hieronder staan de relevante UX en UI aspecten van het onderzoek in grote lijnen:
+            </p>
+            <dl>
+                <div class="alignItems">
+                    <dt>UX Aspecten:</dt>
+                    <dd>
+                        <span>Productafbeeldingen op de voorpagina:</span> Coolblue wordt geprezen voor het tonen van
+                        veel
+                        productafbeeldingen op de voorpagina, wat bijdraagt aan een rijke gebruikerservaring door direct
+                        visueel
+                        aantrekkelijke inhoud te bieden.
+                    </dd>
+                    <dd>
+                        <span>Zoekopties:</span> Het onderzoek benadrukt dat Coolblue diverse zoekopties biedt, wat de
+                        gebruikerservaring
+                        verbetert door gebruikers de mogelijkheid te geven snel en gemakkelijk te vinden wat ze zoeken.
+                    </dd>
+                    <dd>
+                        <span>Logo-locatie:</span> Het tekstmerk van Coolblue wordt aan de linkerkant geplaatst, wat een
+                        belangrijk element
+                        is voor merkherkenning en navigatie op de site.
+                    </dd>
+                    <dd>
+                        <span>Navigatie:</span> De navigatie wordt beschreven als gestructureerd, wat de
+                        gebruiksvriendelijkheid bevordert
+                        door duidelijke en intuïtieve paden voor de gebruiker te creëren.
+                    </dd>
+                </div>
+                <div class="alignItems">
+                    <dt>UI Aspecten:</dt>
+                    <dd>
+                        <span>Logo-locatie:</span> De plaatsing van het logo aan de linkerkant van de pagina is een
+                        UI-element dat bijdraagt
+                        aan een consistente en herkenbare merkpresentatie.
+                    </dd>
+                    <dd>
+                        <span>Betaalmethoden:</span> Duidelijke weergave van betaalmethoden is een UI-element dat
+                        bijdraagt
+                        aan de
+                        transparantie en het vertrouwen van de gebruiker tijdens het afrekenproces.
+                    </dd>
+                    <dd>
+                        <span>Aanbevelingen voor Weldas:</span> Het onderzoek suggereert specifieke UI-verbeteringen
+                        voor
+                        Weldas, zoals meer
+                        productafbeeldingen, een opvallend gekleurd logo, extra zoekopties, filter- en
+                        sorteermogelijkheden,
+                        en
+                        een verbeterde plaatsing van het winkelmandje, inclusief extra icoontjes en een duidelijke
+                        tijdslijn
+                        in
+                        het bestelproces.
+                    </dd>
+                </div>
+            </dl>
+            <p>
+                Er worden ook een aantal aspecten over design benoemd in het onderzoek, maar die zijn voor de wireframes
+                niet relevant.
+            </p>
+            <p>
+                Je kunt het volledige onderzoek van vorig semester via <cite><a
+                        href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Inspiratie-analyse Weldas.pdf">deze
+                        link</a></cite> bekijken.
+            </p>
+        </div>
+
+        <!-- --- -->
+        <div class="textSpace">
+            <h2 class="subtitle">UX onderzoek www.autoverhuurincuraco.nl</h2>
+            <p>
+                Voor het project hebben we eerst allemaal apart een heuristische evaluatie uitgevoerd om te kijken wat
+                voor aspecten ons opvielen aan de website dat nog verbeterd kan worden. Vervolgens hebben we onze
+                opvattingen in 1 document geplaatst.
+            </p>
+            <p class="middleText">
+                Je kunt het document van onze gezamenlijke heuristische evaluatie via <cite><a
+                        href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Formulier Heuristische evaluatie gezamelijk.pdf">deze
+                        link</a></cite> bekijken.
+            </p>
+            <h3>Takenverdeling en Voorbereiding</h3>
+            <p>
+                Vervolgens hebben we afgesproken om de eerste week van het project aan onderzoeken en eventueel een
+                begin aan de wireframes te besteden en te verdelen onder elkaar. Lucas heeft een inspiratie analyse
+                gemaakt en onderzoek gedaan naar kleuren en kleurgebruik voor een kleurenpalet. Rens heeft een doelgroep
+                analyse en een persona gemaakt. Rogier wilde al beginnen met wireframes maken, dus is hij inspiratie
+                gaan zoeken voor een de mobiele variant van websites.
+            </p>
+            <p>
+                Ik ben begonnen met het klaarmaken van een Figma document waar al onze ontwerpen later in komen. Ik heb
+                hem zo gestructureerd dat iedereen weet waar die zijn werk kan plaatsen. Ook heb ik onderzoek gedaan
+                naar de typografie van autoverhuur websites en heb ik daarmee de typografie voor ons ontwerp bepaald.
+            </p>
+            <p class="middleText">
+                Je kunt de verantwoording van mijn onderzoek via <cite><a
+                        href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Typografie verantwoording.pdf">Typografie
+                        verantwoording</a></cite>
+            </p>
+        </div>
+
+        <!-- --- -->
+        <div class="textSpace">
+            <h2 class="subtitle">Reflectie</h2>
+            <p>
+                Het onderzoek heeft me waardevolle inzichten opgeleverd. Ik heb geleerd over het belang van visuele
+                aantrekkelijkheid, diverse zoekopties, heldere navigatie en een gestroomlijnd afrekenproces. Deze
+                algemene principes kan ik nu toepassen op toekomstige profit websites.
+            </p>
+        </div>
+
+        <!-- --- -->
+        <div class="textSpaceSources" id="srces">
+            <h2 class="subtitle">Bewijslast</h2>
+            <p>Je kunt de onderzoeken en meerdere bronnen die bij dit project horen hieronder vinden.</p>
+            <div class="srcLinks">
+
+                <a href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Caribbean Drive.zip" target="_blank"
+                    class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/zip.png"
+                        alt="zip.png"><br><span>Caribbean Drive.zip</span></a>
+
+                        <a href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Formulier Heuristische evaluatie gezamelijk.pdf"
+                    class="webLink" target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>ormulier Heuristische evaluatie gezamelijk</span></a>
+
+                <a href="../../Linked_Files/www.autoverhuurincuracao.nl Wireframes/Inspiratie-analyse Weldas.pdf"
+                    class="webLink" target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Inspiratie-analyse Weldas</span></a>
+
+                <a href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Typografie verantwoording.pdf"
+                    target="_blank" class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Typografie verantwoording</span></a>
+
+                <a href="../../Linked_Files/www.autoverhuurincuracao.nl Research/www.autoverhuurincuracao.nl Research Verantwoording.pdf"
+                    target="_blank" class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>www.autoverhuurincuracao.nl <br> Research
+                        Verantwoording</span></a>
             </div>
         </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="textSpaceSources" id="#srces">
-        <h2 class="subtitle">Bronnen</h2>
-        <p>Je kunt de website van Mette en meerdere bronnen die bij dit project horen hieronder vinden.</p>
-        <div class="srcLinks">
-            <a href="https://i481695.hera.fhict.nl/index.php" target="_blank" class="webLink"><img
-                    src="https://i481695.hera.fhict.nl/img/logotjewit.png" alt="logotjewit.png"><br><span>Website Mette Ghijssen</span></a>
-            <a href="../../Linked_Files/Online Portfolio (UX) Research.pdf"
-                class="webLink" target="_blank"><img
-                    src="../../img/Algemene Afbeeldingen/pdf_Logo.png"
-                    alt="pdf_Logo"><br><span>Portfolio UX Research</span></a>
+        <!-- --- -->
+
+        <br>
+        <div class="pagination">
+            <a href="#" class="prevButton">Vorige project</a>
+            <div class="pageIndicator"></div>
+            <a href="#" class="nextButton">Volgende project</a>
         </div>
-    </div>
-    <!-- --- -->
-    <button id="scrollToTopBtn"><i class="arrow up"></i></button>
-    <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+
+
+        <button id="scrollToTopBtn"><svg xmlns="http://www.w3.org/2000/svg" class="up-arrow">
+                <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg></button>
+
+        <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+    </main>
+    <script>
+
+
+    </script>
 </body>
 
 </html>
