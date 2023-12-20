@@ -11,7 +11,7 @@ ol {
 }
 
 h3 {
-  padding: 10% 0 3%;
+  padding: 5% 0 3%;
   margin: 0 auto;
   color: var(--portfolioWhite);
   font-weight: 600;
@@ -28,7 +28,7 @@ img {
 
 p {
   text-align: justify;
-  max-width: 62vw;
+  max-width: 65vw;
   margin: auto;
   color: var(--portfolioWhite);
 }
@@ -44,6 +44,10 @@ blockquote {
 
 span {
   color: var(--portfolioWhite);
+}
+
+ul {
+  flex-direction: column;
 }
 
 .h2Title {
@@ -62,7 +66,7 @@ span {
 .middleText {
   padding: 0;
   max-width: 57vw;
-  margin: auto;
+  margin: 3rem 0;
 }
 
 .subtitle {
@@ -110,6 +114,7 @@ cite a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 10px
 }
 
 .textSpace ol li {
@@ -130,13 +135,12 @@ cite a:hover {
 
 .flexImages {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  margin-left: auto;
+  align-items: flex-start;
   max-width: fit-content;
   max-height: fit-content;
+  margin-top: 3rem;
 }
 
 .imageDiv {
@@ -145,6 +149,8 @@ cite a:hover {
   min-width: 31vw;
   max-width: 50vw;
   align-items: center;
+  justify-content: flex-start;
+  max-height: 79rem;
 }
 
 .imageUndertitle {
@@ -152,7 +158,6 @@ cite a:hover {
   font-size: 1.3vw;
   max-width: fit-content;
   padding: 1% 0 5%;
-  margin: 0;
   margin: 0;
 }
 
@@ -167,6 +172,7 @@ cite a:hover {
   min-height: 40vh;
   align-items: center;
   justify-content: center;
+  border-radius: 10px
 }
 
 [alt="pdf_Logo.png"],
@@ -181,8 +187,9 @@ cite a:hover {
 
 .srcLinks {
   display: flex;
-  min-width: inherit;
-  justify-content: center;
+  min-width: 66vw;
+  max-width: 66vw;
+  justify-content: space-between;
   flex-direction: row;
   align-items: center;
   padding-top: 1%;
@@ -217,6 +224,7 @@ cite a:hover {
   background-color: var(--portfolioBlue);
   transition: 0.4s ease-in-out;
   transform: translate(0);
+  max-width: 10vw;
 }
 
 .webLink:hover {
@@ -256,6 +264,14 @@ cite a:hover {
   max-width: 40vw !important;
 }
 
+iframe {
+  transform: scale(1.3);
+  padding-bottom: 10%;
+  border: none;
+  margin-top: 5rem;
+  max-width: 65vw;
+}
+
 .embed_documentation_footer--documentationFooter--pnTqy {
   display: none !important;
 }
@@ -271,11 +287,13 @@ cite a:hover {
   margin: 0 10px;
 }
 
-.prevButton, .nextButton {
+.prevButton,
+.nextButton {
   background-color: var(--portfolioWhite);
   font-weight: 600;
 }
 
-.prevButton:hover, .nextButton:hover {
+.prevButton:hover,
+.nextButton:hover {
   color: var(--portfolioOrange)
 }

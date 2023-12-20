@@ -67,6 +67,11 @@ li {
   padding: 1% 4%;
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
+  color: var(--portfolioWhite);
+}
+
+li::marker {
+  color: var(--portfolioBlack);
 }
 
 h1,

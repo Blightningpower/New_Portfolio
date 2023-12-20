@@ -8,7 +8,22 @@ document.addEventListener("DOMContentLoaded", function () {
         "../professionalIdenitityProjects/pfiProject1.html",
     ];
 
-    let currentProjectIndex = localStorage.getItem('currentProjectIndex') || 0;
+    let currentProjectIndex = 0;
+
+    // Extract the last two parts of the current URL
+    const urlParts = window.location.pathname.split('/').filter(part => part); // Remove empty strings
+    const currentUrlLastTwo = urlParts.slice(-2).join('/');
+
+    // Find the index of the matching project in the projects array
+    for (let i = 0; i < projects.length; i++) {
+        const projectParts = projects[i].split('/').filter(part => part); // Remove empty strings
+        const projectLastTwo = projectParts.slice(-2).join('/');
+        
+        if (projectLastTwo === currentUrlLastTwo) {
+            currentProjectIndex = i;
+            break;
+        }
+    }
 
     const prevButtons = document.querySelectorAll(".prevButton");
     const nextButtons = document.querySelectorAll(".nextButton");
@@ -46,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         pageIndicators.forEach(pageIndicator => {
-            pageIndicator.textContent = `Project ${currentProjectIndex} - ${projects.length}`;
+            pageIndicator.textContent = `Project ${currentProjectIndex + 1} - ${projects.length}`;
         });
 
         // Save the currentProjectIndex to local storage
