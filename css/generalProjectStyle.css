@@ -42,6 +42,7 @@ img {
   border: 2px solid var(--portfolioGold);
   background-color: var(--portfolioGrey);
   border-radius: 10px;
+  margin-top: 1rem;
 }
 
 p {
@@ -325,4 +326,8 @@ iframe {
 
 dd span {
   color: var(--portfolioBlack)
+}
+
+[alt="noteIcon.png"] {
+  max-width: 7vw !important;
 }

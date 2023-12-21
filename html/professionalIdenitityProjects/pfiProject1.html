@@ -5,12 +5,9 @@
     <title>Front-end Developer</title>
 
     <!--links for the Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon_io/favicon-16x16.png">
 
     <!--meta tags for responsiveness-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -23,8 +20,10 @@
     <link rel="stylesheet" href="../../css/generalProjectStyle.css">
 
     <!--Link to scriptfiles -->
-    <script src="../../js/header3.js" defer></script>
+    <script src="../../js/header.js" defer></script>
     <script src="../../js/scroll.js" defer></script>
+    <script src="../../js/script.js" defer></script>
+    <script src="../../js/switchProjects.js"></script>
 
     <style>
 
@@ -32,102 +31,173 @@
 
 </head>
 
-<body>
+<body id="learningOutcomesSection">
 
-    <div class=linkMenu>
-        <a href="../../index.html" class="homepageLink">Home</a>
-        <span><i class="arrow right"></i></span>
-        <a href="/Portfolio_Code/html/leeruitkomsten.html" class="activeLink">Leeruitkomsten</a>
-        <span><i class="arrow right"></i></span>
-        <a href="/Portfolio_Code/html/professionalIdentity.html" class="activeLink">Research</a>
-        <span><i class="arrow right"></i></span>
-        <a href="pfiProject1.html" class="activeLink active">Front-end Developer</a>
-    </div>
-    <h1 class="h1Title">Front-end Developer</h1>
+    <!-- header -->
+    <header>
+
+        <a href="../../index.html" class="logoText"><span class="nameHighlight">&lt;/</span>Bavli Armanyous<span
+                class="nameHighlight">></span></a>
+
+        <nav class="headerNavigation">
+
+            <a href="../../index.html" class="navButton" data-active="Home">Home</a>
+
+            <a href="../../index.html#learningOutcomesSection" class="navButton active" id="learningOutcomes"
+                data-active="learningOutcomesSection">Leeruitkomsten</a>
+
+            <div class="dropdown-content">
+
+                <a href="../../index.html#imProjects" class="navButton">Interactive
+                    Media</a>
+
+                <a href="../../index.html#dvProjects" class="navButton">Development</a>
+
+                <a href="../../index.html#dsProjects" class="navButton">Design</a>
+
+                <a href="../../index.html#rsProjects" class="navButton">Research</a>
+
+                <a href="../../index.html#cmProjects" class="navButton">Communication</a>
+
+                <a href="../../index.html#piProjects" class="navButton">Professional
+                    Identity</a>
+
+            </div>
+
+            <a href="html/overMij.html" class="navButton" data-active="aboutMe">Over
+                mij</a>
+
+        </nav>
+    </header>
     <!-- --- -->
-    <div class="textSpace">
-        <h2 class="subtitle">Inleiding</h2>
-        <p>
-            Dit artikel geeft een beknopt inzicht in mijn professionele identiteit als HBO-student, waarbij ik mijn
-            diverse vaardigheden, motivatie als front-end developer, groei in het werkveld, en ambitieuze doelen kort
-            bespreek. Het werpt licht op mijn traject binnen de IT- en ontwikkelingssector, met nadruk op identiteit,
-            motivatie en toekomstvisie.
-            <br><br>
-            De vragen die hieronder beantwoord worden komen van een workshop die Frank (Docent) heeft gegeven over de
-            leeruitkomst 'Professional Identity'. Een aantal klasgenoten en ik hebben een aantal punten besproken die je
-            professionele identiteit kunnen weergeven.
-        </p>
-    </div>
-    <div class="textSpace">
-        <h2 class="subtitle">Waar ben je goed in?</h2>
-        <p>
-            Als HBO-student beschik ik over een breed scala aan vaardigheden en eigenschappen die mijn professionele
-            identiteit definiëren. Mijn betrouwbaarheid en geduld maken mij niet alleen sociaal en behulpzaam in
-            teamverband, maar ook in staat om doelgericht en ordelijk te werken. Mijn beleefde en communicatieve
-            vaardigheden stellen mij in staat effectief te zijn in het voeren van gesprekken en samen te werken met
-            anderen. Met een scherp oog voor details ben ik bedreven in het omgaan met complexe taken en het plannen en
-            organiseren van projecten. Mijn zelfstandigheid en doorzettingsvermogen komen tot uiting in mijn vermogen om
-            websites te bouwen, waarbij ik mijn vaardigheden in HTML, CSS, en een beetje JavaScript combineer. Daarnaast
-            ben ik rekenkundig onderlegd en kan ik goed omgaan met Microsoft Word, Excel, PowerPoint, Outlook, One Drive
-            en Teams, waardoor ik een veelzijdige en competente professional ben met een sterke basis in zowel soft- als
-            hardskills.
-        </p>
-    </div>
-    <div class="textSpace">
-        <h2 class="subtitle">Wat motiveert jou in jouw werkveld?</h2>
-        <br>
-        <p>
-            Mijn motivatie komt van mijzelf willen ontwikkelen als front-end developer. Mijn enthousiasme komt voort uit
-            mijn vermogen om goed te plannen en organiseren, zelfstandig te werken en mijn rekenkundige vaardigheden in
-            te zetten voor het bouwen van boeiende websites. Mijn affiniteit met Microsoft Word, Excel, PowerPoint,
-            Outlook, One Drive en Teams, samen met mijn bekwaamheid in HTML en CSS, vormen de basis van mijn streven
-            naar excellente front-end ontwikkeling.
-        </p>
-    </div>
-    <div class="textSpace">
-        <h2 class="subtitle">Frame Design</h2>
-        <br>
-        <p class="middleText">
-            Ik heb uiteindelijk niet alle challenges gemaakt (Dat was ook niet het plan.), omdat het 30 challenges zijn
-            en ik maar 28 dagen de tijd had.<br>
-            Ook had ik zo'n challenge niet gelijk in 1 dag af, omdat ik soms de code niet goed begreep en omdat er is
-            afgesproken met mijn docenten dat ik bij elke challenge die ik maak iets extra's toevoeg, zodat het niet
-            alleen maar video kijken en nadoen is, maar ook laten zien dat je het begrijpt.<br>
-            Ik heb daarom ook bij elke challenge twee knopjes toegevoegd: 'Code Explanation' waar de uitleg van de
-            challenge code in staat en 'My Add' waarin staat wat ik er aan heb toegevoegd.
-            <br>
-            <br>
-            Je kunt het frame met de challenges bekijken via via de 'Frame Design' knop helemaal
-            onderaan in de <a href="#srces" class="link">bronnenlijst</a>.
-            <br>
-            De code van mijn werk en meer kan je vinden via de 'GitLab Link' knop.
-        </p>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="textSpaceSources" id="#srces">
-        <h2 class="subtitle">Bewijslast</h2>
-        <p>Je kunt de verantwoording van het design en meerdere bronnen die bij dit project horen hieronder vinden.</p>
-        <div class="srcLinks">
-            <a href="https://i484476.hera.fhict.nl/Code/vanillajsframe/" target="_blank" class="webLink"><img
-                    src="../../img/Algemene Afbeeldingen/vanillaJSlogo.png" alt="vanillaJSlogo.png"><br><span>Vanilla JS
-                    Challenges</span></a>
-            <a href="https://git.fhict.nl/I484476/vanillajsframe" target="_blank" class="webLink"><img
-                    src="../../img/DEHAZE_Website/GiTlab-lOGO.png" alt="GiTlab-lOGO.png"><br><span>GitLab
-                    Link</span></a>
-            <a href="https://xd.adobe.com/view/026956cf-fbf6-4627-9ca6-eb05868aa7db-573a/" target="_blank"
-                class="webLink"><img src="../../img/Algemene Afbeeldingen/Adobe_XD_logo.png"
-                    alt="Adobe_XD_logo.png"><br><span>Frame Design</span></a>
-            <a href="../../Linked_Files/Sprint X Projectframe Design verantwoording.pdf" class="webLink"
-                target="_blank"><img src="../../img/Algemene Afbeeldingen/pdf_Logo.png"
-                    alt="pdf_Logo"><br><span>Projectframe Design verantwoording</span></a>
+    <main>
+        <div class="pagination">
+            <a href="#" class="prevButton">Vorige project</a>
+            <div class="pageIndicator"></div>
+            <a href="#" class="nextButton">Volgende project</a>
         </div>
-    </div>
-    <!-- --- -->
-    <button id="scrollToTopBtn"><i class="arrow up"></i></button>
-    <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+
+        <h1 class="h1Title"><span class="nameHighlight">&lt;/</span>Front-end Developer<span
+                class="nameHighlight">></span></h1>
+
+        <div class="textSpace">
+            <h2 class="subtitle">Introductie</h2>
+            <p>
+                Dit artikel geeft een kort overzicht van wie ik ben als developer. Ik bespreek mijn verschillende
+                vaardigheden, waarom ik het leuk vind om websites te maken, hoe ik gegroeid ben in het werkveld, en wat
+                mijn ambitieuze doelen zijn. Het gaat eigenlijk over mijn reis in de IT- en ontwikkelingswereld, en dan
+                vooral over wie ik ben, waarom ik het doe, en wat ik in de toekomst wil bereiken.
+            </p>
+        </div>
+
+        <div class="textSpace">
+            <h2 class="subtitle">Inleiding</h2>
+            <p>
+                De vragen die hieronder worden beantwoord komen van een workshop die Frank, onze docent, gaf over het
+                onderwerp 'Professional Identity'. Samen met een paar klasgenoten hebben we gesproken over dingen die
+                laten zien wie jij bent als professional.
+            </p>
+        </div>
+
+        <div class="textSpace">
+            <h2 class="subtitle">De Vragen</h2>
+            <h3>Waar ben je goed in?</h3>
+            <p>
+                Waar ben je goed in? Dit was de eerste vraag die we moesten beantwoorden.
+                Het antwoord op deze vraag heb ik met de volgende tekst beantwoord:
+            </p>
+            <p>
+                “Als amateur programmeur heb ik verschillende skills die mij helpen in mijn vakgebied. Ik ben
+                betrouwbaar en geduldig, wat niet alleen betekent dat ik goed in groepen kan werken, maar ook dat ik
+                gestructureerd en doelgericht te werk ga.
+                Mijn vriendelijke en goede communicatievaardigheden maken het makkelijk voor mij om met anderen te
+                praten en samen te werken. Ik let goed op details en ben handig met complexe taken en het plannen van
+                projecten.
+                Ik kan zelfstandig werken en geef niet snel op, vooral als het gaat om het bouwen van websites met HTML,
+                CSS en JavaScript. Daarnaast ben ik handig met programma's als Microsoft Word, Excel, PowerPoint,
+                Outlook, One Drive en Teams. Kortom, ik ben een veelzijdige en competente professional met sterke
+                vaardigheden, zowel technisch als sociaal.”
+            </p>
+            <h3>Wat motiveert jou in jouw werkveld?</h3>
+            <p>
+                De tweede vraag die we kregen was “Wat motiveert jou in jouw werkveld?”
+                Het antwoord op deze vraag heb ik met de volgende tekst beantwoord:
+            </p>
+            <p>
+                “Ik vind het interessant om te werken in mijn vakgebied, omdat ik mezelf wil verbeteren als een soort
+                developer. Mijn motivatie komt vooral doordat ik goed ben in plannen, dingen organiseren en zelfstandig
+                werken. Ik gebruik programma's zoals die van Microsoft en ken HTML, CSS en JavaScript, wat allemaal als
+                basis dient voor mijn ontwikkeling als ICT-ontwikkelaar.”
+            </p>
+            <h3>Hoe ben je gegroeid in je werkveld?</h3>
+            <p>
+                De volgende vraag is: “Hoe ben je gegroeid in je werkveld?”
+                Deze heb ik als volgt beantwoord:
+            </p>
+            <p>
+                “Mijn groei in het programmeren komt doordat ik me echt inzet om mijn kennis uit te breiden. Niet alleen
+                ben ik goed in JavaScript, maar ik ben ook begonnen met het ontdekken van andere programmeertalen zoals
+                PHP. Wat helpt, is dat ik goed kan samenwerken met anderen. Ik ben geduldig en geef mijn teamgenoten de
+                ruimte die ze nodig hebben. Ik sta open voor nieuwe ideeën en ben bereid om van anderen te leren. Dit
+                maakt mijn groei in het programmeren nog sterker.”
+            </p>
+            <h3>Wat zijn je goals/ doelen?</h3>
+            <p>Last, but not least. “Wat zijn je goals/ doelen?”. Hierop heb ik het volgende beantwoord:</p>
+            <p>“Ik wil graag groeien in de IT- en ontwikkelingswereld. Mijn eerste grote doel is om heel goed te worden
+                in front-end development, dus het maken van mooie en bruikbare overzichten van websites. Daarna wil ik
+                nog meer leren over back-end en een full-stack developer worden, wat betekent dat ik zowel de voorkant
+                als de achterkant van websites kan bouwen. Ik ben nu al bezig met het leren van programmeertalen zoals
+                JavaScript en PHP. Het belangrijkste voor mij is om niet alleen technisch goed te zijn, maar ook om
+                ervoor te zorgen dat wat ik maak echt handig en fijn is voor mensen om te gebruiken.”
+            </p>
+        </div>
+
+        <div class="textSpace">
+            <h2 class="subtitle">Reflectie</h2>
+            <p>
+                De vragen van deze workshop over professionele identiteit hebben me aan het denken gezet over wat ik
+                allemaal kan als ontwikkelaar, waarom ik dat zo leuk vind, hoe ik wil groeien en wat mijn doelen zijn.
+                Door deze vragen te beantwoorden, kon ik beter begrijpen waar ik goed in ben en wat ik echt leuk vind om
+                te doen. Het was eigenlijk een soort zelfonderzoek dat me hielp om te zien waar mijn passie ligt en waar
+                ik beter in wil worden. Nu weet ik beter wat ik wil bereiken in de wereld van IT en ontwikkeling. Ik wil
+                niet alleen goed worden in front-end development, maar ook in back-end als een echte full-stack
+                developer.
+            </p>
+        </div>
+
+        <div class="textSpaceSources" id="#srces">
+            <h2 class="subtitle">Bewijslast</h2>
+            <p>Hieronder staan de vragen en de antwoorden die ik tijdens de workshop heb beantwword voor mezelf en
+                meerdere bronnen.
+            </p>
+            <div class="srcLinks">
+
+                <a href="../../Linked_Files/Front-end Developer/Workshop Frank 11-12-2023.txt" class="webLink"
+                    target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/noteIcon.png"
+                        alt="noteIcon.png"><br><span>Workshop 11-12-2023 notities</span></a>
+
+                <a href="../../Linked_Files/Front-end Developer/Front-end Developer Verantwoording.pdf" class="webLink"
+                    target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Front-end Developer Verantwoording</span></a>
+
+            </div>
+        </div>
+        <!-- --- -->
+
+        <br>
+        <div class="pagination">
+            <a href="#" class="prevButton">Vorige project</a>
+            <div class="pageIndicator"></div>
+            <a href="#" class="nextButton">Volgende project</a>
+        </div>
+
+
+        <button id="scrollToTopBtn"><svg xmlns="http://www.w3.org/2000/svg" class="up-arrow">
+                <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg></button>
+
+        <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+    </main>
 </body>
 
 </html>
