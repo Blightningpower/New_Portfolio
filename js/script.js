@@ -27,3 +27,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// Type effect name
+document.addEventListener("DOMContentLoaded", function() {
+  const nameElement = document.getElementById("typedName");
+  const name = "Bavli Armanyous";
+
+  // Display each character of the name with a delay
+  for (let i = 0; i < name.length; i++) {
+    setTimeout(function() {
+      nameElement.textContent += name[i];
+    }, i * 100); // Adjust the delay (in milliseconds) as needed
+  }
+});
