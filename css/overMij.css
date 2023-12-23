@@ -1,89 +1,166 @@
+main {
+    padding: unset;
+}
+
+p {
+    padding: unset;
+}
+
+ul {
+    padding-left: inherit;
+    flex-direction: column;
+    max-height: 75vh;
+}
+
 .aboutMeSection {
     width: auto;
     min-height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 12vh 9vw 0;
 }
 
-.infoSection {
-    width: auto;
-    min-height: 100vh;
-    margin: 0;
+#infoSection {
+    margin: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 div.textspaceDiv {
-    padding: 3%;
-    background-color: var(--portfolioWhite);
+    padding: 0 3% 3%;
+    background-color: var(--portfolioBlue);
     border: 2px solid var(--portfolioOrange);
+    margin: 5% auto;
+    border-radius: 10px;
 }
 
-ul {
-    max-height: 94vh;
-    flex-direction: column;
+div.textspaceDiv p {
+    color: var(--portfolioWhite);
+}
+
+@media  screen and (max-width: 680px) {
+    div.textspaceDiv p {
+        font-size: 1.6vw !important;
+    }
+
+    li {
+        padding: unset !important;
+        font-size: 2vw;
+    }
+
+    ul {
+        max-height: 85vh;
+    }
+}
+
+li {
+    padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+   
+    li {
+        padding: unset !important;
+    }
+
+    div.textspaceDiv p {
+        font-size: 1.3vw;
+    }
+
+    .langTitle {
+        padding-left: 2rem !important;
+    }
+
+    .valueName {
+        font-size: 2vw;
+    }
+
+    h3.valueName {
+        font-size: 2vw !important;
+    }
+
+    .overMijSubtitle {
+        font-size: 2.4vw !important;
+    }
+
+    ul.talenDiv li.smallMarker p span {
+        font-size: 1.3vw !important;
+    }
 }
 
 .image {
     width: 20vw;
     height: fit-content;
-    max-height: 47vh;
+    max-height: 49vh;
     float: right;
     margin: 1% 5%;
     opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
+    border-radius: 10px;
+    border: solid var(--portfolioGold);
 }
 
-.textSpace1 {
+.textspace1 {
     display: table-caption;
     margin: 10% 5%;
-    width: 68vw;
+    max-width: 50vw;
+    padding: 0 3% 3%;
+    background-color: var(--portfolioBlue);
+    border: 2px solid var(--portfolioOrange);
+    margin: 1%;
+    height: fit-content;
+    border-radius: 10px;
 }
 
-.textSpace1 p {
+.textspace1 p {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
     padding: 2px;
     text-align: inherit;
+    color: var(--portfolioWhite);
+    font-size: 1.3vw;
 }
 
-.textSpace2 {
+.textspace2 {
     display: table-caption;
     margin: 20% 40%;
     width: 68vw;
 }
 
-.textSpace2 p {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    padding: 2px;
-    text-align: inherit;
+.textspace2 p {
     min-width: max-content;
 }
 
-.marker::marker {
-    color: var(--portfolioWhite);
-}
-
-.marker p {
-    margin: 0;
-}
-
-.flexImgAndTextSpace {
+.textspace2 ul {
+    list-style-type: none;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-height: 65vh;
+    align-content: center;
+    align-items: flex-start;
 }
 
-.textSpace3 {
+.flexImgAndTextspace {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto 0;
+}
+
+.textspace3 {
     display: table-caption;
     margin: 20% 5%;
     width: 68vw;
 }
 
-.textSpace3 p {
+.textspace3 p {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -93,13 +170,13 @@ ul {
     margin: auto 0;
 }
 
-.textSpace4 {
+.textspace4 {
     display: table-caption;
     margin: 20% 40%;
     width: 68vw;
 }
 
-.textSpace4 p {
+.textspace4 p {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -109,18 +186,19 @@ ul {
     margin: auto 0;
 }
 
-.textSpace4 ul li {
+.textspace4 ul li {
     padding: 1%;
     margin: auto 0;
+    min-width: -webkit-fill-available;
 }
 
-.textSpace5 {
+.textspace5 {
     display: table-caption;
     margin: 20% 5%;
     width: 68vw;
 }
 
-.textSpace5 p {
+.textspace5 p {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -130,21 +208,20 @@ ul {
     margin: auto 0;
 }
 
-.textSpace6 {
+.textspace6 {
     display: table-caption;
     margin: 20% 40%;
     width: 68vw;
 }
 
-.textSpace6 p {
+.textspace6 p {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    padding: 2px;
     text-align: inherit;
     min-width: max-content;
-    margin: 20px 0;
+    margin: 20px 20px 20px 0;
 }
 
 .talenDiv {
@@ -153,5 +230,68 @@ ul {
 }
 
 .copyrightText {
-    padding-bottom: 1%;
+    margin-top: 0;
+}
+
+.h1Title {
+    margin-top: 6vh;
+}
+
+.overMijSubtitle {
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: var(--portfolioWhite);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.marker {
+    padding: unset;
+}
+
+.custom-marker::before {
+    content: "•";
+    margin-right: 0.5em;
+}
+
+ul.talenDiv li.smallMarker p span {
+    font-size: 9px;
+    color: var(--porfolioWhite);
+    font-family: 'lato';
+    padding-left: 2rem;
+}
+
+.smallMarker {
+    padding: 0 0 1rem 0;
+}
+
+.smallMarker p {
+    font-size: 11px;
+    padding-left: 2rem;
+}
+
+.valueName {
+    color: var(--portfolioBlack) !important;
+    font-weight: 600;
+    font-family: 'lato';
+}
+
+h3.valueName {
+    font-size: 1.3rem;
+}
+
+.langTitleList {
+    padding-left: 0.6rem;
+}
+
+.langTitle {
+    padding-left: unset;
+}
+
+.middleText {
+    margin: 2% auto !important;
 }

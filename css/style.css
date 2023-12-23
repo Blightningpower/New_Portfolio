@@ -87,6 +87,10 @@ section {
   scroll-snap-align: start;
 }
 
+svg {
+  max-width: -webkit-fill-available;
+}
+
 /* Homepagecode */
 
 main {
@@ -196,7 +200,10 @@ header {
   margin: 10px 0;
 }
 
-.logoText:hover {
+.logoText:hover,
+.logoText:hover .nameHighlight,
+.navButton:hover,
+.navButton.active:hover {
   color: var(--portfolioGrey);
 }
 
@@ -213,16 +220,8 @@ header {
   min-width: max-content;
 }
 
-.navButton:hover {
-  color: var(--portfolioGrey);
-}
-
 .navButton.active {
   color: var(--portfolioOrange);
-}
-
-.navButton.active:hover {
-  color: var(--portfolioGrey);
 }
 
 /* Hide the dropdown content by default */
@@ -266,6 +265,7 @@ header {
 .welcomeText span {
   font-size: 5vw;
   color: var(--portfolioGrey);
+  text-shadow: -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 1px 1px 1px #000000;
 }
 
 .welcomeTitle {
@@ -277,12 +277,14 @@ header {
   align-items: center;
   margin-bottom: 0;
   color: var(--portfolioOrange);
+  text-shadow: -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 1px 1px 1px #000000;
 }
 
 .welcomeUndertitle {
   font-family: 'lato';
   font-size: 3vw;
   margin: 0;
+  font-weight: 600;
 }
 
 .aiMeImg {
@@ -305,7 +307,7 @@ header {
   min-height: 75px;
   max-height: 1vh;
   transition: 0.5s ease-in-out;
-  margin: 8vh auto 0 auto;
+  margin: 0 auto;
   transform: scale(0.5);
 }
 
@@ -319,6 +321,32 @@ header {
   stroke-width: 3px;
   animation: arrows 2s infinite;
   -webkit-animation: arrows 2s infinite;
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+
+.arrows path.a1:hover,
+.arrows path.a2:hover,
+.arrows path.a3:hover,
+.arrows path:hover {
+  stroke: var(--portfolioOrange);
 }
 
 @keyframes arrows {
@@ -360,25 +388,6 @@ header {
   }
 }
 
-.arrows path.a1 {
-  animation-delay: -1s;
-  -webkit-animation-delay: -1s;
-}
-
-.arrows path.a2 {
-  animation-delay: -0.5s;
-  -webkit-animation-delay: -0.5s;
-  -webkit-animation-delay: -0.5s;
-  -webkit-animation-delay: -0.5s;
-}
-
-.arrows path.a3 {
-  animation-delay: 0s;
-  -webkit-animation-delay: 0s;
-  -webkit-animation-delay: 0s;
-  -webkit-animation-delay: 0s;
-}
-
 .blueLine {
   border: 1px solid var(--portfolioBlue);
   min-width: 70vw;
@@ -401,6 +410,12 @@ header {
   margin: 2rem auto 4% auto;
 }
 
+@media screen and (max-width: 800px) {
+  .h1Title {
+    font-size: 3.5vw;
+  }
+}
+
 .h2Title {
   margin: 5rem auto 0;
   font-weight: 600;
@@ -419,7 +434,7 @@ header {
   position: relative;
   bottom: 0;
   min-width: -webkit-fill-available;
-  margin: 10% auto auto auto;
+  margin: 10% auto 1% auto;
 }
 
 #imProjects {
