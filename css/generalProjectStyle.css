@@ -197,6 +197,7 @@ cite a:hover {
   max-width: fit-content;
   padding: 1% 0 5%;
   margin: 0;
+  text-align: center;
 }
 
 .textSpaceSources {
@@ -204,7 +205,7 @@ cite a:hover {
   flex-direction: column;
   background-color: var(--portfolioBlue);
   border: 2px solid var(--portfolioOrange);
-  margin: auto;
+  margin: auto 0;
   min-width: 87vw;
   max-width: 95vw;
   min-height: 40vh;
@@ -226,13 +227,14 @@ cite a:hover {
 .srcLinks {
   display: flex;
   min-width: 66vw;
-  max-width: 66vw;
-  justify-content: center;
+  max-width: fit-content;
   flex-direction: row;
   align-items: center;
   padding-top: 1%;
   flex-wrap: wrap;
   min-height: inherit;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .alignTextandImg {
@@ -250,11 +252,12 @@ cite a:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
   min-width: 17vw;
   min-height: min-content;
   transform: translate(0);
   transition: 0.4s ease-in-out;
+  max-width: 200px;
+  align-items: center;
 }
 
 .webLink img {

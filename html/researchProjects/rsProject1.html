@@ -131,8 +131,8 @@
     <!-- header -->
     <header>
 
-        <a href="../../index.html" class="logoText"><span class="nameHighlight">&lt;/</span><span id="typedName"></span><span
-        class="nameHighlight">></span></a>
+        <a href="../../index.html" class="logoText"><span class="nameHighlight">&lt;/</span><span
+                id="typedName"></span><span class="nameHighlight">></span></a>
 
         <nav class="headerNavigation">
 
@@ -188,6 +188,14 @@
                 uitvoeren om vervolgens wireframes en een design te kunnen maken voor een autoverhuurbedrijf in
                 Curaçao.
             </p>
+            <P>
+                <cite><a href="www.autoverhuurincuracao.nl">www.autoverhuurincuracao.nl</a></cite> is een
+                autoverhuurbedrijf dat al elf jaar actief is in de autoverhuur op
+                Curaçao. De taak die mij en mijn klasgenoten is toegewezen is om voor hun website een nieuwere en
+                verbeterde design te realiseren. Om dit te doen, moet er eerst onderzoek worden gedaan naar hoe we de
+                User Experience kunnen verbeteren van de website. We mogen deze opdracht in groepen van 4 – 5 personen
+                uitvoeren.
+            </P>
         </div>
         <!-- --- -->
 
@@ -195,25 +203,161 @@
             <h2 class="subtitle">Inleiding</h2>
             <br>
             <p>
-                In dit verslag leg ik uit over mijn proces bij onderzoeken die ik heb uitgevoerd voor het creëren van
-                wireframes voor onze stakeholder.
+                In dit artikel deel ik mijn opmerkingen en bevindingen over de onderzoeken die zijn gedaan voor de
+                website van onze stakeholder, www.autoverhuurincuracao.nl. Ons team (Lucas, Rens, Rogier en ik) hebben
+                een heuristische evaluatie uitgevoerd, waarbij elk lid verantwoordelijk was voor specifieke
+                pagina-elementen. Mijn focus lag op de contactpagina, header en footer.
+            </p>
+            <p>
+                Voor het maken van wireframes heb ik een inspiratie-analyse gedaan. Mijn onderzoek richt zich op het
+                identificeren van essentiële elementen voor een gebruiksvriendelijke website. De onderzoeksvraag is dan
+                ook: 'Welke elementen zijn cruciaal voor een gebruiksvriendelijke website?' Mijn aanpak omvat het
+                bestuderen van UX-richtlijnen en het vergelijken van de stakeholderwebsite met moderne websites.
             </p>
         </div>
 
         <!-- --- -->
         <div class="textSpace">
-            <h2 class="subtitle">UX onderzoek</h2>
+            <h2 class="subtitle">Research</h2>
+            <h3>Heuristische Evaluatie</h3>
             <p>
-                Omdat ik vorig semester al eens onderzoek heb gedaan naar inspiratie voor de website van een andere
-                opdrachtgever <cite><a
-                        href="https://www.weldaseurope.com/nl/">(https://www.weldaseurope.com/nl/)</a></cite>, had ik al
-                een idee van hoe de wireframes er ongeveer
-                uit moeten zien.
+                Om er achter te komen hoe een website een goede UX kan uitstralen heb ik eerst gekeken naar de ‘10
+                Usability Heuristics for User Interface Design’ (of terwijl de ‘10 Bruikbaarheidsheuristieken voor het
+                ontwerpen van gebruikersinterfaces’).
             </p>
             <p>
-                In het kort geeft het onderzoek dat ik toen heb gedaan inzicht in hoe de UX- en UI-elementen van
-                Coolblue zijn geanalyseerd en formuleert concrete aanbevelingen voor het verbeteren van de
-                gebruikerservaring op de fictieve website van Weldas.
+                Het woord ‘Heuristiek’ betekent in het Grieks ‘vinden’. Het is de wetenschap, de leer of de kunst van
+                het vinden. Een heuristiek wordt vaak gebruikt als (vuist)regel met als doel om er voor te zorgen dat er
+                zo min mogelijk interactie nodig is om op een oplossing te komen. Het werkt als een ezelsbruggetje. Een
+                geheugensteun om fouten te voorkomen
+            </p>
+            <p>
+                In dit geval gaat het over 10 “ezelsbruggetjes” (om het makkelijk te verwoorden) die helpen zoeken naar
+                wat er niet goed gaat met de UX van een website en wat dus kan worden verbeterd. Jakob Nielsen van het
+                bedrijf Nielsen Norman Group is met 10 algemene principes/regels gekomen voor een het maken van een
+                gebruiksvriendelijk interactieontwerp. Zijn website hebben we als bron vanuit het Fontys gekregen.
+            </p>
+            <p class="middleText">
+                De 10 regels zijn:
+            </p>
+            <ol>
+                <li class="listTitle">Zichtbaarheid van de systeemstatus</li>
+                <p class="listDesc">Het ontwerp moet gebruikers altijd op de hoogte houden van wat er gaande is, door
+                    middel van passende feedback binnen een redelijke tijd.</p>
+                <li class="listTitle">Match tussen systeem en de echte wereld</li>
+                <p class="listDesc">Het ontwerp moet de taal van de gebruiker spreken. Gebruik woorden, zinnen en
+                    concepten waarmee de gebruiker vertrouwd is, in plaats van intern jargon. Volg conventies uit de
+                    echte wereld, waardoor informatie in een natuurlijke en logische volgorde verschijnt.</p>
+                <li class="listTitle">Gebruikerscontrole en vrijheid</li>
+                <p class="listDesc">Gebruikers voeren vaak per ongeluk acties uit. Ze hebben een duidelijk gemarkeerde
+                    "nooduitgang" nodig om de ongewenste actie te verlaten zonder een langdurig proces te hoeven
+                    doorlopen.</p>
+                <li class="listTitle">Consistentie en standaarden</li>
+                <p class="listDesc">Gebruikers hoeven zich niet af te vragen of verschillende woorden, situaties of
+                    acties hetzelfde betekenen. Volg platform- en brancheconventies.</p>
+                <li class="listTitle">Foutpreventie</li>
+                <p class="listDesc">Goede foutmeldingen zijn belangrijk, maar de beste ontwerpen voorkomen in de eerste
+                    plaats zorgvuldig dat er problemen ontstaan. Elimineer foutgevoelige omstandigheden of controleer ze
+                    en presenteer gebruikers een bevestigingsoptie voordat ze zich committeren aan de actie.</p>
+                <li class="listTitle">Herkenning in plaats van herinnering</li>
+                <p class="listDesc">Minimaliseer de geheugenbelasting van de gebruiker door elementen, acties en opties
+                    zichtbaar te maken. De gebruiker hoeft geen informatie van het ene deel van de interface naar het
+                    andere te onthouden. Informatie die nodig is om het ontwerp te gebruiken (bijv. veldlabels of
+                    menu-items) moet zichtbaar of gemakkelijk terug te vinden zijn wanneer dat nodig is.</p>
+                <li class="listTitle">Flexibiliteit en gebruiksefficiëntie</li>
+                <p class="listDesc">Snelkoppelingen - verborgen voor beginnende gebruikers - kunnen de interactie voor
+                    de ervaren gebruiker versnellen, zodat het ontwerp geschikt is voor zowel onervaren als ervaren
+                    gebruikers. Sta gebruikers toe om frequente acties aan te passen.</p>
+                <li class="listTitle">Esthetisch en minimalistisch ontwerp</li>
+                <p class="listDesc">Interfaces mogen geen informatie bevatten die niet relevant is of zelden nodig is.
+                    Elke extra informatie-eenheid in een interface concurreert met de relevante informatie-eenheden en
+                    vermindert hun relatieve zichtbaarheid.</p>
+                <li class="listTitle">Help gebruikers fouten te herkennen, diagnosticeren en herstellen</li>
+                <p class="listDesc">Foutmeldingen moeten in gewone taal worden uitgedrukt (geen foutcodes), het probleem
+                    nauwkeurig aangeven en constructief een oplossing voorstellen.</p>
+                <li class="listTitle">Hulp en documentatie</li>
+                <p class="listDesc">Het is het beste als het systeem geen extra uitleg nodig heeft. Het kan echter nodig
+                    zijn om documentatie te verstrekken om gebruikers te helpen begrijpen hoe ze hun taken moeten
+                    uitvoeren.</p>
+            </ol>
+            <div class="imageDiv">
+                <img src="../../img/www.autoverhuurincuracao.nl Research/Afbeelding1.png" alt="Afbeelding1.png">
+                <p class="imageUndertitle">Afbeelding 1 <br> ‘10 Usability Heuristics for User Interface Design’</p>
+            </div>
+            <p class="middleText">
+                Zoals ik eerder al aan heb gegeven, hebben mijn groepje en ik een heuristische evaluatie uitgevoerd.
+                Hiervoor heeft ieder van ons een document met regels betreffende de evaluatie ingevuld waarbij de
+                opdracht is om te controleren of de website van de stakeholder voldoet aan die regels. Hierbij konden we
+                per ‘probleem’ aangeven hoe groot de ernst ervan is op een schaal van 1 – 4. Ik had zelf al een klein
+                aantal dingen gevonden die mij niet aanstonden op de website. Je kunt het document waar ik mijn
+                bevindingen in heb geschreven via <cite><a
+                        href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Heuristische evaluatie Bavli.pdf">deze
+                        link</a></cite> bekijken.
+            </p>
+            <p>
+                Omdat er niet genoeg tijd was om de hele website rustig door te nemen op school, is het niet gelukt om
+                het document af te maken. Mijn groep en ik zijn al snel begonnen met het bespreken van de resultaten die
+                wij hebben gevonden. Je kunt het document waar we onze gezamelijke bevindingen in heb geschreven via
+                <cite><a
+                        href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Formulier Heuristische evaluatie gezamelijk.pdf">deze
+                        link</a></cite> bekijken.
+            </p>
+            <h3>Online Research</h3>
+            <p>
+                Voor ik ben begonnen met het maken van wireframes, ben ik eerst gaan kijken naar elementen die onmisbaar
+                zijn voor een degelijke website. Om hier meer over te weten ben ik online bronnen gaan zoeken die mij
+                hierbij kunnen helpen.
+            </p>
+            <p>
+                Op ‘nicklink.nl’ heb ik een pagina ‘User experience analyse (UX) en design voor site succes’ gevonden
+                waarin Nick Nijhuis (Marketingcoach en eigenaar van nicklink.nl) uitlegt welke UX factoren een website
+                zou moeten bezitten.
+            </p>
+            <p>
+                In een video op de website van nicklink.nl gaat een verslaggeefster in gesprek met John Kagenaar van het
+                bureau Kreagaan die gaat over Vormgeving en Webdesign.
+            </p>
+            <div class="imageDiv">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TnbRTuiOhMw" frameborder="0"
+                    allowfullscreen></iframe>
+                <p class="imageUndertitle">Video 1 <br> Tips voor een goede website en branding!</p>
+            </div>
+            <p>
+                In dit gesprek wordt uitgelegd waarom de UX van een website erg belangrijk is.
+            </p>
+            <p>
+                Als je naar de video hebt geluisterd, dan hoor je dat John uitlegt waarom mensen meer waarde hechten aan
+                een goede website. Hij geeft aan dat 93% van de aankoopbeslissingen online worden gedaan. De
+                merkbeleving moet op de website gelijk zijn aan het bedrijf.
+            </p>
+            <p>
+                Hij geeft ook aan dat de website moet bijdragen aan de consistente merkbeleving van mensen. “Het moet
+                lekker voelen, maar het moet ook wel aansluiten bij de trends die er zijn. Op de manier laat je als
+                bedrijf zien dat je je ontwikkelt en meebeweegt met wat er gebeurt”, nogmaals John Kagenaar.
+            </p>
+            <p>
+                Hij geeft tijdens het naar beneden scrollen op een website op de IPad aan dat mensen tegen de tijd dat
+                ze naar beneden scrollen gewoon alle benodigde informatie terug willen zien.
+            </p>
+            <p>
+                Dat en nog meer tips kun je terugvinden op <cite><a
+                        href="https://nicklink.nl/2017/12/06/user-experience-analyse-ux-tips-user-experience-design/">https://nicklink.nl/2017/12/06/user-experience-analyse-ux-tips-user-experience-design/</a></cite>.
+            </p>
+            <p>
+                Op de site wordt ook uitgelegd hoe icoontjes er voor kunnen zorgen dat veel informatie alsnog rustig aan
+                de gebruiker kan worden weergegeven. Uiteindelijk houdt niemand van alleen maar tekst bij het bezoeken
+                van een website.
+            </p>
+            <h3>Inspiratie-analyse</h3>
+            <p>
+                Nadat de heuristische analyse af was, had ik al een goed idee welke punten verbeterd kunnen worden op de
+                website van onze stakeholder. Het idee is om nu te kijken hoe andere bedrijven hun websites hebben
+                gemaakt en wat zij nou juist wel of niet doen in hun website dat verbeterd kan worden aan <cite><a
+                        href="www.autoverhuurincuracao.nl">www.autoverhuurincuracao.nl</a></cite>.
+            </p>
+            <p>
+                Ik koos voor de webshop van Coolblue als inspiratie vanwege hun uitstekende gebruikerservaring en mijn
+                positieve ervaring met hun service en webshop.
             </p>
             <p class="middleText">
                 Hieronder staan de relevante UX en UI aspecten van het onderzoek in grote lijnen:
@@ -222,106 +366,99 @@
                 <div class="alignItems">
                     <dt>UX Aspecten:</dt>
                     <dd>
-                        <span>Productafbeeldingen op de voorpagina:</span> Coolblue wordt geprezen voor het tonen van
-                        veel
-                        productafbeeldingen op de voorpagina, wat bijdraagt aan een rijke gebruikerservaring door direct
-                        visueel
-                        aantrekkelijke inhoud te bieden.
+                        <span>Afbeeldingen en Visuele Aantrekkingskracht:</span>
+                        Coolblue wordt geprezen voor het tonen van
+                        Het gebruik van veel afbeeldingen op de voorpagina van Coolblue valt op als een positief
+                        UX-aspect. Het draagt bij aan visuele aantrekkingskracht en kan de gebruiker helpen bij het snel
+                        verkennen van beschikbare producten.
                     </dd>
                     <dd>
-                        <span>Zoekopties:</span> Het onderzoek benadrukt dat Coolblue diverse zoekopties biedt, wat de
-                        gebruikerservaring
-                        verbetert door gebruikers de mogelijkheid te geven snel en gemakkelijk te vinden wat ze zoeken.
+                        <span>Zoekfunctionaliteit:</span>
+                        De verschillende manieren waarop een product kan worden gezocht, zoals de zoekbalk, het bekijken
+                        van het hele assortiment, en het filteren op categorieën, dragen bij aan een positieve
+                        zoekervaring voor gebruikers.
                     </dd>
                     <dd>
-                        <span>Logo-locatie:</span> Het tekstmerk van Coolblue wordt aan de linkerkant geplaatst, wat een
-                        belangrijk element
-                        is voor merkherkenning en navigatie op de site.
+                        <span>Kleurgebruik:</span>
+                        Het kleurenpalet van wit, blauw en oranje wordt genoemd als een positief aspect van Coolblue ‘s
+                        UX. Het gebruik van kleuren draagt bij aan een rustige uitstraling (wit en blauw) en
+                        opvallenheid (oranje).
                     </dd>
                     <dd>
-                        <span>Navigatie:</span> De navigatie wordt beschreven als gestructureerd, wat de
-                        gebruiksvriendelijkheid bevordert
-                        door duidelijke en intuïtieve paden voor de gebruiker te creëren.
+                        <span>Navigatie en Filters:</span>
+                        Het gebruik van filters en sorteeropties op de website draagt bij aan een intuïtieve navigatie,
+                        waardoor gebruikers gemakkelijk producten kunnen vinden die aan hun wensen voldoen.
+                    </dd>
+                    <dd>
+                        <span>Accountoptie:</span>
+                        Het toevoegen van een accountoptie in de header wordt genoemd als een mogelijke verbetering voor
+                        de UX. Dit kan bijdragen aan klantenbinding en herhaalde bestellingen.
                     </dd>
                 </div>
                 <div class="alignItems">
                     <dt>UI Aspecten:</dt>
                     <dd>
-                        <span>Logo-locatie:</span> De plaatsing van het logo aan de linkerkant van de pagina is een
-                        UI-element dat bijdraagt
-                        aan een consistente en herkenbare merkpresentatie.
+                        <span>Plaatsing van Elementen:</span>
+                        De plaatsing van het logo aan de linkerkant van de website wordt als positief beoordeeld. Het is
+                        consistent en blijft zichtbaar op alle pagina's.
                     </dd>
                     <dd>
-                        <span>Betaalmethoden:</span> Duidelijke weergave van betaalmethoden is een UI-element dat
-                        bijdraagt
-                        aan de
-                        transparantie en het vertrouwen van de gebruiker tijdens het afrekenproces.
+                        <span>Kleur en Contrast:</span>
+                        Het kleurgebruik, met oranje als opvallende kleur, en het gebruik van wit en blauw voor
+                        contrast, wordt beschouwd als een positief UI-aspect. De kleuren dragen bij aan een esthetisch
+                        aantrekkelijke interface.
                     </dd>
                     <dd>
-                        <span>Aanbevelingen voor Weldas:</span> Het onderzoek suggereert specifieke UI-verbeteringen
-                        voor
-                        Weldas, zoals meer
-                        productafbeeldingen, een opvallend gekleurd logo, extra zoekopties, filter- en
-                        sorteermogelijkheden,
-                        en
-                        een verbeterde plaatsing van het winkelmandje, inclusief extra icoontjes en een duidelijke
-                        tijdslijn
-                        in
-                        het bestelproces.
+                        <span>Duidelijke Categorieën:</span>
+                        Het hebben van duidelijke categorieën en een filter- en sorteeroptie draagt bij aan een
+                        gestroomlijnde gebruikersinterface door gebruikers gemakkelijk door de webshop te laten
+                        navigeren.
+                    </dd>
+                    <dd>
+                        <span>Accounticoon:</span>
+                        Het suggereren van een accounticoon in de header wordt genoemd als een mogelijke UI-verbetering,
+                        waardoor gebruikers snel toegang hebben tot account gerelateerde functies.
                     </dd>
                 </div>
             </dl>
-            <p>
-                Er worden ook een aantal aspecten over design benoemd in het onderzoek, maar die zijn voor de wireframes
-                niet relevant.
-            </p>
-            <p>
-                Je kunt het volledige onderzoek van vorig semester via <cite><a
-                        href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Inspiratie-analyse Weldas.pdf">deze
+            <p class="middleText">
+                Je kunt het volledige onderzoek van de inspiratie-analyse via <cite><a
+                        href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Inspiratie-analyse www.autoverhuurincuracao.nl.pdf"
+                        target="_blank">deze
                         link</a></cite> bekijken.
             </p>
         </div>
 
-        <!-- --- -->
         <div class="textSpace">
-            <h2 class="subtitle">UX onderzoek www.autoverhuurincuraco.nl</h2>
+            <h2 class="subtitle">Takenverdeling en Voorbereiding</h2>
             <p>
-                Voor het project hebben we eerst allemaal apart een heuristische evaluatie uitgevoerd om te kijken wat
-                voor aspecten ons opvielen aan de website dat nog verbeterd kan worden. Vervolgens hebben we onze
-                opvattingen in 1 document geplaatst.
+                Tegen het einde van de eerste week van het project zijn we begonnen met taken verdelen.
+            </p>
+            <p>
+                Lucas heeft ook een inspiratie analyse gemaakt en onderzoek gedaan naar kleuren en kleurgebruik voor een
+                kleurenpalet. Rens heeft een doelgroep analyse en een persona gemaakt. Rogier wilde al beginnen met
+                wireframes maken, dus is hij inspiratie gaan zoeken voor een de mobiele variant van websites.
+            </p>
+            <p>
+                Ik ben begonnen met het klaarmaken van een Figma document waar al onze frames en ontwerpen later in
+                komen. Ik heb hem zo gestructureerd dat iedereen weet waar die zijn werk kan plaatsen. Ook heb ik
+                onderzoek gedaan naar de typografie van autoverhuur websites en heb ik daarmee de typografie voor ons
+                ontwerp bepaald.
             </p>
             <p class="middleText">
-                Je kunt het document van onze gezamenlijke heuristische evaluatie via <cite><a
-                        href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Formulier Heuristische evaluatie gezamelijk.pdf">deze
+                Je kunt verantwoording van mijn onderzoek via <cite><a
+                        href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Typografie verantwoording.pdf"
+                        target="_blank">deze
                         link</a></cite> bekijken.
-            </p>
-            <h3>Takenverdeling en Voorbereiding</h3>
-            <p>
-                Vervolgens hebben we afgesproken om de eerste week van het project aan onderzoeken en eventueel een
-                begin aan de wireframes te besteden en te verdelen onder elkaar. Lucas heeft een inspiratie analyse
-                gemaakt en onderzoek gedaan naar kleuren en kleurgebruik voor een kleurenpalet. Rens heeft een doelgroep
-                analyse en een persona gemaakt. Rogier wilde al beginnen met wireframes maken, dus is hij inspiratie
-                gaan zoeken voor een de mobiele variant van websites.
-            </p>
-            <p>
-                Ik ben begonnen met het klaarmaken van een Figma document waar al onze ontwerpen later in komen. Ik heb
-                hem zo gestructureerd dat iedereen weet waar die zijn werk kan plaatsen. Ook heb ik onderzoek gedaan
-                naar de typografie van autoverhuur websites en heb ik daarmee de typografie voor ons ontwerp bepaald.
-            </p>
-            <p class="middleText">
-                Je kunt de verantwoording van mijn onderzoek via <cite><a
-                        href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Typografie verantwoording.pdf">Typografie
-                        verantwoording</a></cite>
             </p>
         </div>
 
-        <!-- --- -->
         <div class="textSpace">
             <h2 class="subtitle">Reflectie</h2>
             <p>
                 Het onderzoek heeft me waardevolle inzichten opgeleverd. Ik heb geleerd over het belang van visuele
                 aantrekkelijkheid, diverse zoekopties, heldere navigatie en een gestroomlijnd afrekenproces. Deze
-                algemene principes kan ik nu toepassen op toekomstige profit websites.
+                algemene principes kan ik nu toepassen op toekomstige profijt websites.
             </p>
         </div>
 
@@ -335,13 +472,17 @@
                     class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/zip.png"
                         alt="zip.png"><br><span>Caribbean Drive.zip</span></a>
 
-                        <a href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Formulier Heuristische evaluatie gezamelijk.pdf"
+                <a href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Formulier Heuristische evaluatie gezamelijk.pdf"
                     class="webLink" target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
-                        alt="pdf_Logo.png"><br><span>ormulier Heuristische evaluatie gezamelijk</span></a>
+                        alt="pdf_Logo.png"><br><span>Formulier Heuristische evaluatie gezamelijk</span></a>
 
-                <a href="../../Linked_Files/www.autoverhuurincuracao.nl Wireframes/Inspiratie-analyse Weldas.pdf"
+                <a href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Heuristische evaluatie Bavli.pdf"
                     class="webLink" target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
-                        alt="pdf_Logo.png"><br><span>Inspiratie-analyse Weldas</span></a>
+                        alt="pdf_Logo.png"><br><span>Heuristische evaluatie Bavli</span></a>
+
+                <a href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Inspiratie-analyse www.autoverhuurincuracao.nl.pdf"
+                    class="webLink" target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Inspiratie-analyse <br> www.autoverhuurincuracao.nl</span></a>
 
                 <a href="../../Linked_Files/www.autoverhuurincuracao.nl Research/Typografie verantwoording.pdf"
                     target="_blank" class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
@@ -351,6 +492,21 @@
                     target="_blank" class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
                         alt="pdf_Logo.png"><br><span>www.autoverhuurincuracao.nl <br> Research
                         Verantwoording</span></a>
+
+                <a href="htps://nl.wikipedia.org/wiki/Heuris􀆟ek" target="_blank" class="webLink"><img
+                        src="https://nl.wikipedia.org/static/images/icons/wikipedia.png"
+                        alt="wikipedia.png"><br><span>Wikipedia-bijdragers. (2022c, september 20)</span></a>
+
+                <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank"
+                    class="webLink"><img src="https://media.nngroup.com/static/img/logo-817x388.png"
+                        alt="logo-817x388.png"><br><span>10 Usability Heuristics for User Interface Design <br> Nielsen
+                        Norman Group</span></a>
+
+                <a href="https://nicklink.nl/2017/12/06/user-experience-analyse-ux-tips-user-experience-design/"
+                    target="_blank" class="webLink"><img
+                        src="https://nicklink.nl/wp-content/uploads/2019/02/NickLink-Logo.png"
+                        alt="NickLink-Logo.png"><br><span>User experience analyse en design voor site succes.
+                        NickLink. Digital marketing</span></a>
             </div>
         </div>
         <!-- --- -->
