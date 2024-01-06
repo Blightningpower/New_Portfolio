@@ -69,7 +69,7 @@
   border-radius: 10px;
 }
 
-.container:hover .containerInfo {
+.container:hover .containerInfo, .container:focus {
   opacity: 1;
   transform: translateY(0px);
 }
