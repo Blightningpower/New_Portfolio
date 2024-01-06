@@ -131,5 +131,5 @@
 
 #imProject2container {
   background: url(https://blightningpower.github.io/New_Portfolio_Code/img/Online%20Portfolio%20Design/Favicon%20Logo/logo%202.0%20transparante%20achtergrond.png) no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
