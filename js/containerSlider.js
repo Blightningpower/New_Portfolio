@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let startPosition = 0;
     let currentTranslate = 0;
   
-    sliderContainer.addEventListener("mousedown", (e) => startDragging(e));
+    // sliderContainer.addEventListener("mousedown", (e) => startDragging(e));
     sliderContainer.addEventListener("touchstart", (e) => startDragging(e));
   
     sliderContainer.addEventListener("mousemove", (e) => whileDragging(e));
