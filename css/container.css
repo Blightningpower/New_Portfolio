@@ -1,11 +1,32 @@
+.containerFlex {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+#imProjects {
+  margin-top: 3rem !important;
+}
+
+.learningOutcomesSection section {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  min-height: 100vh;
+  margin-top: 10rem;
+  justify-content: center;
+}
+
 .container {
   width: 25rem;
+  min-width: 25rem;
   height: 23rem;
   border: 1px solid var(--portfolioBlack);
   border-radius: 10px;
   color: var(--portfolioWhite);
   transition: 0.4s ease-in-out;
   transform: translate(0);
+  margin-right: 4rem;
 }
 
 .container:hover {
@@ -16,6 +37,7 @@
 .container:hover:before {
   opacity: 1;
 }
+
 .container:before {
   content: "";
   position: absolute;
@@ -69,7 +91,9 @@
   padding-top: 5%;
 }
 
-#imProject1container, #dvProject1container, #rsProject1container {
+#imProject1container,
+#dvProject1container,
+#rsProject1container {
   background: url(https://www.autoverhuurincuracao.nl/wp-content/uploads/2022/09/Logo-Auto-huren-Curacao.jpg) no-repeat;
   background-size: cover;
 }
@@ -86,5 +110,10 @@
 
 #piProject1container {
   background: url(https://www.totaltek.com/wp-content/uploads/2022/01/Computer-Programming-Languages.jpg);
+  background-size: cover;
+}
+
+#imProject2container {
+  background: url(https://blightningpower.github.io/New_Portfolio_Code/img/Online%20Portfolio%20Design/Favicon%20Logo/logo%202.0%20transparante%20achtergrond.png) no-repeat;
   background-size: cover;
 }

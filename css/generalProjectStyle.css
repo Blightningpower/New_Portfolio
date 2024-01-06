@@ -48,6 +48,7 @@ img {
 p {
   text-align: justify;
   max-width: 65vw;
+  min-width: inherit;
   margin: auto;
   color: var(--portfolioWhite);
 }
@@ -205,7 +206,7 @@ cite a:hover {
   flex-direction: column;
   background-color: var(--portfolioBlue);
   border: 2px solid var(--portfolioOrange);
-  margin: auto 0;
+  margin: auto;
   min-width: 87vw;
   max-width: 95vw;
   min-height: 40vh;
@@ -252,7 +253,7 @@ cite a:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  min-width: 17vw;
+  min-width: 12.5rem;
   min-height: min-content;
   transform: translate(0);
   transition: 0.4s ease-in-out;
@@ -352,4 +353,18 @@ dd span {
 
 [alt="noteIcon.png"] {
   max-width: 7vw !important;
+}
+
+a span {
+  text-align: center;
+}
+
+.h4Title {
+  padding: 5% 0 3%;
+  margin: 0 auto;
+  color: var(--portfolioWhite);
+}
+
+.alignText p {
+  padding-top: 1rem;
 }

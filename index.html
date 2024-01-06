@@ -34,7 +34,7 @@
 
     <nav class="headerNavigation">
 
-      <a href="index.html" class="navButton" data-active="Home">Home</a>
+      <a href="index.html" class="navButton active" data-active="Home">Home</a>
 
       <a href="#learningOutcomesSection" class="navButton" id="learningOutcomes"
         data-active="learningOutcomesSection">Leeruitkomsten</a>
@@ -78,7 +78,7 @@
         <img src="img/Algemene_Afbeeldingen/ai_Me.png" alt="ai_Me.png" class="aiMeImg">
       </div>
 
-      <a href="#learningOutcomesSection" class="arrows">
+      <a href="#imProjects" class="arrows">
         <svg>
           <path class="a1" d="M0 0 L30 32 L60 0"></path>
           <path class="a2" d="M0 20 L30 52 L60 20"></path>
@@ -88,15 +88,15 @@
       <hr class="blueLine">
     </section>
 
-    <section class="learningOutcomesSection" id="learningOutcomesSection">
+    <div class="learningOutcomesSection">
       <h2 class="h2Title"><span class="nameHighlight">&lt;/</span>Leeruitkomsten<span class="nameHighlight">></span>
       </h2>
 
-      <h3 class="h3Title" id="imProjects"><span class="nameHighlight">&lt;/</span>Interactive Media<span
-          class="nameHighlight">></span>
-      </h3>
-
       <!-- Interactive Media projects -->
+      <section id="imProjects">
+        <h3 class="h3Title"><span class="nameHighlight">&lt;/</span>Interactive Media<span class="nameHighlight">></span>
+        </h3>
+        <div class="containerFlex">
 
       <a href="html/interactiveMediaProjects/imProject1.html" class="container" id='imProject1container'>
         <div class="containerInfo">
@@ -116,6 +116,27 @@
         </div>
       </a>
 
+      <a href="html/interactiveMediaProjects/imProject2.html" class="container" id='imProject2container'>
+        <div class="containerInfo">
+          <h4 class="h4Title">Online Portfolio<br>Wireframes</h4>
+          <div class="par">
+            <h5 class="h5Title">Het project:</h5>
+            <p>
+              Voor het tweede semester van ICT & Media Design is het vereist om een online portfolio website te
+              ontwikkelen, waarin projecten de leeruitkomsten van het semester demonstreren. Dit artikel presenteert de
+              wireframes van mijn online portfolio en de bijbehorende onderbouwing voor het ontwerp.
+            </p>
+            <h5 class="h5Title">Wat ik heb geleerd tijdens het project:</h5>
+            <p>
+              Ook tijdens dit project heb ik mijn vaardigheden in Figma verder ontwikkeld, waardoor mijn efficiëntie en
+              expertise in het gebruik van dit ontwerpprogramma aanzienlijk zijn verbeterd.
+            </p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
       <!-- Development Projects -->
 
       <section id="dvProjects">
@@ -246,7 +267,7 @@
         <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
       </section>
 
-    </section>
+    </div>
 
     <button id="scrollToTopBtn"><svg xmlns="http://www.w3.org/2000/svg" class="up-arrow">
         <path d="M12 19V5M5 12l7-7 7 7" />
@@ -255,6 +276,7 @@
   </main>
 
   <script>
+
   </script>
 
 </body>
