@@ -1,10 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
     const projects = [
         "../interactiveMediaProjects/imProject1.html",
+        "../interactiveMediaProjects/imProject2.html",
         "../developmentProjects/dvProject1.html",
+        "../developmentProjects/dvProject2.html",
         "../designProjects/dsProject1.html",
+        "../designProjects/dsProject2.html",
+        "../designProjects/dsProject3.html",
+        "../designProjects/dsProject4.html",
         "../researchProjects/rsProject1.html",
         "../communicationProjects/cmProject1.html",
+        "../communicationProjects/cmProject2.html",
         "../professionalIdenitityProjects/pfiProject1.html",
     ];
 

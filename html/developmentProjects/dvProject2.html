@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>Sprint X</title>
+
+    <!--links for the Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon_io/favicon-16x16.png">
+
+    <!--meta tags for responsiveness-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta charset="utf-8">
+
+    <!--Link to stylesheets-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/generalProjectStyle.css">
+
+    <!--Link to scriptfiles -->
+    <script src="../../js/header.js" defer></script>
+    <script src="../../js/scroll.js" defer></script>
+    <script src="../../js/script.js" defer></script>
+    <script src="../../js/switchProjects.js"></script>
+
+    <style>
+        .flexImages .imageUndertitle {
+            font-size: 2rem;
+        }
+
+        [alt="Afbeelding1.png"],
+        [alt="Afbeelding2.png"],
+        [alt="Afbeelding5.png"],
+        [alt="Afbeelding6.png"],
+        [alt="Afbeelding7.png"],
+        [alt="Afbeelding8.png"],
+        [alt="Afbeelding9.png"] {
+            max-width: 50vw;
+        }
+    </style>
+
+</head>
+
+<body id="learningOutcomesSection">
+
+    <!-- header -->
+    <header>
+
+        <a href="../../index.html" class="logoText"><span class="nameHighlight">&lt;/</span><span
+                id="typedName"></span><span class="nameHighlight">></span></a>
+
+        <nav class="headerNavigation">
+
+            <a href="../../index.html" class="navButton" data-active="Home">Home</a>
+
+            <a href="../../index.html#learningOutcomesSection" class="navButton active" id="learningOutcomes"
+                data-active="learningOutcomesSection">Leeruitkomsten</a>
+
+            <div class="dropdown-content">
+
+                <a href="../../index.html#imProjects" class="navButton">Interactive
+                    Media</a>
+
+                <a href="../../index.html#dvProjects" class="navButton">Development</a>
+
+                <a href="../../index.html#dsProjects" class="navButton">Design</a>
+
+                <a href="../../index.html#rsProjects" class="navButton">Research</a>
+
+                <a href="../../index.html#cmProjects" class="navButton">Communication</a>
+
+                <a href="../../index.html#piProjects" class="navButton">Professional
+                    Identity</a>
+
+            </div>
+
+            <a href="../../html/overMij.html" class="navButton" data-active="aboutMe">Over
+                mij</a>
+
+        </nav>
+    </header>
+    <!-- --- -->
+
+    <main>
+
+        <div class="pagination">
+            <a href="#" class="prevButton">Vorige project</a>
+            <div class="pageIndicator"></div>
+            <a href="#" class="nextButton">Volgende project</a>
+        </div>
+
+        <div class="projectTitle">
+            <h1><span class="nameHighlight">&lt;/</span>Sprint X<span class="nameHighlight">></span></h1>
+            <h4>Development</h4>
+        </div>
+
+        <!-- --- -->
+        <div class="textSpace">
+            <h2 class="subtitle">Introductie</h2>
+            <p>
+                Voor het laatste project van Semester 2 ICT & Media Design hebben we Sprint X. Dit is een individueel
+                project waarbij jij zelf mag kiezen waar je aan wilt werken. Je kunt bijvoorbeeld een prototype of media
+                product maken, werken aan een specifieke vaardigheid die je nog wilt verbeteren (zoals design met beeld,
+                video of een magazine), onderzoek doen, aan branding werken, of zelfstudie doen. Ik heb ervoor gekozen
+                om zelfstudie te doen.
+            </p>
+        </div>
+
+        <div class="textSpace">
+            <h2 class="subtitle">Inleiding</h2>
+            <p>
+                In dit artikel vertel ik hoe ik mijn Sprint X heb aangepakt. Ik koos ervoor om 30 uitdagingen te doen
+                met Vanilla Javascript via de website <cite><a href="https://javascript30.com/"
+                        target="_blank">https://javascript30.com/</a></cite>. Ik presenteer deze
+                uitdagingen als
+                kleine projecten in een frame, zodat anderen kunnen zien welke uitdagingen ik heb voltooid. Bij elk
+                project leg ik uit wat de uitdaging inhield en wat ik eraan heb toegevoegd.
+            </p>
+            <p>
+                Omdat ik vorig semester al een aantal van deze challenges heb gemaakt (4 in totaal), had ik al een
+                ontwerp voor het frame waar al mijn projecten in komen. Ik heb hem echter een klein beetje aangepast om
+                aan te duiden welke projecten oud zijn en welke nieuw en ook omdat ik hem gewoon nieuwer wilde maken.
+            </p>
+        </div>
+
+        <div class="textSpace">
+            <h2 class="subtitle">Old Design</h2>
+            <p>
+                Het ontwerp zoals je deze ziet op Afbeelding 1 heb ik gemaakt met Adobe XD. De afbeeldingen en de manier
+                hoe ze zijn geplaatst heb ik overgenomen van <cite><a href="https://javascript30.com/"
+                        target="_blank">https://javascript30.com/</a></cite> <cite>(Afbeelding
+                    2)</cite>.
+            </p>
+            <div class="flexImages">
+                <div class="imageDiv" id="a1">
+                    <img src="../../img/Sprint X/Afbeelding1.png" alt="Afbeelding1.png">
+                    <p class="imageUndertitle">Afbeelding 1 Old Frame Design</p>
+                </div>
+
+                <div class="imageDiv">
+                    <img src="../../img/Sprint X/Afbeelding2.png" alt="Afbeelding2.png">
+                    <p class="imageUndertitle">Afbeelding 2 Javascript30 Website Frame</p>
+                </div>
+            </div>
+            <p>
+                De kleuren echter heb ik als advies gekregen van ChatGPT. Ik heb gevraagd aan ChatGPT of hij de kleuren
+                kon weergeven die het beste bij elkaar passen, zodat ik deze kon uittesten in een HTML bestand
+                <cite>(Afbeelding 3)</cite>.
+            </p>
+            <div class="imageDiv">
+                <img src="../../img/Sprint X/Afbeelding3.png" alt="Afbeelding3.png">
+                <p class="imageUndertitle">Afbeelding 3 ChatGPT Prompt</p>
+            </div>
+            <p>
+                Al deze kleurencombinaties vond ik persoonlijk wel goed voor het frame, maar ik wilde graag iets met de
+                kleur ‘Aqua blauw’. Naast dat Aqua blauw mijn persoonlijke lievelingskleur is en omdat volgens ChatGPT
+                dit een lichte kleur is die vaak een psychologisch effect van kalmte, rust en harmonie heeft op mensen.
+            </p>
+            <p>
+                De combinatie van Aqua blauw en Coral pink zoals deze te zien is op nummer 9 van Afbeelding 3 vond ik
+                geen slechte combo, maar ik wilde meer kleurencombo’s bekijken met Aqua. Dit heb ik toen aan ChatGPT
+                verteld <cite>(Afbeelding 4)</cite>.
+            </p>
+            <div class="imageDiv">
+                <img src="../../img/Sprint X/Afbeelding4.png" alt="Afbeelding4.png">
+                <p class="imageUndertitle">Afbeelding 4 ChatGPT Prompt</p>
+            </div>
+            <p>
+                Na veel kleurencombo’s vergeleken te hebben met HTML en CSS (Afbeelding 5), ben ik tot de conclusie
+                gekomen dat Aqua en Coral de beste combinatie vindt, daarom is het achtergrond op <cite><a
+                        href="#a1">Afbeelding 1</a></cite> Aqua
+                blauw en de randen van de containers koraal.
+            </p>
+            <div class="imageDiv">
+                <img src="../../img/Sprint X/Afbeelding5.png" alt="Afbeelding5.png">
+                <p class="imageUndertitle">Afbeelding 5 Code en Overzicht</p>
+            </div>
+            <h3>Ontwerp Update</h3>
+            <p>
+                Na feedback te hebben ontvangen van mijn docenten over mijn ontwerp <cite>(Afbeelding 6 - 7)</cite> en
+                na een kort gesprek met mijn Sprint X coach <cite>(Frank)</cite>, heb ik mijn ontwerp een beetje
+                aangepast. Deze
+                aanpassingen heb ik gelijk in de code verwerkt.
+            </p>
+            <div class="flexImages">
+
+                <div class="imageDiv">
+                    <img src="../../img/Sprint X/Afbeelding6.png" alt="Afbeelding6.png">
+                    <p class="imageUndertitle">Afbeelding 6 FeedPulse Checkpoint</p>
+                </div>
+
+                <div class="imageDiv">
+                    <img src="../../img/Sprint X/Afbeelding7.png" alt="Afbeelding7.png">
+                    <p class="imageUndertitle">Afbeelding 7 Teams gesprek met Frank</p>
+                </div>
+            </div>
+            <p>
+                De feedback ging voornamelijk over dat de kleuren en de typografie niet zo UX-vriendelijk waren, daarom
+                heb ik de huisstijl van de tutorial gewoon volledig overgenomen en een klein beetje aangepast
+                <cite>(Afbeelding 8)</cite>.
+            </p>
+            <div class="imageDiv">
+                <img src="../../img/Sprint X/Afbeelding8.png" alt="Afbeelding8.png">
+                <p class="imageUndertitle">Afbeelding 8 Javascript30 Website Frame</p>
+            </div>
+            <p class="middleText">
+                Je kunt mijn oude design hieronder bekijken:
+            </p>
+            <iframe width="800" height="450" src="https://xd.adobe.com/embed/e93cee90-2bd3-4568-9218-8c67c3034c22-bc6f/"
+                allowfullscreen></iframe>
+        </div>
+
+        <div class="textSpace">
+            <h2 class="subtitle">New Design</h2>
+            <p>
+                Ik heb mijn oude design van vorig semester in Adobe XD gemaakt. Nu heb ik er voor gekozen om hem te
+                bewerken in Figma, omdat ik in Figma nu wel beter kan werken.
+            </p>
+            <h3>Wat is er veranderd?</h3>
+            <div class="alignTextandImg">
+                <p class="sideText">
+                    Om aan te duiden dat ik al eerder een aantal van deze challenges heb gemaakt, heb ik de kopjes ‘New
+                    Challenges’ en ‘Old Challenges’ toegevoegd aan het frame.
+                    <br><br>
+                    De nieuwe challenges staan bovenaan, want de oude challenges hebben de meeste van mijn docenten
+                    waarschijnlijk al gezien vorig semester en de nieuwe zijn dus relevanter.
+                    <br><br>
+                    Ook heb ik een knop toegevoegd die meteen naar de top van de pagina scrolt als je er op klikt. Als
+                    er dertig challenges in komen te staan, kan je je voorstellen dat er veel gescrold moet worden en
+                    niemand heeft dan zin om weer helemaal naar boven te scrollen als het er op aankomt
+                    <cite>(Afbeelding 9)</cite>.
+                </p>
+                <div class="imageDiv">
+                    <img src="../../img/Sprint X/Afbeelding9.png" alt="Afbeelding9.png">
+                    <p class="imageUndertitle">Afbeelding 9 New Frame Design</p>
+                </div>
+            </div>
+            <p class="middleText">
+                Je kunt mijn nieuwe design hieronder bekijken:
+            </p>
+            <iframe width="800" height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbNgr3QiGPgBAO7x4lKFxK4%2FSprint-X-New-Projectframe-Design-2.0%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-297%26viewport%3D433%252C135%252C0.57%26t%3D6ZBWeZqyBMSSFK8E-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D1%253A297%26mode%3Ddesign"
+                allowfullscreen></iframe>
+            <p class="middleText">
+                Je kunt het frame met de challenges die ik heb gemaakt via <cite><a
+                        href="https://blightningpower.github.io/VanillaJSframe/" target="_blank">deze link</a></cite>
+                bekijken.
+            </p>
+        </div>
+
+        <div class="textSpace">
+            <h2 class="subtitle">Git</h2>
+            <p>
+                In dit project heb ik GitHub gebruikt. Vorig semester gebruikte ik echter GitLab, maar ik vind GitHub
+                handiger.
+            </p>
+            <p>
+                GitHub heeft extra mogelijkheden, zoals je code kunnen uploaden naar een URL of je code publiekelijk
+                online zetten, zodat iedereen het kan zien. GitLab kan dat ook, maar dan moet je ervoor betalen.
+            </p>
+            <p>
+                Ik heb wel gewoon alles wat ik in GitLab had staan gekopieerd naar GitHub.
+            </p>
+            <p>
+                Je kunt de Git benaderen via de link onderaan in de bronnenlijst.
+            </p>
+        </div>
+
+        <div class="textSpace">
+            <h2 class="subtitle">Reflectie</h2>
+            <p>
+                Ik heb geleerd hoe belangrijk feedback is en hoe deze kan leiden tot verbeteringen in design en
+                gebruiksvriendelijkheid.
+            </p>
+            <p>
+                Door het werken met Adobe XD en Figma heb ik mijn ontwerpvaardigheden aangescherpt en ontdekt hoe
+                kleurencombinaties en typografie de gebruikerservaring kunnen beïnvloeden.
+            </p>
+            <p>
+                Dit project heeft mij niet alleen technisch, maar ook creatief laten groeien en ik heb gezien hoe
+                essentieel het is om flexibel te zijn en open te staan voor veranderingen om tot een beter eindresultaat
+                te komen, met een specifieke focus op het versterken van mijn vaardigheden in Vanilla Javascript.
+            </p>
+        </div>
+
+        <div class="textSpaceSources">
+            <h2 class="subtitle">Bewijslast</h2>
+            <p class="middleTet">Je kunt de website en meerdere bronnen die bij dit project horen hieronder vinden.</p>
+            <div class="srcLinks">
+
+                <a href="https://blightningpower.github.io/VanillaJSframe/" target="_blank" class="webLink"><img
+                        src="../../img/Algemene_Link_Afbeeldingen/vanillaJSlogo.png"
+                        alt="vanillaJSlogo.png"><br><span>VanillaJSframe website link</span></a>
+
+                <a href="https://github.com/Blightningpower/VanillaJSframe" target="_blank" class="webLink"><img
+                        src="../../img/Algemene_Link_Afbeeldingen/gitHubLogo.png" alt="gitHubLogo.png"><br><span>GitHub
+                        Link</span></a>
+
+                        <a href="../../Linked_Files/Sprint X/JavaScript30 Project Sprint X Challenge.pptx" target="_blank" class="webLink"><img
+                            src="../../img/Algemene_Link_Afbeeldingen/PowerPointLogo.png" alt="PowerPointLogo.png"><br><span>JavaScript30 Challenge Powerpoint</span></a>
+
+                <a href="../../Linked_Files/Sprint X/Sprint X 2.0 verantwoording.pdf"
+                    class="webLink" target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Sprint X 2.0 <br> Verantwoording</span></a>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="pagination">
+            <a href="#" class="prevButton">Vorige project</a>
+            <div class="pageIndicator"></div>
+            <a href="#" class="nextButton">Volgende project</a>
+        </div>
+
+        <!-- --- -->
+        <button id="scrollToTopBtn"><svg xmlns="http://www.w3.org/2000/svg" class="up-arrow">
+                <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg></button>
+
+        <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+    </main>
+    <script>
+
+    </script>
+</body>
+
+</html>

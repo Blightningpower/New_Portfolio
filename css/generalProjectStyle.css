@@ -49,8 +49,9 @@ p {
   text-align: justify;
   max-width: 65vw;
   min-width: inherit;
-  margin: auto;
+  margin: 10px auto;
   color: var(--portfolioWhite);
+  padding: 0 10%;
 }
 
 blockquote {
@@ -103,9 +104,10 @@ ul {
 }
 
 .middleText {
-  padding: 0;
+  padding-top: 2%;
   max-width: 57vw;
-  margin: 3rem 0;
+  margin: 3rem 0 1rem;
+  text-align: center;
 }
 
 .subtitle {
@@ -200,6 +202,15 @@ cite a:hover {
   margin: 0;
   text-align: center;
 }
+
+.flexImages .imageDiv {
+  transform: scale(0.5);
+}
+
+.flexImages .imageDiv img {
+  margin: 0;
+}
+
 
 .textSpaceSources {
   display: flex;
