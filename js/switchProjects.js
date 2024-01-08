@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "../interactiveMediaProjects/imProject2.html",
         "../developmentProjects/dvProject1.html",
         "../developmentProjects/dvProject2.html",
-        // "../designProjects/dsProject1.html",
+        "../designProjects/dsProject1.html",
         // "../designProjects/dsProject2.html",
         // "../designProjects/dsProject3.html",
         // "../designProjects/dsProject4.html",
