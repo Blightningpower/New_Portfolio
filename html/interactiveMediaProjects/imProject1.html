@@ -26,22 +26,28 @@
     <script src="../../js/switchProjects.js"></script>
 
     <style>
+        [alt="Afbeelding1.png"],
         [alt="Afbeelding2.png"],
-        [alt="Afbeelding9.png"],
-        [alt="Afbeelding10.png"] {
-            max-width: 30vw;
+        [alt="Afbeelding3.png"],
+        [alt="Afbeelding4.png"] {
+            max-width: 50vw !important;
+            min-height: 20vh !important;
         }
 
-        [alt="Afbeelding3.png"] {
-            max-width: 32vw;
+        [alt="Afbeelding12.png"],
+        [alt="Afbeelding13.png"],
+        [alt="Afbeelding15.png"] {
+            max-width: 50vw;
+        }
+
+        [alt="Afbeelding8.png"],
+        [alt="Afbeelding9.png"],
+        [alt="Afbeelding10.png"] {
+            max-width: 40vw;
         }
 
         [alt="Afbeelding11.png"] {
             max-width: 17vw;
-        }
-
-        [alt="Afbeelding9.png"] {
-            max-width: 29vw;
         }
 
         [alt="Afbeelding14.png"] {
@@ -110,17 +116,12 @@
             flex-direction: column;
         }
 
-        .layout2 {
-            flex-direction: row;
-            margin: 0;
-        }
-
         .colorRed {
-            color: darkred;
+            color: red;
         }
 
         .colorGreen {
-            color: lime;
+            color: green;
         }
     </style>
 
@@ -131,14 +132,14 @@
     <!-- header -->
     <header>
 
-        <a href="../../index.html" class="logoText"><span class="nameHighlight">&lt;/</span><span id="typedName"></span><span
-        class="nameHighlight">></span></a>
+        <a href="../../index.html" class="logoText"><span class="nameHighlight">&lt;/</span><span
+                id="typedName"></span><span class="nameHighlight">></span></a>
 
         <nav class="headerNavigation">
 
             <a href="../../index.html" class="navButton" data-active="Home">Home</a>
 
-            <a href="../../index.html#learningOutcomesSection" class="navButton active" id="learningOutcomes"
+            <a href="../../index.html#imProjects" class="navButton active" id="learningOutcomes"
                 data-active="learningOutcomesSection">Leeruitkomsten</a>
 
             <div class="dropdown-content">
@@ -228,7 +229,8 @@
             <p>
                 Om te bepalen wat er in de header komt te staan, ben ik eerst gaan kijken naar wat de website van
                 onze stakeholder al in de header heeft staan en ben ik deze gaan vergelijken.
-                Op <cite>Afbeelding 3</cite> kan je zien hoe de header van onze stakeholder er uit ziet en op <cite>Afbeelding 4</cite> kan je
+                Op <cite>Afbeelding 3</cite> kan je zien hoe de header van onze stakeholder er uit ziet en op
+                <cite>Afbeelding 4</cite> kan je
                 zien hoe de header van een wat bekendere autoverhuurwebsite; https://www.sixt.nl/ er uit ziet.
             </p>
             <div class="flexImages">
@@ -239,7 +241,7 @@
                 </div>
 
                 <div class="imageDiv">
-                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding5.png" alt="Afbeelding5.png">
+                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding4.png" alt="Afbeelding4.png">
                     <p class="imageUndertitle">Afbeelding 4 Desktop Header Sixt.nl</p>
                 </div>
             </div>
@@ -284,7 +286,7 @@
                 </div>
             </div>
             <div class="alignTextandImg">
-                <p>Bij de mobiele variant zie je pas de zoekbalk, de vertaalknop en het menu van de
+                <p class="sideText">Bij de mobiele variant zie je pas de zoekbalk, de vertaalknop en het menu van de
                     header
                     wanneer je op het hamburgermenu-icoontje klikt <br> <cite>(Afbeelding 6)</cite>.</p>
                 <div class="imageDiv">
@@ -297,26 +299,29 @@
                         href="../researchProjects/rsProject1.html">www.autverhuurincuracao.nl Research</a></cite>.
             </p>
             <h3>Footer</h3>
-            <div class="alignTextandImg layout1">
-                <p>
+            <div>
+                <p class="middleText">
                     De footer van de website ziet er op de plaatsing van de elementen na hetzelfde uit voor zowel
                     desktop als mobiel <cite>(Afbeelding 7 en 8)</cite>.
                 </p>
-                <div class="flexImages layout2">
+                <div class="flexImages">
+
                     <div class="imageDiv">
                         <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding7.png"
                             alt="Afbeelding7.png">
                         <p class="imageUndertitle">Afbeelding 7 <br> Mobile Footer Wireframe</p>
                     </div>
+
                     <div class="imageDiv">
                         <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding8.png"
                             alt="Afbeelding8.png">
                         <p class="imageUndertitle">Afbeelding 8 <br> Desktop Footer Wireframe</p>
                     </div>
+
                 </div>
             </div>
 
-            <p>
+            <p class="middleText">
                 Om te bepalen wat er in de footer komt te staan, ben ik ook eerst gaan kijken naar wat de website van
                 onze stakeholder al in de footer heeft staan en ben ik ook deze gaan vergelijken.
                 <br>
@@ -382,27 +387,28 @@
                     <li>Algemene bedrijfsgegevens (locatie, openingstijden, telefoonnummer, etc.…)</li>
                     <li>Wereldkaart (Snel de locatie vinden van het bedrijf)</li>
                 </ul>
-                <div class="flexImages layout2">
-                    <div class="imageDiv">
-                        <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding11.png"
-                            alt="Afbeelding11.png">
-                        <p class="imageUndertitle">Afbeelding 11 <br> Mobile Contactpagina Wireframe</p>
-                    </div>
-
-                    <div class="imageDiv">
-                        <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding12.png"
-                            alt="Afbeelding12.png">
-                        <p class="imageUndertitle">Afbeelding 12 <br> Desktop Contactpagina Wireframe</p>
-                    </div>
-
-                    <div class="imageDiv">
-                        <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding13.png"
-                            alt="Afbeelding13.png">
-                        <p class="imageUndertitle">Afbeelding 13 <br> Desktop Contactpagina Weldas.nl</p>
-                    </div>
-                </div>
             </div>
-            <p>
+
+            <div class="flexImages">
+
+                <div class="imageDiv">
+                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding11.png" alt="Afbeelding11.png">
+                    <p class="imageUndertitle">Afbeelding 11 <br> Mobile Contactpagina Wireframe</p>
+                </div>
+
+                <div class="imageDiv">
+                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding12.png" alt="Afbeelding12.png">
+                    <p class="imageUndertitle">Afbeelding 12 <br> Desktop Contactpagina Wireframe</p>
+                </div>
+
+                <div class="imageDiv">
+                    <img src="../../img/www.autoverhuurincuracao.nl Wireframes/Afbeelding13.png" alt="Afbeelding13.png">
+                    <p class="imageUndertitle">Afbeelding 13 <br> Desktop Contactpagina Weldas.nl</p>
+                </div>
+
+            </div>
+
+            <p class="middleText">
                 Je kunt de prototype wireframes hieronder bekijken:
             </p>
             <iframe width="800" height="450"
@@ -454,7 +460,12 @@
             </p>
             <ul>
                 <h3>Header inhoud</h3>
-                <p>Legenda toevoegen</p>
+
+                <ul class="legend">
+                    <li><span class="removed">●</span> Verwijderd</li>
+                    <li><span class="added">●</span> Toegevoegd</li>
+                </ul>
+
                 <li class="mainHeading">Logo (met klikfunctie naar de homepagina)</li>
                 <li class="mainHeading colorGreen">Autocataloges (Lijst met beschikbare auto’s)</li>
                 <li class="mainHeading">Reserveren <span class="colorRed">(Reserveer een auto)</span><span
@@ -510,16 +521,13 @@
         <!-- --- -->
         <div class="textSpaceSources" id="srces">
             <h2 class="subtitle">Bewijslast</h2>
-            <p class="middleTet">Je kunt de wireframes en meerdere bronnen die bij dit project horen hieronder vinden.</p>
+            <p class="middleTet">Je kunt de wireframes en meerdere bronnen die bij dit project horen hieronder vinden.
+            </p>
             <div class="srcLinks">
 
-                <a href="../../Linked_Files/www.autoverhuurincuracao.nl Wireframes/Caribbean Drive.zip" target="_blank"
-                    class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/zip.png"
-                        alt="zip.png"><br><span>Caribbean Drive.zip</span></a>
-
-                <a href="../../Linked_Files/www.autoverhuurincuracao.nl Wireframes/Inspiratie-analyse Weldas.pdf"
-                    class="webLink" target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
-                        alt="pdf_Logo.png"><br><span>Inspiratie-analyse Weldas</span></a>
+                <a href="../../Linked_Files/www.autoverhuurincuracao.nl Wireframes/www.autoverhuurincuracao.nl Wireframes.zip"
+                    target="_blank" class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/zip.png"
+                        alt="zip.png"><br><span>www.autoverhuurincuracao.nl Wireframes.zip</span></a>
 
                 <a href="../../Linked_Files/www.autoverhuurincuracao.nl Wireframes/Website verdeling.pdf"
                     target="_blank" class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
@@ -531,7 +539,7 @@
                         Verantwoording</span></a>
             </div>
         </div>
-<!-- --- -->
+        <!-- --- -->
 
         <br>
         <div class="pagination">
@@ -540,7 +548,7 @@
             <a href="#" class="nextButton">Volgende project</a>
         </div>
 
-        
+
         <button id="scrollToTopBtn"><svg xmlns="http://www.w3.org/2000/svg" class="up-arrow">
                 <path d="M12 19V5M5 12l7-7 7 7" />
             </svg></button>
