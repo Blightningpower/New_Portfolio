@@ -274,6 +274,7 @@ cite a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-width: -webkit-fill-available;
 }
 
 .alignTextandImg .imageDiv {

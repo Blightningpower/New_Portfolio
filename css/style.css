@@ -427,7 +427,7 @@ header {
 .h3Title {
   font-weight: 600;
   margin-bottom: revert;
-  margin-top: auto;
+  margin-top: 10vh;
 }
 
 .copyrightText {
