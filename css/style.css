@@ -93,6 +93,9 @@ svg {
   max-width: -webkit-fill-available;
 }
 
+blockquote {
+  color: var(--portfolioWhite);
+}
 /* Homepagecode */
 
 main {

@@ -5,12 +5,9 @@
     <title>Branding evi Design</title>
 
     <!--links for the Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon_io/favicon-16x16.png">
 
     <!--meta tags for responsiveness-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -23,230 +20,270 @@
     <link rel="stylesheet" href="../../css/generalProjectStyle.css">
 
     <!--Link to scriptfiles -->
-    <script src="../../js/header3.js" defer></script>
+    <script src="../../js/header.js" defer></script>
     <script src="../../js/scroll.js" defer></script>
+    <script src="../../js/script.js" defer></script>
+    <script src="../../js/switchProjects.js"></script>
 
     <style>
-        .stylescapeDiv {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            min-width: 31vw;
-            max-width: 85vw;
+        [alt="Afbeelding1.png"],
+        [alt="Afbeelding2.png"],
+        [alt="Afbeelding3.png"] {
+            max-width: 50vw;
         }
     </style>
 
 </head>
 
-<body>
+<body id="learningOutcomesSection">
 
-    <div class=linkMenu>
-        <a href="../../index.html" class="homepageLink">Home</a>
-        <span><i class="arrow right"></i></span>
-        <a href="/Portfolio_Code/html/leeruitkomsten.html" class="activeLink">Leeruitkomsten</a>
-        <span><i class="arrow right"></i></span>
-        <a href="/Portfolio_Code/html/design.html" class="activeLink">Design</a>
-        <span><i class="arrow right"></i></span>
-        <a href="dsProject2.html" class="activeLink active">Branding evi</a>
-    </div>
-    <h1 class="h1Title">Branding evi</h1>
+    <!-- header -->
+    <header>
+
+        <a href="../../index.html" class="logoText"><span class="nameHighlight">&lt;/</span><span
+                id="typedName"></span><span class="nameHighlight">></span></a>
+
+        <nav class="headerNavigation">
+
+            <a href="../../index.html" class="navButton" data-active="Home">Home</a>
+
+            <a href="../../index.html#imProjects" class="navButton active" id="learningOutcomes"
+                data-active="learningOutcomesSection">Leeruitkomsten</a>
+
+            <div class="dropdown-content">
+
+                <a href="../../index.html#imProjects" class="navButton">Interactive
+                    Media</a>
+
+                <a href="../../index.html#dvProjects" class="navButton">Development</a>
+
+                <a href="../../index.html#dsProjects" class="navButton">Design</a>
+
+                <a href="../../index.html#rsProjects" class="navButton">Research</a>
+
+                <a href="../../index.html#cmProjects" class="navButton">Communication</a>
+
+                <a href="../../index.html#piProjects" class="navButton">Professional
+                    Identity</a>
+
+            </div>
+
+            <a href="../../html/overMij.html" class="navButton" data-active="aboutMe">Over
+                mij</a>
+
+        </nav>
+    </header>
     <!-- --- -->
-    <div class="textSpace">
-        <h2 class="subtitle">Inleiding</h2>
-        <br>
-        <p>
-            Bij ons allereerste officiële project moesten we samenwerken in een team van studenten om een eigen
-            huisstijl te ontwikkelen voor een muziekartiest. We moeten een brandguide en een contentstrategie
-            presenteren als onderdeel van onze opdracht. Mijn team bestaat uit Danny, Thammy, Artun en natuurlijk
-            ikzelf.
-        </p>
-    </div>
 
-    <div class="textSpace">
-        <h2 class="subtitle">Stylescape evi</h2>
-        <br>
-        <p>
+    <main>
 
-            Voor ons brandingproject kregen we als groep de opdracht om als "Media Bedrijf" een artiest meer bekendheid
-            te geven door middel van sociale media en branding. Ons doel was ook om een unieke stijl voor deze artiest
-            te creëren. Het eerste wat we moesten doen, was een stylescape maken, een soort gedetailleerd moodboard dat
-            de identiteit van de artiest weerspiegelt. Een stylescape bevat visuele elementen zoals kleuren, typografie,
-            fotografie, illustraties en andere stilistische kenmerken.
-            <br><br>
-            In het voorjaar van semester 2 had ik niet echt de kans gekregen om te begrijpen wat een stylescape precies
-            is en wat het idee erachter is. Daarom besloot ik deze keer meer onderzoek te doen, wat te vinden is via
-            <cite><a href="../../Linked_Files/Stylescape Research.pdf" target="_blank"> deze
-                    link</a></cite> en in de <a href="#srces" class="link">bronnenlijst</a> onderaan de pagina. Mijn
-            onderzoek legt ook uit hoe ik tot de uitwerking van mijn stylescape voor evi ben gekomen.
-            <br><br>
-            Als groep besloten we dat elk lid een eigen versie van de stylescape voor evi zou maken. Vervolgens hebben
-            we gezamenlijk besloten welke versies we naar haar zouden sturen om te voorkomen dat ze
-            overweldigd zou raken door teveel verschillende stylescapes. Ik heb zelf slechts één versie gemaakt, maar
-            sommige
-            van mijn groepsleden hadden er meerdere. Helaas werd mijn stylescape niet gekozen, maar dat had ik eigenlijk
-            niet verwacht, aangezien ik weet dat ik niet zo sterk ben als het gaat om design.
-        </p>
-        <br>
-        <p>
-            Op <cite>Afbeelding 1</cite> zie je de Stylescape die ik heb gemaakt en op <cite>Afbeelding 2</cite> zie
-            je de stylescape die het wel is geworden.<br>
-            De stylescape op <cite>Afbeelding 2</cite> is gemaakt door een groepsgenoot van mij (Thammy).
-        </p>
-        <br>
-        <div class="stylescapeDiv">
-            <img src="../../img/Branding evi/Afbeelding1.png"
-                alt="Afbeelding1.png" style="min-width: 50vw">
-            <p class="imageUndertitle">Afbeelding 1</p>
+        <div class="pagination">
+            <a href="#" class="prevButton">Vorige project</a>
+            <div class="pageIndicator"></div>
+            <a href="#" class="nextButton">Volgende project</a>
         </div>
-        <div class="stylescapeDiv">
-            <img src="../../img/Branding evi/Afbeelding2.png"
-                alt="Afbeelding2.png" style="min-width: 50vw">
-            <p class="imageUndertitle">Afbeelding 2</p>
-        </div>
-    </div>
 
-    <div class="textSpace">
-        <h2 class="subtitle">Tone of visual evi</h2>
-        <p>
-            Na het maken van de stylescapes was de opdracht om aan de brandguide voor evi te beginnen.<br>
-            Hierin moet duidelijk worden weergegeven welke kleuren, typografie illustraties, etc. moet worden gebruikt
-            en eventueel hoe het niet mag worden gebruikt.<br>
-            Een soort handleiding voor het gebruik van de stijl.<br>
-            Ook hiervoor heb ik even de tijd genomen om onderzoek te doen naar brandguides in het algemeen.<br>
-            Dit onderzoek is te vinden in de <a href="#srces" class="link">bronnenlijst</a> onderaan deze pagina.
-            Bij deze opdracht was ik verantwoordelijk voor het maken van een Tone of visual voor evi. Ook dit onderzoek
-            naar
-            de Tone of visual en mijn uitwerkingen daarvan zijn te vinden in de <a href="#srces"
-                class="link">bronnenlijst</a> onderaan deze pagina.<br>
+        <div class="projectTitle">
+            <h1><span class="nameHighlight">&lt;/</span>Branding evi Design<span class="nameHighlight">></span></h1>
+            <h4>Design</h4>
+        </div>
+        <!-- --- -->
+
+        <div class="textSpace">
+            <h2 class="subtitle">Introductie</h2>
+            <p>
+                Bij ons allereerste project moesten we samenwerken in een team van studenten om een eigen huisstijl te
+                ontwikkelen voor een muziekartiest. We moeten een brandguide en een contentstrategie presenteren als
+                onderdeel van onze opdracht. Mijn team bestaat uit Artun, Danny, Thammy en natuurlijk ikzelf.
+            </p>
+        </div>
+
+        <div class="textSpace">
+            <h2 class="subtitle">Inleiding</h2>
+            <p>
+                De opdracht die we hebben gekregen voor het branding project als groep was om als “Media Bedrijf” een
+                artiest bekender te maken (d.m.v. social media en branding) en om een eigen stijl voor die artiest te
+                creëren. De artiest die aan onze groep was aangewezen heet Eline Wijnands. Haar artiestennaam is evi.
+                Eline is een beginnend zangeres en songwriter en wij moesten voor haar een brandguide en
+                contentstrategie maken.
+            </p>
+        </div>
+
+        <div class="textSpace">
+            <h2 class="subtitle">Stylescape evi</h2>
             <br>
-            Ik heb een aantal variaties gemaakt van de Tone of visual. Je kunt het eindresultaat vinden op
-            <cite>Afbeelding 3</cite>.
-        </p>
-        <br>
-        <div class="stylescapeDiv">
-            <img src="../../img/Branding evi/Afbeelding3.png"
-                alt="Afbeelding3.png" style="min-width: 50vw">
-            <p class="imageUndertitle">Afbeelding 3 (T.o.V.. 1.4)</p>
+            <p>
+                Het eerste dat we moesten doen voor haar was een stylescape maken. Een stylescape is eigenlijk een soort
+                moodboard, maar dan wat specifieker. De stylescape is een canvas waarin je een identiteit van een
+                bedrijf of persoon in terug ziet. Het is een combinatie van visuele elementen, kleuren, typografie,
+                fotografie, illustratie en andere stijlelementen.
+            </p>
+            <p>
+                We hebben als groep dus besloten dat we allemaal en eigen versie van de stylescape maken voor evi en dat
+                we samen dan achteraf beslissen welke we naar haar gaan opsturen, zodat ze niet overweldigd wordt met
+                allerlei verschillende stylescapes. Ik heb er zelf maar 1 gemaakt, maar een paar van mijn groepsgenoten
+                hadden er meer. Uiteindelijk is het mijn stylescape niet geworden helaas, maar dat had ik eigenlijk ook
+                niet verwacht, want ik weet van mezelf dat ik nog niet zo sterk ben in design. Het maken van de
+                stylescape heeft mij echter wel wat meer creativiteit toegebracht doordat ik met verschillende vormen,
+                kleuren en lettertypes kon puzzelen.
+            </p>
+            <p>
+                Op <cite>Afbeelding 1</cite> zie je de Stylescape die ik heb gemaakt en op <cite>Afbeelding 2</cite> zie
+                je de stylescape die het wel is geworden.
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Branding evi Design/Afbeelding1.png" alt="Afbeelding1.png">
+                <p class="imageUndertitle">Afbeelding 1 Mijn stylescape voor evi</p>
+            </div>
+
+            <div class="imageDiv">
+                <img src="../../img/Branding evi Design/Afbeelding2.png" alt="Afbeelding2.png">
+                <p class="imageUndertitle">Afbeelding 2 Door de groep gekozen stylescape voor evi</p>
+            </div>
+
+            <p class="middleText">
+                De stylescape op <cite>Afbeelding 2</cite> is gemaakt door een groepsgenoot van mij (Thammy).
+            </p>
+            <p class="middleText">
+                Omdat ik in het voorjaar van semester 2 niet echt de kans heb gekregen om door te nemen wat een
+                stylescape nou precies is en wat de gedachte erachter is, heb ik ervoor gekozen om deze keer er wat meer
+                onderzoek naar te doen. Dit onderzoek is terug te vinden via <cite><a
+                        href="../../Linked_Files/Branding evi Design/Stylescape Research.pdf">deze link</a></cite>.
+                Hierin staat ook hoe ik op de uitwerking van mijn stylescape voor evi ben gekomen.
+            </p>
         </div>
-        <h3>T.o.V. 1.4 Verantwoording</h3>
-        <blockquote>
-            De 'Tone of Visual' in deze afbeelding is nauwkeurig gemaakt om de ”feel” van evi uit te stralen.
-            De focus van het beeld ligt in de kleurrijke afbeelding van het gezicht van een vrouw, rechts boven in.
-            De afbeelding wordt gekenmerkt door zijn gedurfde en expressieve streken.<br>
-            Onder de afbeelding van gekleurde vrouw staat een vrouw met een gekrulde afro en een zonnebril op, omringd
-            door confetti.<br>
-            Ze straalt een vrolijke en zorgeloze energie uit.<br>
-            Bovendien is helemaal aan de linkerkant van de afbeelding een vrouw in een kleurrijke outfit.<br>
+
+        <div class="textSpace">
+            <h2 class="subtitle">Tone of visual evi</h2>
+            <p>
+                Na het maken van de stylescape was de opdracht om aan de brandguide voor evi te beginnen. Hierin moet
+                duidelijk worden weergegeven welke kleuren, typografie illustraties, etc. moet worden gebruikt en
+                eventueel hoe het niet mag worden gebruikt. Een soort handleiding voor het gebruik van de stijl. Bij
+                deze opdracht was ik verantwoordelijk voor het maken van een Tone of Visual voor evi.
+            </p>
+            <p>
+                Ik heb een aantal variaties gemaakt van de Tone of Visual. Je kunt het eindresultaat vinden op
+                <cite>Afbeelding 3</cite>.
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Branding evi Design/Afbeelding3.png" alt="Afbeelding3.png">
+                <p class="imageUndertitle">Afbeelding 3 (T.o.V. 1.4)</p>
+            </div>
+            <p>
+                Het onderzoek naar de Tone of Visual en de verantwoording naar alle andere variaties zijn te vinden
+                <cite><a href="../../Linked_Files/Branding evi Design/Tone of Visual Research.pdf">deze link</a></cite>.
+            </p>
+            <h3>T.o.V. 1.4 Verantwoording</h3>
+            <blockquote>
+                De 'Tone of Visual' in deze afbeelding is nauwkeurig gemaakt om de “”feel” van Evi uit te stralen. De
+                focus van het beeld ligt in de kleurrijke afbeelding van het gezicht van een vrouw, rechts bovenin. De
+                afbeelding wordt gekenmerkt door zijn gedurfde en expressieve streken. Onder de afbeelding van gekleurde
+                vrouw staat een vrouw met een gekrulde afro en een zonnebril op, omringd door confetti. Ze straalt een
+                vrolijke en zorgeloze energie uit. Bovendien is helemaal aan de linkerkant van de afbeelding een vrouw
+                in een kleurrijke outfit. Deze vrouw valt op door haar levendige kleding en unieke kapsel. Haar
+                speelsheid draagt bij aan de algehele luchthartigheid van het visueel. Midden bovenin staat een vrouw
+                met hoed die poseert in een veld met bloemen. De serene achtergrond benadrukt haar aanwezigheid. Onder
+                de die vrouw is een afbeelding met een zon op de achtergrond te zien. Dit element voegt een zonnige en
+                vrolijke sfeer toe aan het visueel. Samen creëren deze elementen een boeiend en dynamisch beeld, met
+                levendige kleuren, diverse individuen en een viering van creativiteit en zelfexpressie.
+            </blockquote>
             <br>
-            Deze vrouw valt op door haar levendige kleding en unieke kapsel. Haar speelsheid draagt bij aan de algehele
-            luchthartigheid van het visueel.<br>
-            Midden boven in staat een vrouw met hoed die poseert in een veld met bloemen. De serene achtergrond
-            benadrukt haar aanwezigheid.<br>
-            Onder de die vrouw is een afbeelding met een zon op de achtergrond te zien.<br>
-            Dit element voegt een zonnige en vrolijke sfeer toe aan het visueel.<br>
-            Samen creëren deze elementen een boeiend en dynamisch beeld, met levendige kleuren, diverse individuen en
-            een viering van creativiteit en zelfexpressie.
-        </blockquote>
-        <br>
-        <p class="maxContent">Je kunt onze volledige brandguide en het onderzoek wat ik er naar heb gedaan vinden in de
-            <a href="#srces" class="link">bronnenlijst</a>
-            onderaan deze pagina.
-        </p>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="textSpace">
-        <h2 class="subtitle">Contentstrategie evi</h2>
-        <p>
-            Na onze eerste presentatie van de sprintdemo <cite>(die ik trouwens alleen met Thammy heb gegeven)</cite>,
-            hebben we wat
-            feedback van de groep ontvangen die we moeten verwerken.
-            Deze heeft Thammy in de FeedPulse verwerkt
-            <cite>(Afbeelding 4)</cite>.
-        </p>
-        <br>
-        <div class="stylescapeDiv">
-            <img src="../../img/Branding evi/Afbeelding4.png"
-                alt="Afbeelding4.png" style="min-width: 50vw">
-            <p class="imageUndertitle">Afbeelding 4</p>
+            <p class="middleText">Je kunt ons volledige brandguide via <cite><a
+                        href="../../Linked_Files/Branding evi Design/Brand Guide evi (Final).pdf">deze link</a></cite>
+                bekijken.
+            </p>
+            <p class="middleText">
+                Het logo van de ‘e’ als een zonnetje is ook ontworpen door Thammy <cite>(Afbeelding 4)</cite>.
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Branding evi Design/Afbeelding4.png" alt="Afbeelding4.png">
+                <p class="imageUndertitle">Afbeelding 3 (T.o.V. 1.4)</p>
+            </div>
+
+            <p class="middleText">
+                Na het maken van de brandguide, zijn we begonnen aan de contentstrategie. Die valt echter onder
+                ‘Research’. Je kunt (het onderzoek naar) de contentstrategie en alle andere onderzoeken vinden via de
+                onderstaande links:
+            </p>
+            <cite><a href="../../Linked_Files/Branding evi Design/Contentstrategie Research.pdf">Contentstrategie
+                    Research</a></cite>
+            <cite><a href="../../Linked_Files/Branding evi Design/Content Strategy evi.pdf">Content strategy
+                    evi</a></cite>
+            <cite><a href="../../Linked_Files/Branding evi Design/Branding evi Research Verantwoording.pdf">Branding evi
+                    Research Verantwoording</a></cite>
         </div>
-        <br>
-        <p>
-            In het kort moest er nog het een en ander worden bijgewerkt aan de brandguide. Ook moest ik nog mijn tone of
-            visual voor evi aanpassen. Ik ben namelijk niet meteen op versie 1.4 gekomen. Omdat zowel de brandguide als
-            de
-            contentstrategie binnen twee weken moesten worden voltooid, hebben we besloten de taken goed te verdelen via
-            Trello. Mijn voornaamste taak was om te werken aan de onderzoeken voor de contentstrategie.
-            <br>
-            <br>
-            Je kunt mijn verantwoording voor de contentstrategie en de contentstrategie zelf onderaan in de <a
-                href="#srces" class="link">bronnenlijst</a> vinden. Hier vind je ook een zip-bestand van onze
-            groepscontent die op One Drive staat en het document 'ICT & Media Design Research 2.0' dat ik gedurende dit
-            semester heb bijgehouden. In dit document heb ik mijn werk van dit semester samengevat.
-        </p>
-    </div>
 
-    <div class="textSpaceSources" id="srces">
-        <h2 class="subtitle">Bewijslast</h2>
-        <p class="middleText">Je kunt de bronnen die behoren bij dit project en meer hieronder vinden.</p>
-        <div class="srcLinks">
-
-            <a href="../../Linked_Files/Branding evi Design/Brand Guide evi (Final).pdf"
-                class="webLink" target="_blank"><img
-                    src="../../img/Algemene Afbeeldingen/pdf_Logo.png"
-                    alt="pdf_Logo.png"><br><span>Brand Guide evi.pdf</span></a>
-
-                    <a href="../../Linked_Files/Branding evi Design/Branguide evi.zip"
-                target="_blank" class="webLink"><img
-                    src="../../img/Algemene Afbeeldingen/zip.png"
-                    alt="zip.png"><br><span>Brand Guide evi.zip</span></a>
-
-            <a href="../../Linked_Files/Branding evi Design/Brand Guide Research.pdf"
-                class="webLink" target="_blank"><img
-                    src="../../img/Algemene Afbeeldingen/pdf_Logo.png"
-                    alt="pdf_Logo.png"><br><span>Brand Guide Research.pdf</span></a>
-
-            <a href="../../Linked_Files/Branding evi Design/Stylescape Research.pdf"
-                class="webLink" target="_blank"><img
-                    src="../../img/Algemene Afbeeldingen/pdf_Logo.png"
-                    alt="pdf_Logo.png"><br><span>Stylescape Verantwoording.pdf</span></a>
-
-            <a href="../../Linked_Files/Branding evi Design/Tone of Visual Research.pdf"
-                class="webLink" target="_blank"><img
-                    src="../../img/Algemene Afbeeldingen/pdf_Logo.png"
-                    alt="pdf_Logo.png"><br><span>Tone of Visual Verantwoording.pdf</span></a>
-
-            <a href="../../Linked_Files/Branding evi Design/Content Strategie evi (Final).pdf"
-                class="webLink" target="_blank"><img
-                    src="../../img/Algemene Afbeeldingen/pdf_Logo.png"
-                    alt="pdf_Logo.png"><br><span>Contentstrategie evi.pdf</span></a>
-
-                    <a href="../../Linked_Files/Branding evi Design/Content Strategie evi.zip"
-                target="_blank" class="webLink"><img
-                    src="../../img/Algemene Afbeeldingen/zip.png"
-                    alt="zip.png"><br><span>Contentstrategie evi.zip</span></a>
-
-            <a href="../../Linked_Files/Branding evi Design/Contentstrategie Research.pdf"
-                class="webLink" target="_blank"><img
-                    src="../../img/Algemene Afbeeldingen/pdf_Logo.png"
-                    alt="pdf_Logo.png"><br><span>Contentstrategie Research.pdf</span></a>
-
-            <a href="../../Linked_Files/Branding evi Design/Branding evi Design.zip"
-                target="_blank" class="webLink"><img
-                    src="../../img/Algemene Afbeeldingen/zip.png"
-                    alt="zip.png"><br><span>Branding evi.zip</span></a>
-
-            <a href="../../Linked_Files/ICT & Media Design Research 2.0.pdf"
-                target="_blank" class="webLink"><img
-                    src="../../img/Algemene Afbeeldingen/fontysLogo.png"
-                    alt="fontysLogo.png"><br><span>ICT & Media Design Research 2.0</span></a>
+        <div class="textSpace">
+            <h2 class="subtitle">Reflectie</h2>
+            <p>
+                In mijn rol binnen het teamproject voor het ontwikkelen van een huisstijl voor evi heb ik waardevolle
+                inzichten en ervaring opgedaan. Hoewel mijn eigen stylescape uiteindelijk niet gekozen werd, heeft het
+                proces van het creëren ervan mij geholpen om creatiever te worden en beter te begrijpen hoe je iets of
+                iemand een speciale stijl geeft. Het maken van de 'Tone of Visual' voor evi liet me zien hoe belangrijk
+                het is dat alles er goed en samenhangend uitziet als je een merk maakt. Door dit project ben ik beter
+                geworden in het maken van designs en heb ik geleerd hoe belangrijk het is om goed samen te werken en
+                veel na te denken over nieuwe ideeën.
+            </p>
         </div>
-    </div>
-    <!-- --- -->
-    <button id="scrollToTopBtn"><i class="arrow up"></i></button>
-    <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+
+        <div class="textSpaceSources" id="srces">
+            <h2 class="subtitle">Bewijslast</h2>
+            <p class="middleText">Je kunt de bronnen die behoren bij dit project en meer hieronder vinden.</p>
+            <div class="srcLinks">
+
+                <a href="../../Linked_Files/Branding evi Design/Brand Guide evi (Final).pdf" class="webLink"
+                    target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Brand Guide evi</span></a>
+
+                <a href="../../Linked_Files/Branding evi Design/Branding evi Research Verantwoording.pdf"
+                    class="webLink" target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Brand Guide Research Verantwoording</span></a>
+
+                <a href="../../Linked_Files/Branding evi Design/Stylescape Research.pdf" class="webLink"
+                    target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Stylescape Verantwoording</span></a>
+
+                <a href="../../Linked_Files/Branding evi Design/Tone of Visual Research.pdf" class="webLink"
+                    target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Tone of Visual Verantwoording</span></a>
+
+                <a href="../../Linked_Files/Branding evi Design/Content Strategy evi.pdf" class="webLink"
+                    target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Contentstrategy evi</span></a>
+
+                <a href="../../Linked_Files/Branding evi Design/Contentstrategie Research.pdf" class="webLink"
+                    target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Contentstrategie Research</span></a>
+
+                <a href="../../Linked_Files/Branding evi Design/Brandguide evi POC.zip" target="_blank"
+                    class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/zip.png" alt="zip.png"><br><span>Brand
+                        Guide evi POC.zip</span></a>
+
+                <a href="../../Linked_Files/Branding evi Design/Branding evi Design Verantwoording.pdf" class="webLink"
+                    target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Brand Guide Design Verantwoording</span></a>
+
+            </div>
+        </div>
+        <!-- --- -->
+
+        <br>
+        <div class="pagination">
+            <a href="#" class="prevButton">Vorige project</a>
+            <div class="pageIndicator"></div>
+            <a href="#" class="nextButton">Volgende project</a>
+        </div>
+
+
+        <button id="scrollToTopBtn"><svg xmlns="http://www.w3.org/2000/svg" class="up-arrow">
+                <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg></button>
+
+        <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+    </main>
 </body>
 
 </html>
