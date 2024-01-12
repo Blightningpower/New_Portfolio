@@ -115,7 +115,7 @@
 }
 
 #dsProject1container {
-  background: url(https://blightningpower.github.io/New_Portfolio_Code/img/Double_Life_Challenge/Afbeelding36.png);
+  background: url(/New_Portfolio_Code/img/Double_Life_Challenge/Afbeelding36.png);
   background-size: cover;
 }
 
@@ -135,11 +135,11 @@
 }
 
 #dvProject2container {
-  background: url(https://blightningpower.github.io/New_Portfolio_Code/img/Algemene_Link_Afbeeldingen/vanillaJSlogo.png) no-repeat;
+  background: url(/New_Portfolio_Code/img/Algemene_Link_Afbeeldingen/vanillaJSlogo.png) no-repeat;
   background-size: cover;
 }
 
 #dsProject2container {
-  background: url(https://blightningpower.github.io/New_Portfolio_Code/img/Algemene_Link_Afbeeldingen/logo%20evi.png);
+  background: url(/New_Portfolio_Code/img/Algemene_Link_Afbeeldingen/logo%20evi.png);
   background-size: cover;
 }
