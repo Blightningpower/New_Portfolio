@@ -25,12 +25,11 @@
   flex-direction: row;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+  -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   min-height: 26rem;
-  min-width: 100vw;
+  min-width: 90vw;
   padding: 1rem 2rem 2rem;
-  overflow-y: hidden;
 }
 
 .container {
@@ -47,12 +46,14 @@
   transform: translateX(0);
 }
 
-.container:hover, .container:focus {
+.container:hover,
+.container:focus {
   transform: scale(1.1) translateX(0);
   cursor: pointer;
 }
 
-.container:hover:before, .container:focus:before {
+.container:hover:before,
+.container:focus:before {
   opacity: 1;
 }
 
@@ -71,7 +72,8 @@
   border-radius: 10px;
 }
 
-.container:hover .containerInfo, .container:focus .containerInfo{
+.container:hover .containerInfo,
+.container:focus .containerInfo {
   opacity: 1;
   transform: translateY(0px);
 }
@@ -109,6 +111,10 @@
   padding-top: 5%;
 }
 
+#dsProjects a.container:last-of-type {
+  margin-right: 1rem;
+}
+
 #imProject1container,
 #dvProject1container,
 #rsProject1container,
@@ -132,8 +138,10 @@
   background-size: cover;
 }
 
-#imProject2container {
-  background: url(https://blightningpower.github.io/New_Portfolio_Code/img/Algemene_Link_Afbeeldingen/logo%202.0%20transparante%20achtergrond.png) no-repeat;
+#imProject2container,
+#dsProject4container {
+  /* background: url(https://blightningpower.github.io/New_Portfolio_Code/img/Algemene_Link_Afbeeldingen/logo%202.0%20transparante%20achtergrond.png) no-repeat; */
+  background: url(/img/Algemene_Link_Afbeeldingen/logo%202.0%20transparante%20achtergrond.png) no-repeat;
   background-size: contain;
 }
 
