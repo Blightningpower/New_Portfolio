@@ -1,5 +1,5 @@
 #imProjects {
-  margin-top: 3rem !important;
+  margin-top: 2rem !important;
 }
 
 #imProjects .h3Title {
@@ -28,13 +28,15 @@
   -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
   scrollbar-width: thin;
   min-height: 26rem;
+  min-width: 100vw;
   padding: 1rem 2rem 2rem;
+  overflow-y: hidden;
 }
 
 .container {
-  width: 25rem;
-  min-width: 25rem;
-  height: 23rem;
+  width: 20rem;
+  min-width: 20rem;
+  height: 20rem;
   border: 1px solid var(--portfolioBlack);
   border-radius: 10px;
   color: var(--portfolioWhite);
@@ -96,7 +98,7 @@
 
 .par p {
   color: var(--portfolioWhite);
-  font-size: .75rem;
+  font-size: .65rem;
   margin: 0;
 }
 
@@ -109,13 +111,14 @@
 
 #imProject1container,
 #dvProject1container,
-#rsProject1container {
+#rsProject1container,
+#dsProject3container {
   background: url(https://www.autoverhuurincuracao.nl/wp-content/uploads/2022/09/Logo-Auto-huren-Curacao.jpg) no-repeat;
   background-size: cover;
 }
 
 #dsProject1container {
-  background: url(/New_Portfolio_Code/img/Double_Life_Challenge/Afbeelding36.png);
+  background: url(https://blightningpower.github.io/New_Portfolio_Code/img/Double_Life_Challenge/Afbeelding36.png);
   background-size: cover;
 }
 
@@ -130,16 +133,16 @@
 }
 
 #imProject2container {
-  background: url(/New_Portfolio_Code/img/Algemene_Link_Afbeeldingen/logo%202.0%20transparante%20achtergrond.png) no-repeat;
+  background: url(https://blightningpower.github.io/New_Portfolio_Code/img/Algemene_Link_Afbeeldingen/logo%202.0%20transparante%20achtergrond.png) no-repeat;
   background-size: contain;
 }
 
 #dvProject2container {
-  background: url(/New_Portfolio_Code/img/Algemene_Link_Afbeeldingen/vanillaJSlogo.png) no-repeat;
+  background: url(https://blightningpower.github.io/New_Portfolio_Code/img/Algemene_Link_Afbeeldingen/vanillaJSlogo.png) no-repeat;
   background-size: cover;
 }
 
 #dsProject2container {
-  background: url(/New_Portfolio_Code/img/Algemene_Link_Afbeeldingen/logo%20evi.png);
+  background: url(https://blightningpower.github.io/New_Portfolio_Code/img/Algemene_Link_Afbeeldingen/logo%20evi.png);
   background-size: cover;
 }

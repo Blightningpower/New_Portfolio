@@ -48,7 +48,7 @@ img {
 p {
   text-align: justify;
   max-width: 65vw;
-  min-width: 65vw;
+  min-width: 50vw;
   margin: 0 auto;
   color: var(--portfolioWhite);
 }
@@ -81,6 +81,7 @@ ul {
   font-size: 1.5rem;
   min-width: fit-content;
   padding: 5px;
+  color: var(--portfolioBlack);
 }
 
 .projectTitle h4 {
@@ -156,8 +157,9 @@ cite a:hover {
   padding: 0 10% 2% 10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-radius: 10px
+  align-items: stretch;
+  border-radius: 10px;
+  align-content: space-between;
 }
 
 .textSpace ol li {
@@ -186,32 +188,14 @@ cite a:hover {
 }
 
 .flexImages .imageDiv .imageUndertitle {
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: normal;
-}
-
-.flexImages .imageDiv {
-  transform: scale(0.5);
 }
 
 .flexImages .imageDiv img {
   width: 100%; 
   height: auto; 
-  margin: 0;
-}.flexImages .imageDiv .imageUndertitle {
-  font-size: 2rem;
-  line-height: normal;
-}
-
-.flexImages .imageDiv {
-  transform: scale(0.5);
-}
-
-.flexImages .imageDiv img {
-  width: auto;
-  max-width: 100vw;
-  min-height: 100vh;
-  margin: 0;
+  margin: auto;
 }
 
 .imageDiv {
@@ -221,7 +205,7 @@ cite a:hover {
   align-items: center;
   justify-content: center;
   max-height: 30rem;
-  margin: 0;
+  margin: auto;
   max-width: 30vw;
 }
 
@@ -328,17 +312,10 @@ cite a:hover {
 .cropContent {
   border: 2px solid var(--portfolioGrey);
   padding: 1%;
-  max-width: 29vw;
 }
 
 .flexImagesMiddle {
   margin: auto;
-}
-
-.flexImagesMiddleFlex {
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .maxWidth40vw {
@@ -349,8 +326,8 @@ iframe {
   transform: scale(1.3);
   padding-bottom: 10%;
   border: none;
-  margin-top: 5rem;
   max-width: 65vw;
+  margin: 5rem auto;
 }
 
 .embed_documentation_footer--documentationFooter--pnTqy {
@@ -366,12 +343,16 @@ iframe {
 
 .pageIndicator {
   margin: 0 10px;
+  color: var(--portfolioBlack);
+  font-weight: 600;
 }
 
 .prevButton,
 .nextButton {
   background-color: var(--portfolioWhite);
   font-weight: 600;
+  color: var(--portfolioBlack);
+  text-decoration: underline;
 }
 
 .prevButton:hover,
