@@ -226,6 +226,7 @@ header {
   font-weight: 600;
   margin: 10px;
   min-width: max-content;
+  color: var(--portfolioBlack);
 }
 
 .navButton.active {
@@ -249,8 +250,9 @@ header {
 }
 
 .dropdown-content>a {
-  border-bottom: 2px solid var(--portfolioWhite);
+  border-bottom: 2px solid var(--portfolioOrange);
   max-width: fit-content;
+  color: var(--portfolioWhite);
 }
 
 /* Homepage */
