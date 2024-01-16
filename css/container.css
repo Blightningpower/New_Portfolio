@@ -139,7 +139,8 @@
 }
 
 #imProject2container,
-#dsProject4container {
+#dsProject4container,
+#rsProject3container {
   background: url(https://blightningpower.github.io/New_Portfolio_Code/img/Algemene_Link_Afbeeldingen/logo%202.0%20transparante%20achtergrond.png) no-repeat;
   background-size: contain;
 }
