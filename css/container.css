@@ -149,7 +149,8 @@
   background-size: cover;
 }
 
-#dsProject2container {
+#dsProject2container,
+#rsProject2container {
   background: url(https://blightningpower.github.io/New_Portfolio_Code/img/Algemene_Link_Afbeeldingen/logo%20evi.png);
   background-size: cover;
 }

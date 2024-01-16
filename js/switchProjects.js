@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "../designProjects/dsProject3.html",
         "../designProjects/dsProject4.html",
         "../researchProjects/rsProject1.html",
+        "../researchProjects/rsProject2.html",
         "../communicationProjects/cmProject1.html",
         // "../communicationProjects/cmProject2.html",
         "../professionalIdenitityProjects/pfiProject1.html",
