@@ -46,10 +46,10 @@ img {
 }
 
 p {
-  text-align: justify;
+  text-align: left;
   max-width: 65vw;
   min-width: 50vw;
-  margin: 0 auto;
+  margin: auto 0;
   color: var(--portfolioWhite);
 }
 
@@ -105,10 +105,12 @@ ul {
 }
 
 .middleText {
-  padding-top: 2%;
-  max-width: 57vw;
-  margin: 3rem 0 1rem;
-  text-align: justify;
+  margin: 3rem auto 1rem 0;
+}
+
+.textSpaceSources .middleText {
+  text-align: center;
+  margin: 1rem auto 3rem;
 }
 
 .subtitle {
@@ -173,16 +175,15 @@ cite a:hover {
 }
 
 .sideText {
-  max-width: 50vw !important;
-  padding-left: 16%;
-  margin: 0;
+  min-width: 35vw;
+  margin-bottom: 3rem;
 }
 
 .flexImages {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 65vw;
+  max-width: 70vw;
   margin-top: 3rem;
   align-items: center;
 }
@@ -193,8 +194,8 @@ cite a:hover {
 }
 
 .flexImages .imageDiv img {
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
   margin: auto;
 }
 
@@ -257,9 +258,8 @@ cite a:hover {
 
 .alignTextandImg {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: space-between;
-  min-width: -webkit-fill-available;
 }
 
 .alignTextandImg .imageDiv {
@@ -328,6 +328,7 @@ iframe {
   border: none;
   max-width: 65vw;
   margin: 5rem auto;
+  max-height: 80vh;
 }
 
 .embed_documentation_footer--documentationFooter--pnTqy {

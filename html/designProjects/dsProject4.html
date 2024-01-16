@@ -5,9 +5,9 @@
     <title>Online Portfolio Design</title>
 
     <!--links for the Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://i484476.hera.fhict.nl/Portfolio/img/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon_io/favicon-16x16.png">
 
     <!--meta tags for responsiveness-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -20,371 +20,551 @@
     <link rel="stylesheet" href="../../css/generalProjectStyle.css">
 
     <!--Link to scriptfiles -->
-    <script src="../../js/header3.js" defer></script>
+    <script src="../../js/header.js" defer></script>
     <script src="../../js/scroll.js" defer></script>
+    <script src="../../js/script.js" defer></script>
+    <script src="../../js/switchProjects.js"></script>
 
     <style>
-        [alt="Adobe_XD_logo.png"] {
-            max-width: 11vw;
-            display: flex;
-            flex-direction: column;
-            max-height: 15vh;
+        .flexImages .imageDiv img {
+            width: auto;
+            max-width: 30vw;
+            margin: 0;
         }
 
-        img {
-            max-width: unset;
+        [alt="Afbeelding1.png"],
+        [alt="Afbeelding2.png"],
+        [alt="Afbeelding13.png"] {
+            max-width: 50vw;
+        }
+
+        [alt="Afbeelding3.png"] {
+            width: 10vw;
+            min-height: 73vh !important;
         }
     </style>
 
 </head>
 
-<body id="learningOutcomes">
+<body id="learningOutcomesSection">
 
-     <!-- header -->
-     <header>
-        <div class="headerLeftCorner">
-            <h1 class="homePageTitle">ICT & Media Design Portfolio</h1>
-            <div class="BAlogo">
+    <!-- header -->
+    <header>
 
-                <img src="../../img/logo 3.3.1 Character 'B'_New.png" alt="Logo_Character_'B'" class="logoB logoHover">
-                <img src="../../img/avli.png" alt="avli.png" class="textRestFname">
+        <a href="../../index.html" class="logoText"><span class="nameHighlight">&lt;/</span><span
+                id="typedName"></span><span class="nameHighlight">></span></a>
 
-                <img src="../../img/logo 3.3.1 Character 'A'_New.png" alt="Logo_Character_'A'" class="logoA logoHover">
-                <img src="../../img/rmanyous.png" alt="rmanyous.png" class="textRestLname">
-
-            </div>
-        </div>
         <nav class="headerNavigation">
 
             <a href="../../index.html" class="navButton" data-active="Home">Home</a>
-            <a href="../../html/overMij.html" class="navButton" data-active="aboutMe">Over mij</a>
-            <a href="../../html/leeruitkomsten.html" class="navButton LO"
-                data-active="learningOutcomes">Leeruitkomsten<span class="dropDownIcon">▶</span></a>
+
+            <a href="../../index.html#imProjects" class="navButton active" id="learningOutcomes"
+                data-active="learningOutcomesSection">Leeruitkomsten</a>
+
             <div class="dropdown-content">
-                <a href="../../html/interactiveMedia.html" class="navButton">Interactive Media</a>
-                <a href="../../html/development.html" class="navButton">Development</a>
-                <a href="../../html/design.html" class="navButton">Design</a>
-                <a href="../../html/research.html" class="navButton">Research</a>
-                <a href="../../html/communication.html" class="navButton">Communication</a>
-                <a href="../../html/professionalIdentity.html" class="navButton">Professional Identity</a>
+
+                <a href="../../index.html#imProjects" class="navButton">Interactive
+                    Media</a>
+
+                <a href="../../index.html#dvProjects" class="navButton">Development</a>
+
+                <a href="../../index.html#dsProjects" class="navButton">Design</a>
+
+                <a href="../../index.html#rsProjects" class="navButton">Research</a>
+
+                <a href="../../index.html#cmProjects" class="navButton">Communication</a>
+
+                <a href="../../index.html#piProjects" class="navButton">Professional
+                    Identity</a>
+
             </div>
+
+            <a href="../../html/overMij.html" class="navButton" data-active="aboutMe">Over
+                mij</a>
+
         </nav>
     </header>
     <!-- --- -->
-    <h1 class="h1Title">Online Portfolio Design</h1>
-    <!-- --- -->
-    <div class="textSpace">
-        <h2 class="subtitle">Inleiding</h2>
-        <br>
-        <p>
-            Om een design te kunnen realiseren voor mijn online portfolio, moet ik uiteraard van tevoren beslissen welke
-            huisstijl deze krijgt.<br>
-            Dit ga ik doen door te kijken wat andere hebben gedaan.<br>
-            Hopelijk zou ik van daar dan mijn inspiratie kunnen halen.<br>
-            Zelf vond ik de huisstijl die Mette Ghijssen <cite>(Hogere semester ICT & Media Design studente)</cite> heeft gebruikt ook heel nice.<br>
-            Ze heeft er goed voor gezorgd dat de aandacht van de gebruiker bij de site blijft d.m.v. kleuren en
-            animaties en bewegende beelden.<br>
-            Ik wil in mijn online portfolio uiteraard ook veel animaties maken, maar dat zie ik ook als een optie voor
-            later.<br>
-            Uiteraard moet de basis van mijn online Portfolio eerst worden gemaakt, zoals deze in wireframes is verwerkt.<br>
-            Daarna kan ik denken aan animaties en extra’s.<br>
-        </p>
-    </div>
-    <br><br><br><br>
-    <div class="textSpace">
-        <h2 class="subtitle">Huisstijl inspiratie</h2>
-        <br>
-        <div class="alignTextandImg">
-            <p class="sideText">
-                Ik heb besloten om mijn portfolio huisstijl te baseren op het logo dat ik gemaakt heb.<br>
-                Het kleurenpalet heb ik laten genereren met Adobe Color.<br>
-                Ik heb het logo met de grijze en zwarte cirkels eromheen geüpload, zodat ik die kleuren ook in het
-                kleurenpalet zou krijgen.<br>
-                Op <cite>Afbeelding 1</cite> zie je het kleurenpalet dat ik heb gebruikt voor mijn portfolio.<br>
-            </p>
-            <div class="flexImages">
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_Design/Afbeelding1.png"
-                        alt="Afbeelding1">
-                    <p class="imageUndertitle">Afbeelding 1</p>
-                </div>
-            </div>
-        </div>
-        <div class="alignTextandImg">
-            <p class="sideText">
-                Ik heb nu de kleuren die op <cite>Afbeelding 1</cite> staan en de typografie die op <cite>Afbeelding
-                    2</cite> te zien
-                is.
-            </p>
-            <div class="flexImages">
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_Design/Afbeelding2.png"
-                        alt="Afbeelding2">
-                    <p class="imageUndertitle">Afbeelding 2</p>
-                </div>
-            </div>
-        </div>
-        <div class="alignTextandImg">
-            <p class="sideText">
-                Naast het ‘MX’ font heb ik nog aan ChatGPT gevraagd welke fonts op dat lettertype lijken
-                <cite>(Afbeelding 3)</cite>.
-            </p>
-            <div class="flexImages">
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_Design/Afbeelding3.png"
-                        alt="Afbeelding3" style="max-width: 30vw;">
-                    <p class="imageUndertitle">Afbeelding 3</p>
-                </div>
-            </div>
-        </div>
-        <div class="alignTextandImg">
-            <p class="sideText">
-                Ik heb ervoor gekozen om voor hoofdtitels het ‘MX’ font te gebruiken.<br>
-                Voor Subtitels gebruik ik ‘lato’ en als back-up Lucida Console of Arial. <br>
-                En voor algemene tekst gebruik ik Arial en als back-up Helvetica of sans-serif. <br>
-                Ik ben ik Canva gaan werken aan een Mood Board om een idee te geven/krijgen wat de huisstijl van mijn website
-                is.<br>
-                Hiervoor heb ik dus een huisstijl gemaakt op Canva <cite>(Afbeelding 4)</cite>.
-            </p>
-            <div class="flexImages">
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_Design/Afbeelding4.png"
-                        alt="Afbeelding4" style="max-width: 30vw;">
-                    <p class="imageUndertitle">Afbeelding 4</p>
-                </div>
-            </div>
-        </div>
-        <div class="alignTextandImg">
-            <p class="sideText">
-                Het Mood Board dat ik met Canva heb gemaakt is te zien op <cite>Afbeelding 5</cite>.
-            </p>
-            <div class="flexImages">
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_Design/Afbeelding5.png"
-                        alt="Afbeelding5" style="max-width: 30vw;">
-                    <p class="imageUndertitle">Afbeelding 5</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="textSpace">
-        <h2 class="subtitle">Mijn eerste ontwerp</h2>
-        <br>
-        <p>
-            Ik heb het prototype van dit Online portfolio design met Adobe XD gemaakt. Ik heb nooit eerder hiermee
-            gewerkt, maar het ik heb al wel eens met Figma gewerkt en in mijn ervaring tot zover, ben ik niet heel veel
-            verschillen tegengekomen qua werkwijze. Soms was het wel een beetje uitzoeken hoe het een en het ander
-            werkte, maar zo ging dat ook met Figma de eerste keer.<br><br>Waarom ik niet gewoon Figma als tool koos voor mijn ontwerp is omdat ik Adobe XD geadviseerd kreeg van mijn semestercoach. Ook wilde ik zelf graag Adobe XD
-            uitproberen. Van wat ik erover heb gelezen en gezien lijkt het mij wel een handige design tool, maar dat
-            blijkt wel vaker uit de tools van Adobe. Mocht het zo zijn dat ik er echt niet meer vooruit kan, dan kan ik
-            altijd weer terug naar Figma, maar dat was gelukkig niet het geval. Integendeel, Ik vond Adobe XD zelfs fijner
-            werken dan Figma, maar dat is mijn mening.
-        </p>
-        <div class="alignTextandImg">
-            <p class="sideText">
-                Allereerst ben ik begonnen met het maken van de
-                Homepagina. Dit is één van de belangrijkste pagina’s. Dit is namelijk de eerste pagina die een gebruiker
-                ziet wanneer die de website bezoekt. Het dient dus al eerste indruk. Ik ben dus ook niet met de andere
-                pagina’s verder gegaan tot ik zeker wist dat de hoofdpagina goed was.<br><br>
-                Op <cite>Afbeelding 6</cite> zie je de eerste versie van de hoofdpagina die ik in Adobe XD heb gemaakt.
-                <br>
-                Mijn doel bij dit ontwerp was om het ‘beest’ terug te laten zien zoals het thema op het Mood board. <br>
-                Ja, je las het goed. Ik zei: “eerste versie”. Dit is omdat, na heel wat feedback te hebben ontvangen, de
-                homepagina en eigenlijk alle pagina’s die hierop volgen er momenteel wat ander uitzien dan op dit
-                ontwerp.<br>
-                Maar dat wordt naderhand nog wel duidelijk.
-            </p>
-            <div class="flexImages">
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_Design/Afbeelding6.png"
-                        alt="Afbeelding6">
-                    <p class="imageUndertitle">Afbeelding 6</p>
-                </div>
-            </div>
-        </div>
-        <div class="alignTextandImg">
-            <p class="sideText">
-                Nadat dit af was ben ik naar een docent toegegaan om er feedback over te ontvangen.<br>
-                Op <cite>Afbeelding 7</cite> kan je de feedback lezen die ik toen heb gekregen van mijn docent
-                (Paul).<br>
-                Ik was die dag nogal moe, dus je gaat waarschijnlijk wat grammatica- en spellingsfouten tegenkomen in de
-                tekst.<br>
-                Don't blame me 😉<br><br>
-                Kort samengevat is wat deze feedback aangeeft dat mijn design nog niet uitstraalt wat ik bedoelde: ‘het
-                beest’. Er moet dus wat worden veranderd.<br><br>
-                Om die verandering te kunnen maken, ben ik een beetje gaan spelen met het design. Ik heb de plaatsen van
-                de klauwen veranderd, de (hovers van de) knoppen aangepast en eventueel wat kleuren uitgeprobeerd op
-                andere plekken.<br>
-                Ik ben aan mensen tussendoor gaan vragen wat zij ervan vonden.
-            </p>
-            <div class="flexImages">
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_Design/Afbeelding7.png"
-                        alt="Afbeelding7">
-                    <p class="imageUndertitle">Afbeelding 7</p>
-                </div>
-            </div>
-        </div>
-        <div class="alignTextandImg">
-            <p class="sideText">
-                Op <cite>Afbeelding 8</cite> zie je de hoofdpagina dat het daarna is geworden na een hoop feedback te
-                hebben gekregen van docenten, vrienden en klasgenoten. <br> Ik had na deze pagina de rest van de
-                pagina’s
-                ontworpen met dezelfde stijl.
-            </p>
-            <div class="flexImages">
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_Design/Afbeelding8.png"
-                        alt="Afbeelding8">
-                    <p class="imageUndertitle">Afbeelding 8</p>
-                </div>
-            </div>
-        </div>
-        <p style="text-align: center;">Ik zal zo kort mogelijk proberen uit te leggen hoe die er allemaal uitzien:</p>
-        <div class="alignTextandImg">
-            <p class="sideText">
-                Allereerst zie je de ogen van een wolf op het beeld wegvagen in een leeg donkergrijs scherm
-                <cite>(Afbeelding 9)</cite>.<br><br>
-                Vervolgens komt de hoofdpagina tevoorschijn met een ‘fade-in’ effect <cite>(Afbeelding 10)</cite>.<br>
-                Daarna zie je de opties ‘Over Mij’ en ‘Leeruitkomsten’.
-            </p>
-            <div class="flexImages">
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_Design/Afbeelding9.png"
-                        alt="Afbeelding9">
-                    <p class="imageUndertitle">Afbeelding 9</p>
-                </div>
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_Design/Afbeelding10.png"
-                        alt="Afbeelding10">
-                    <p class="imageUndertitle">Afbeelding 10</p>
-                </div>
-            </div>
-        </div>
-        <div class="alignTextandImg">
-            <p class="sideText">
-                Ik had bij alles dat klikbaar is die kras gepakt van de wolf en er een effect bij gemaakt, zodat de
-                gebruikers weten dat het een knop is.<br><cite>Op afbeelding 11</cite> zie je hoe de knop eruit ziet als
-                je er overheen hovert met je muis en op <cite>Afbeelding 12</cite> zie je hoe de knop eruit zie als je
-                er op zou klikken.<br><br>
-                Dit is echter niet de laatste variant, want er is meerdere malen ook aangegeven
-                dat die krassen overal te druk is en dat dat te onprofessioneel is voor een portfolio.<br>Ik heb dus
-                tijdens het schrijven van de code van dit design heel wat aanpassingen gemaakt (zoals je wel hebt
-                gemerkt als je mijn Online portfolio goed hebt bekeken).
-            </p>
-            <div class="flexImages">
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_Design/Afbeelding11.png"
-                        alt="Afbeelding 11 (Hover state)">
-                    <p class="imageUndertitle">Afbeelding 11 (Hover state)</p>
-                </div>
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_Design/Afbeelding12.png"
-                        alt="Afbeelding 12 (Toggle State)">
-                    <p class="imageUndertitle">Afbeelding 12 (Toggle State)</p>
-                </div>
-            </div>
-        </div>
-        <div class="alignTextandImg">
-            <p class="sideText">
-                Wanneer je op de ‘Over mij’ pagina bent <cite>(Afbeelding 13)</cite>, zie je een soort CV-achtige
-                introductie van wie ik ben, wat ik heb gedaan en wat mijn skills en/of vaardigheden zijn.<br>
-                Ik heb hier trouwens de feedback op gekregen dat het geen CV hoeft te zijn, omdat het uiteraard niet
-                voor een sollicitatie is, maar ik heb het toch een beetje zo gedaan om de docenten wat leuke feitjes
-                over mij te laten weten.<br>
-                Later heb ik in de laatste portfolio review gehoord dat deze pagina veel toevoegt aan de leeruitkomst
-                ‘Professional Identity’.
-            </p>
-            <div class="flexImages">
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_Design/Afbeelding13.png"
-                        alt="Afbeelding 13">
-                    <p class="imageUndertitle">Afbeelding 13</p>
-                </div>
-            </div>
-        </div>
-        <div class="alignTextandImg">
-            <p class="sideText">
-                Wanneer je op de ‘Leeruitkomsten’ pagina bent <cite>(Afbeelding 14)</cite>, kan je kiezen van welke
-                leeruitkomst je de projecten wilt zien. <br>Klik je bijvoorbeeld op de leeruitkomst Design
-                <cite>(Afbeelding 15)</cite>, dan zie je mijn design gerelateerde projecten en als je dan op zo een
-                project klikt <cite>(Afbeelding 16)</cite>, dan zie je de uitleg over het project, de ervaringen die ik
-                er van heb meegekregen en eventueel een link naar de documenten die erbij horen.<br><br>
-                Op <cite>Afbeelding 15 en 16</cite> heb ik een oud project van het 1e semester gepakt als voorbeeld.
-                Maar na mijn 2de
-                portfolio review heb ik begrepen dat het niet de bedoeling was om oude projecten te laten zien. Alle
-                projecten moeten in dit semester (semester 2) zijn gedaan. Je mag wel oude projecten erin zetten als je
-                alles van dit semester al erin hebt gezet. Dus het kan zijn dat dat project er niet in zit.
-            </p>
-            <div class="flexImages">
-                <div class="imageDiv">
-                    <img src="../../img/Online_Portfolio_Design/Afbeelding14.png"
-                        alt="Afbeelding 14" style="max-width: 25vw;">
-                    <p class="imageUndertitle">Afbeelding 14</p>
-                </div>
-            </div>
-        </div>
-        <div class="flexImages" style="flex-direction: row;">
-            <div class="imageDiv">
-                <img src="../../img/Online_Portfolio_Design/Afbeelding15.png"
-                    alt="Afbeelding 15" style="max-width: 15vw;">
-                <p class="imageUndertitle">Afbeelding 15</p>
-            </div>
-            <div class="imageDiv">
-                <img src="../../img/Online_Portfolio_Design/Afbeelding16.png"
-                    alt="Afbeelding 16" style="max-width: 15vw;">
-                <p class="imageUndertitle">Afbeelding 16</p>
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="textSpace">
-        <h2 class="subtitle">Slot</h2>
-        <br>
-        <p>
-            Je zult je nu waarschijnlijk afvragen waarom mijn design niet het uiteindelijke resultaat is van de website
-            waar je nu op zit.<br>
-            Dit komt omdat ik bij elk gesprek waarin mijn feedback werd gegeven over dit portfolio, ik snel de neiging
-            kreeg om het aan te passen in de code dan in het design zelf.<br>
-            Dit 'probleem' heb ik al sinds het 1e semester. Ik ben niet heel goed in designen en ik vind development
-            interessanter.<br>
-            Ik ben er heel eerlijk over en geef toe dat ik niet heel creatief ben en nog veel te leren heb als het gaat
-            om designen.<br>
-            Ik moet wel zeggen dat ik een hoop heb geleerd dit (2e) semester voor wat designen betreft.<br>
-            Ik heb tools gebruikt en begrepen die ik nooit eerder heb gebruikt/ begrepen, zoals Adobe Photoshop, Adobe
-            xD, Figma, etc..<br>
-            Ondanks dat ik geen meester designer ben, ben ik er nogsteeds trots op de resultaten die ik heb bereikt.
-        </p>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="textSpaceSources" id="srces">
-        <h2 class="subtitle">Bewijslast</h2>
-        <p class="middleText">Je kunt het design en meerdere bronnen die bij dit project horen hieronder vinden.</p>
-        <div class="srcLinks">
 
-            <a href="https://xd.adobe.com/view/bed79c9e-236d-4b3f-a677-ca18dd307258-eb84/" target="_blank"
-                class="webLink"><img
-                    src="../../img/Algemene Afbeeldingen/Adobe_XD_logo.png"
-                    alt="Adobe_XD_logo.png"><br><span>Portfolio Design</span></a>
-                    
-            <a href="../../Linked_Files/Online Portfolio Design.pdf" class="webLink"
-                target="_blank"><img src="../../img/Algemene Afbeeldingen/pdf_Logo.png"
-                    alt="pdf_Logo"><br><span>Portfolio Design Research</span></a>
+    <main>
+
+        <div class="pagination">
+            <a href="#" class="prevButton">Vorige project</a>
+            <div class="pageIndicator"></div>
+            <a href="#" class="nextButton">Volgende project</a>
         </div>
-    </div>
-    <!-- --- -->
-    <button id="scrollToTopBtn"><i class="arrow up"></i></button>
-    <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+
+        <div class="projectTitle">
+            <h1><span class="nameHighlight">&lt;/</span>Online Portfolio Design<span class="nameHighlight">></span></h1>
+            <h4>Design</h4>
+        </div>
+        <!-- --- -->
+
+        <div class="textSpace">
+            <h2 class="subtitle">Projectintroductie</h2>
+            <p>
+                Voor semester 2 van ICT & Media design moeten we een online por􀆞olio website maken waarin we d.m.v.
+                projecten de leeruitkomsten van het semester aantonen. Om zo’n website te kunnen maken, moet er eerst
+                een ontwerp komen. En om een ontwerp te maken, heb je eerste wireframes nodig met een onderbouwd
+                onderzoek erachter. In dit ar􀆟kel vind je de wireframes van mijn online por􀆞olio en de verantwoording
+                ervan.
+            </p>
+        </div>
+
+        <div class="textSpace">
+            <h2 class="subtitle">Inleiding</h2>
+            <p>
+                Ik ben begonnen met het zoeken naar inspiratie voor mijn portfolio. Zo kan ik in ieder geval een goed
+                overzicht maken met wat ik wil terugzien in mijn portfolio. Vervolgens heb ik van mijn inspiratie
+                wireframes gemaakt.
+            </p>
+        </div>
+
+        <div class="textSpace">
+            <h2 class="subtitle">Portolio inspiratie</h2>
+
+            <p>
+                Ik ben door de 19 voorbeelden van online portfolio’s van Wix.com gegaan <cite>(Afbeelding 1)</cite>
+                en ik heb hier 1 uit gekozen die ik het beste vond.
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Online Portfolio Design/Afbeelding1.png" alt="Afbeelding1">
+                <p class="imageUndertitle">Afbeelding 1 Wix.com Portfolio Voorbeelden</p>
+            </div>
+
+            <h3>Sophie</h3>
+
+            <div class="imageDiv">
+                <img src="../../img/Online Portfolio Design/Afbeelding2.png" alt="Afbeelding2">
+                <p class="imageUndertitle">Afbeelding 2 Portfolio UX Designer Sophie Brittain</p>
+            </div>
+
+            <p>
+                Dit portfolio <cite>(Afbeelding 2)</cite> van Sophie Brittain, gespecialiseerd in branding en UI/UX
+                design, dient als
+                inspiratie voor mijn eigen portfolio. Haar website toont overtuigend haar vaardigheden in zowel UC als
+                Design met een goed gedefinieerde visuele stijl bestaande uit drie kleuren, geometrische vormen,
+                vectorlijniconen en voldoende witruimte. Ik heb voor dit voorbeeld gekozen omdat het een effectieve
+                manier laat zien om een carrièreportfolio vorm te geven en een professionele indruk achter te laten.
+            </p>
+            <p>
+                Sophie heeft er voor gekozen om de 'Home' knop een andere kleur dan de rest van de knoppen te geven. Dit
+                kan de gebruikerservaring verbeteren door de gebruiker te laten weten op welke pagina of sector die is.
+            </p>
+            <p class="middleText">
+                Mijn stijl zal dan net wat anders zijn dan die van Sophie, maar de UX komt op hetzelfde neer. Je kunt
+                haar website bekijken op <cite><a
+                        href="https://www.sophiebritt.com/">https://www.sophiebritt.com/</a></cite>.
+            </p>
+            <h3>Daniell</h3>
+
+            <div class="imageDiv">
+                <img src="../../img/Online Portfolio Design/Afbeelding3.png" alt="Afbeelding3">
+                <p class="imageUndertitle">Afbeelding 3 Portfolio Daniell Verwegen ICT & Media Design Semester 3</p>
+            </div>
+
+            <p>
+                Ook ben ik gaan kijken naar de portfolio van een hogere semester ICT en Media Design student, omdat hij
+                het semester al eens heeft behaald en omdat hij mij goede adviezen heeft gegeven.
+            </p>
+            <p>
+                Daniell (een nu semester 3 student bij het profiel ICT & Media Design) heeft vorig semester bij mij in
+                de klas gezeten en wat mij het meest inspireerde aan Daniell’s porfolio zijn de lichte, maar ook
+                duidelijke kleuren die hij heeft gebruikt <cite>(Afbeelding 3)</cite>.
+            </p>
+            <p>
+                Netals het portfolio van Sophie, worden er 3 – 5 kleuren gehanteerd. Wat de portfolio consistent en
+                overzichtelijk houdt.
+            </p>
+        </div>
+
+        <div class="textSpace">
+            <h2 class="subtitle">Research</h2>
+            <h3>Waarom een header?</h3>
+            <p>
+                Ik heb onderzoek gedaan naar waarom een website een header heeft. Ik ben op de website van
+                <cite><a
+                        href="https://ralfvanveen.com/begrippenlijst/header/">https://ralfvanveen.com/begrippenlijst/header/</a></cite>
+                uitgekomen.
+                De auteur van de website (Ralf van Veen Senior SEO-specialist) benadrukt dat een header cruciaal is voor
+                de gebruiksvriendelijkheid en het design van een website, aangezien het de eerste indruk vormt die
+                bezoekers van de ondernemer en de website krijgen. Ook omdat een goed ontworpen header positieve
+                effecten heeft op de klantbeleving en het organisch verkeer kan verhogen. Content die als subtekst in de
+                header staat, is erg relevant voor je SEO, Nogmaals Ralf van Veen.
+            </p>
+            <h3>Waarom een header?</h3>
+            <p>
+                Op de website van Daniel na is het mij opgevallen dat geen van de portfolio’s een footer hebben. Ik heb
+                mijn diagnose met een van mijn docenten gedeeld en die gaf als feedback dat dit zo is omdat het doel van
+                een footer aanvullende informatie bieden is, zoals contactgegevens, links naar zakelijke pagina's,
+                auteursrechten, en eventueel andere relevante details. Mijn docent gaf aan dat al deze details helemaal
+                niet relevant zijn voor mijn doelgroep (mijn docenten), omdat ze mij al kennen en omdat dat helemaal
+                niet het doel is van het portfolio. Daarom heb ik er voor gekozen om alleen de 'copyright' tekst onder
+                in de pagina te laten staan.
+            </p>
+            <h3>Manier van navigeren</h3>
+            <p>
+                Om de manier van navigeren door de website te bepalen, ben ik gaan kijken naar allerlei soorten manieren
+                van navigeren (Horizontale navigatiebalken, Verticale navigatiebalken, Gecentreerde navigatiebalken,
+                Hamburgermenu’s) en zo zijn er veel meer manieren van navigeren door een website.
+            </p>
+            <p>
+                Op <cite><a
+                        href="https://kinsta.com/nl/blog/verbeter-navigatie-site/">https://kinsta.com/nl/blog/verbeter-navigatie-site/</a></cite>
+                heb ik tips, voorbeelden en redenen om de navigatie van een site te verbeteren gevonden en hoe je de
+                gebruikerservaring kan optimaliseren.
+            </p>
+            <p>
+                Mette (een nu semester 5 student op het profiel ICT & Media Design) gebruikte een breadcrumbs navigatie.
+                Ik heb haar navigeermethode vorig semester op mijn porfolio toegepast <cite>(Afbeelding 4 en 5)</cite>.
+                Ik heb hier echter feedback op gekregen dat dit niet zo soepel werkte voor een aantal van mijn docenten,
+                Daarom ben ik ook bezig geweest met een nieuw online portfolio maken.
+            </p>
+            <div class="flexImages">
+
+                <div class="imageDiv">
+                    <img src="../../img/Online Portfolio Design/Afbeelding4.png" alt="Afbeelding4.png">
+                    <p class="imageUndertitle">Afbeelding 4 Breadcrumbs navigatie Portfolio Mette</p>
+                </div>
+
+                <div class="imageDiv">
+                    <img src="../../img/Online Portfolio Design/Afbeelding5.png" alt="Afbeelding5.png">
+                    <p class="imageUndertitle">Afbeelding 5 Breadcrumbs navigatie van mijn portfolio (Vorig semester)
+                    </p>
+                </div>
+
+            </div>
+            <p>
+                Wat het navigeren door de leeruitkomsten betreft, heb ik er voor gekozen om dat te doen netals hoe
+                Daniell dat heeft gedaan. Gewoon simpel en overzichtelijk. Je klikt op de “leeruitkomsten” knop in
+                de header of scrolt naar de leeruitkomsten sectie. Dan zie je de 6 leeruitkomsten met daaronder de
+                projecten die de leeruitkomst laten zien <cite>(Afbeelding 6)</cite>. Vervolgens hover je over een
+                project /
+                artikel en ziet kort wat informatie over het project waarna je met een klik bij het betreffende
+                project / artikel uitkomt.
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Online Portfolio Design/Afbeelding6.png" alt="Afbeelding6.png">
+                <p class="imageUndertitle">Afbeelding 6 Daniell’s Leeruitkomsten Sectie</p>
+            </div>
+
+            <p>
+                Om ervoor te zorgen dat de gebruiker van mijn site makkelijk naar boven kan scrollen op lange pagina's,
+                heb ik een knopje met een pijltje naar boven toegevoegd zoals Daniel dat ook heeft gedaan. Deze komt
+                dadelijk alleen tevoorschijn op pagina's waar je (veel) naar beneden moet scrollen.
+            </p>
+            <p>
+                De knop staat altijd rechtsonder vast als je naar beneden scrolt. Zo wil ik ook dat de header altijd
+                vast aan de bovenkant van het scherm om snel van pagina's te kunnen veranderen. Dit heeft de website van
+                Ralf van Veen waar ik het eerder over had ook zo gedaan.
+            </p>
+        </div>
+
+        <div class="textSpace">
+            <h2 class="subtitle">Het Design</h2>
+            <h3>Design 1.0</h3>
+            <p>
+                Mijn eerste ontwerp voor het portfolio zag er heel anders uit dan degene die ik nu heb. Mijn eerste
+                design was namelijk van vorig semester. Deze heb ik voor een tijdje ook voor dit semester gebruikt, maar
+                na mijn tweede portfolioreview bleek al snel dat daar veel aan veranderd moest worden.
+            </p>
+            <p>
+                De kleuren waren te donker, de gebruiksvriendelijkheid kon verbeterd worden en er zat eigenlijk niet
+                echt een onderzoek achter. Ik hem basically gekopieerd van een hogere semester studente (Mette) en toen
+                heb ik hem in mijn stijl aangepast <cite>(Afbeelding 7)</cite>.
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Online Portfolio Design/Afbeelding7.png" alt="Afbeelding7.png">
+                <p class="imageUndertitle">Afbeelding 7 Design 1.0</p>
+            </div>
+
+            <p class="middleText">
+                Ik ga de verantwoording van het oude design niet opnieuw uitleggen. Dat heb ik vorig semester al gedaan,
+                maar je kunt hem hieronder nog bekijken als Adobe XD prototype:
+            </p>
+            <iframe width="2256" height="1504"
+                src="https://xd.adobe.com/embed/433a1074-cd37-42f7-81f5-1623d59c998d-1669/" frameborder="0"
+                allowfullscreen></iframe>
+            <h3>Design 2.0</h3>
+            <p>
+                Mijn tweede ontwerp was naar mijn mening en ook die van mijn docenten al stukken beter <cite>(Afbeelding
+                    8)</cite>.
+                Hier had ik namelijk wel onderzoek voor gedaan. Ook zocht ik naar andere inspiraties op basis van die
+                onderzoeken, namelijk de inspiraties en onderzoeken die in artikel zijn benoemd.
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Online Portfolio Design/Afbeelding8.png" alt="Afbeelding8.png">
+                <p class="imageUndertitle">Afbeelding 8 Design 2.0</p>
+            </div>
+
+            <p class="middleText">
+                Zo ben ik op het ontwerp gekomen dat je op <cite>Afbeelding 8</cite> en het volgende prototype kunt
+                bekijken:
+            </p>
+            <iframe width="800" height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fqx6882rDotRmZZFm5hZWi0%2FICT-%2526-Media-Design-Online-Portfolio%3Fpage-id%3D36%253A607%26type%3Ddesign%26node-id%3D36-608%26viewport%3D389%252C318%252C0.1%26t%3D5Zq95Ej6bVAVbFPZ-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D36%253A608%26mode%3Ddesign"
+                allowfullscreen></iframe>
+            <h3>Design 3.0</h3>
+            <p>
+                Het derde ontwerp dat ik creëerde, is de laatste variant. Dit is het design van mijn huidige portfolio
+                website (Afbeelding 9). Althans mijn huidige website ziet er alsnog een klein beetje anders uit dan het
+                ontwerp, vanwege de nieuwe feedback die er altijd wel is en door een usability test die ik er later op
+                heb uitgevoerd, maar daar kom ik later op terug.
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Online Portfolio Design/Afbeelding9.png" alt="Afbeelding9.png">
+                <p class="imageUndertitle">Afbeelding 9 Design 3.0</p>
+            </div>
+
+            <p class="middleText">Je kunt Design 3.0 hieronder als Figma prototype bekijken:</p>
+            <iframe width="800" height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fqx6882rDotRmZZFm5hZWi0%2FICT-%2526-Media-Design-Online-Portfolio%3Fpage-id%3D104%253A2%26type%3Ddesign%26node-id%3D104-104%26viewport%3D531%252C276%252C0.11%26t%3DkbCwOwtmIJywpzc4-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D104%253A104%26mode%3Ddesign"
+                allowfullscreen></iframe>
+            <p>
+                Ik heb er voor gekozen om mijn laatste twee designs in Figma te maken, omdat ik veel over Figma heb
+                geleerd dit semester, maar ook van het vorige semester en ik vind Figma nu fijner werken dan Adobe XD.
+            </p>
+            <h3>logo</h3>
+            <p>
+                In principe heb ik niet echt een logo gemaakt als doel om te gebruiken voor mijn portfolio, omdat ik
+                vaker de feedback heb ontvangen van zowel docenten als medestudenten dat alleen je naam weergeven genoeg
+                is. Dat heb ik ook van mijn inspiratiebronnen meegekregen. Wel heb ik een logo voor de Favicon van mijn
+                website gemaakt (Afbeelding 10). Je ziet hem waarschijnlijk nu ook op je eigen tabblad. Dit logo gebruik
+                ik verder ook als kenmerk aan het begin van al mijn documenten.
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Online Portfolio Design/Afbeelding10.png" alt="Afbeelding10.png">
+                <p class="imageUndertitle">Afbeelding 10 Browser Tabblad Online Portfolio</p>
+            </div>
+
+            <p>
+                Voor dit logo heb ik in Canva verschillende variaties gemaakt <cite>(Afbeelding 11)</cite>.
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Online Portfolio Design/Afbeelding11.png" alt="Afbeelding11.png">
+                <p class="imageUndertitle">Afbeelding 11 Favicon Logo Iteraties</p>
+            </div>
+
+            <p>
+                Via <cite><a
+                        href="https://www.canva.com/design/DAF3Ck1_Zi8/LKfikRkMln_tImNnmiSzAg/edit?utm_content=DAF3Ck1_Zi8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">deze
+                        link</a></cite> kun je de iteraties ook bekijken op Canva.
+            </p>
+            <p>
+                Het eerste idee dat ik had voor de favicon was om de beginletter van mijn naam (de ‘B’) tussen twee HTML
+                brackets te plaatsen. Daar heb ik vele variaties van gemaakt. Uiteindelijk bleek dat bijna niet meer te
+                zien op het tabblad. Daarom heb ik er voor gekozen om de ‘B’ gewoon er uit te halen.
+            </p>
+            <p>
+                Zo konden de HTML brackets worden vergroot en kwam ik uit op het logo zoals die er nu uit ziet
+                <cite>(Afbeelding 12).
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Online Portfolio Design/Afbeelding12.png" alt="Afbeelding12.png">
+                <p class="imageUndertitle">Afbeelding 12 Huidige Favicon logo</p>
+            </div>
+
+        </div>
+        <div class="textSpace">
+            <h2 class="subtitle">Van 2.0 naar 3.0</h2>
+            <p class="middleText">
+                Zoals je in het vorige hoofdstuk al kon zien lijken het tweede en derde erg veel op elkaar, maar net
+                niet als je begrijpt wat ik bedoel. Hieronder leg ik de verschillen uit.
+            </p>
+            <p>
+                De homepagina van design 2.0 is een mix van de homepagina van Daniell en Sophie die ik als inspiratie
+                heb gebruikt. Ook weer met mijn stijl er op toegepast. De navigatie in de header en de welkom tekst met
+                een afbeelding er langs heb ik van het portfolio van Sophie <cite>(Afbeelding 13)</cite>.
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Online Portfolio Design/Afbeelding13.png" alt="Afbeelding13.png">
+                <p class="imageUndertitle">Afbeelding 13 Homepagina Design 2.0</p>
+            </div>
+
+            <p class="middleText">
+                Ook het idee om de header en het achter wit te houden zijn van Sophie <cite>(Afbeelding 14)</cite>.
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Online Portfolio Design/Afbeelding14.png" alt="Afbeelding14.png">
+                <p class="imageUndertitle">Afbeelding 14 Portfolio UX Designer Sophie Brittain</p>
+            </div>
+
+            <p class="middleText">
+                Ik heb er dan voor gekozen om gebroken wit (#F5F5F5) te gebruiken i.p.v. het originele wit (#FFFFF),
+                want dat is iets rustiger op de ogen.
+                </pcl>
+            <p>
+                Bij Design 3.0 heb ik er echter voor gekozen om iets meer kleuren te gebruiken <cite>(Afbeelding
+                    15)</cite>.
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Online Portfolio Design/Afbeelding15.png" alt="Afbeelding15.png">
+                <p class="imageUndertitle">Afbeelding 15 Portfolio Homepagina Design 3.0</p>
+            </div>
+
+            <h3>Kleurenpalet</h3>
+            <p>
+                Voor ik Design 2.0 en 3.0 heb gemaakt, had ik al een kleurenpalet opgesteld <cite>(Afbeelding
+                    16)</cite>.
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Online Portfolio Design/Afbeelding16.png" alt="Afbeelding16.png">
+                <p class="imageUndertitle">Afbeelding 16 Kleurenpalet Online Portfolio</p>
+            </div>
+
+            <div class="alignTextandImg">
+                <p class="sideText">
+                    De eerste kleur (#FA8500) is de kleur oranje die Daniell op zijn portfolio heeft toegepast
+                    <cite>(Afbeelding 17)</cite>.
+                    <br><br>
+                    De tweede kleur <cite>(#B9DEF0)</cite> is een lichtere kleur blauw dan Daniell heeft toegepast op
+                    zijn portfolio.
+                    <br><br>
+                    De derde kleur <cite>(#FDC94F)</cite> is de kleur goud en komt van een foto van mij die een Ai heeft
+                    ontwikkeld. Je ziet hem ook terug op de homepagina’s van mijn designs.
+                    <br><br>
+                    De vierde kleur <cite>(#00000)</cite> is zwart, omdat zwart bijna overal op kan worden gebruikt. Het
+                    is een standaard kleur.
+                    <br><br>
+                    De vijfde kleur <cite>(#F5F5F5)</cite> is zoals ik zei gebroken wit en heb ik gekozen omdat die
+                    rustiger op het oog is dan de originele kleur wit <cite>(#FFFFF)</cite>.
+                </p>
+
+                <div class="imageDiv">
+                    <img src="../../img/Online Portfolio Design/Afbeelding17.png" alt="Afbeelding17.png">
+                    <p class="imageUndertitle">Afbeelding 17 Portfolio Daniell</p>
+                </div>
+
+            </div>
+            <p>
+                Het idee om de header een andere kleur dan de achtergrond te geven en het idee om een kader om mijn
+                naam te plaatsen kwam van mijn neefje. Hij liet mij zien hoe de Kruidvat hun headers in
+                verschillende kleuren heeft staan <cite>(Afbeelding 18)</cite> en zij met een kader er voor zorgen
+                dat de tekst uitblinkt.
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Online Portfolio Design/Afbeelding18.png" alt="Afbeelding18.png">
+                <p class="imageUndertitle">Afbeelding 18 Header Kruidvat</p>
+            </div>
+
+            <p>
+                Nu is de header van de Kruidvat iets kleurrijker dan die van mij en bevatten ze hele andere elementen
+                dan mijn header, omdat het een webshop is. Maar het gaat om het idee.
+            </p>
+            <p>
+                De markeringen die ik telkens gebruik op mijn homepagina refereren naar code <cite>(Afbeelding 19 en
+                    Afbeelding 20)</cite>. Mijn functieprofiel als AC (Associate Degree) student is frontend Developer
+                en dat wilde
+                ik daarom ook terug laten komen in mijn portfolio. Daarnaast vind ik coderen en programmeren erg leuk om
+                te doen. Ik hoop op een dag full stack Developer te worden. Dat is dat je zowel backend als frontend
+                beheerst, maar mijn voorlopige doel is om frontend developer te worden. Als dat is gelukt, ga ik me ook
+                op backend focussen. Ik ben al bezig om JavaScript te leren.
+            </p>
+            <div class="flexImages">
+
+                <div class="imageDiv">
+                    <img src="../../img/Online Portfolio Design/Afbeelding19.png" alt="Afbeelding19.png">
+                    <p class="imageUndertitle">Afbeelding 19 HTML tags om mijn naam</p>
+                </div>
+
+                <div class="imageDiv">
+                    <img src="../../img/Online Portfolio Design/Afbeelding20.png" alt="Afbeelding20.png">
+                    <p class="imageUndertitle">Afbeelding 20 Welkomtekst als JavaScript Functie</p>
+                </div>
+
+            </div>
+            <br><br>
+            <p>
+                Wat Sophie en Daniell niet hebben gedaan in hun portfolio’s, maar ik wel is dat mijn header vast aan
+                de bovenkant van de pagina staat. Ik heb hier voor gekozen omdat dit het navigeren makkelijker maakt
+                voor de gebruiker. Ook kun je door de kleuren van de knoppen zien op welke pagina je bent. Dat idee
+                komt wel van Sophie af en heb ik ook later ook uitgetest op gebruikerservaring.
+            </p>
+            <br>
+            <p>
+                Je zult het wel gemerkt hebben bij het surfen op deze website.
+            </p>
+            <br><br>
+            <p>
+                De Usability test die ik heb uitgevoerd op mijn docenten wordt in <cite><a
+                        href="../../Linked_Files/Online Portfolio Design/Online%20Portfolio%20Usability%20Test%20Verantwoording.pdf">dit</a></cite>
+                document verantwoord. Hierdoor
+                worden bepaalde veranderingen op de website ten op zichte van het laatste design iets duidelijker.
+            </p>
+        </div>
+
+        <div class="textSpace">
+            <h2 class="subtitle">Reflectie</h2>
+            <p>
+                Voor het maken van het online portfolio heb ik veel onderzoek gedaan naar hoe andere mensen hun websites
+                ontwerpen. Ik keek naar voorbeelden van portfolio's van professionals en studenten, zoals Sophie en
+                Daniell om te zien hoe zij het hebben aangepakt. Ik leerde over het belang van een header voor het
+                gemakkelijk navigeren en het maken van een goede eerste indruk en waarom sommige websites kiezen om geen
+                footer te gebruiken. Ook ontdekte ik verschillende manieren van navigeren, zoals breadcrumbs, maar
+                uiteindelijk koos ik voor een eenvoudigere methode die ik heb getest.
+            </p>
+            <p>
+                Door dit alles heb ik geleerd hoe belangrijk het is om goed te kijken naar wat anderen doen en hieruit
+                de beste ideeën te kiezen om mijn eigen website beter en gebruiksvriendelijker te maken.
+            </p>
+        </div>
+
+        <div class="textSpaceSources" id="srces">
+            <h2 class="subtitle">Bewijslast</h2>
+            <p class="middleText">Je kunt de designs en meerdere bronnen die bij dit project horen hieronder vinden.</p>
+            <div class="srcLinks">
+
+                <a href="../../Linked_Files/Online Portfolio Design/Favicon Iteraties.zip" target="_blank"
+                    class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/zip.png"
+                        alt="zip.png"><br><span>Favicon Iteraties</span></a>
+
+                <a href="../../Linked_Files/Online Portfolio Design/Online Portfolio Design 1.0.zip" target="_blank"
+                    class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/zip.png"
+                        alt="zip.png"><br><span>Online Portfolio Design 1.0</span></a>
+
+                <a href="../../Linked_Files/Online Portfolio Design/Online Portfolio Design 2.0.zip" target="_blank"
+                    class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/zip.png"
+                        alt="zip.png"><br><span>Online Portfolio Design 2.0</span></a>
+
+                <a href="../../Linked_Files/Online Portfolio Design/Online Portfolio Design 3.0.zip" target="_blank"
+                    class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/zip.png"
+                        alt="zip.png"><br><span>Online Portfolio Design 3.0</span></a>
+
+                <a href="../../Linked_Files/Online Portfolio Design/Online Portfolio Design Verantwoording.pdf"
+                    class="webLink" target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Online Portfolio Design Verantwoording</span></a>
+
+            </div>
+        </div>
+        <!-- --- -->
+
+        <br>
+        <div class="pagination">
+            <a href="#" class="prevButton">Vorige project</a>
+            <div class="pageIndicator"></div>
+            <a href="#" class="nextButton">Volgende project</a>
+        </div>
+
+
+        <button id="scrollToTopBtn"><svg xmlns="http://www.w3.org/2000/svg" class="up-arrow">
+                <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg></button>
+
+        <p class="copyrightText">Copyright ©2023 By Bavli Armanyous, All Rights Reserved</p>
+    </main>
 </body>
 
 </html>
