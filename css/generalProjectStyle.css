@@ -47,7 +47,7 @@ img {
 
 p {
   text-align: left;
-  max-width: 65vw;
+  max-width: 69vw;
   min-width: 50vw;
   margin: auto 0;
   color: var(--portfolioWhite);
@@ -175,8 +175,9 @@ cite a:hover {
 }
 
 .sideText {
-  min-width: 35vw;
+  min-width: 36vw;
   margin-bottom: 3rem;
+  margin-top: revert;
 }
 
 .flexImages {
@@ -197,6 +198,7 @@ cite a:hover {
   width: 100%;
   height: auto;
   margin: auto;
+  max-width: 20vw;
 }
 
 .imageDiv {
@@ -264,6 +266,7 @@ cite a:hover {
 
 .alignTextandImg .imageDiv {
   margin-right: 16%;
+  max-width: 20vw;
 }
 
 .whiteLineDiv {

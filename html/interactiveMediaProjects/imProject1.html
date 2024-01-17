@@ -27,17 +27,47 @@
 
     <style>
         [alt="Afbeelding1.png"],
-        [alt="Afbeelding2.png"],
-        [alt="Afbeelding3.png"],
-        [alt="Afbeelding4.png"] {
+        [alt="Afbeelding2.png"]{
             max-width: 50vw !important;
             min-height: 20vh !important;
+        }
+
+        [alt="Afbeelding3.png"] {
+            z-index: 100;
+        }
+
+        [alt="Afbeelding3.png"],
+        [alt="Afbeelding4.png"] {
+            max-width: 50vw;
+            min-height: 10vh;
+            transform: scale(1.1);
+        }
+
+        [alt="Afbeelding3.png"]:hover,
+        [alt="Afbeelding4.png"]:hover {
+            transform: scale(1.5);
+        }
+
+        [alt="Afbeelding7.png"] {
+            max-width: fit-content;
+        }
+
+        [alt="Afbeelding7.png"]:hover {
+            transform: scale(1.5);
+        }
+
+        [alt="Afbeelding11.png"] {
+            max-width: 10vw !important;
         }
 
         [alt="Afbeelding12.png"],
         [alt="Afbeelding13.png"],
         [alt="Afbeelding15.png"] {
             max-width: 50vw;
+        }
+
+        [alt="Afbeelding14.png"] {
+            max-width: 15vw;
         }
 
         [alt="Afbeelding15.png"] {
@@ -51,14 +81,6 @@
 
         [alt="Afbeelding10.png"] {
             max-width: 60vw !important;
-        }
-
-        [alt="Afbeelding11.png"] {
-            max-width: 17vw;
-        }
-
-        [alt="Afbeelding14.png"] {
-            max-width: 24vw;
         }
 
         .mainHeading {
