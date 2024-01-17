@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "../researchProjects/rsProject2.html",
         "../researchProjects/rsProject3.html",
         "../communicationProjects/cmProject1.html",
-        // "../communicationProjects/cmProject2.html",
+        "../communicationProjects/cmProject2.html",
         "../professionalIdenitityProjects/pfiProject1.html",
     ];
 
