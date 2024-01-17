@@ -28,7 +28,7 @@
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   min-height: 26rem;
-  min-width: 90vw;
+  min-width: 95vw;
   padding: 1rem 2rem 2rem;
 }
 
@@ -112,7 +112,7 @@
 }
 
 #dsProjects a.container:last-of-type {
-  margin-right: 1rem;
+  margin-right: 3rem;
 }
 
 #imProject1container,
