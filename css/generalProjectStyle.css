@@ -412,3 +412,14 @@ a span {
 .legend .added {
   color: green;
 }
+
+.videoDiv {
+  max-width: none;
+  max-height: none;
+  padding-bottom: inherit;
+}
+
+.videoDiv iframe{
+  margin-bottom: unset;
+  padding-bottom: unset;
+}
