@@ -92,7 +92,8 @@ li {
 }
 
 .image {
-    width: 20vw;
+    width: 15rem;
+    max-width: 15vw;
     height: fit-content;
     max-height: 49vh;
     float: right;
