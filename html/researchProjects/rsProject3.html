@@ -58,6 +58,109 @@
             right: 28vw;
             margin-top: 6rem;
         }
+
+        .researchQuestion {
+            font-weight: 600;
+            padding: inherit;
+        }
+
+        ol {
+            border: none;
+        }
+
+        ol>p {
+            padding: unset;
+            margin-bottom: revert;
+            max-width: min-content;
+        }
+
+        ol>ol {
+            border: none;
+            padding: unset;
+        }
+
+        .custom-ol {
+            counter-reset: section;
+        }
+
+        .custom-ol>li {
+            list-style-type: none;
+            counter-increment: section;
+        }
+
+        .custom-ol>li:before {
+            content: counter(section) ". ";
+            display: none;
+        }
+
+        .custom-ol>li>ol {
+            counter-reset: subsection 0;
+        }
+
+        .custom-ol>li>ol>li {
+            list-style-type: none;
+            counter-increment: subsection;
+        }
+
+        .custom-ol>li>ol>li:before {
+            content: counter(section) "." counter(subsection) " ";
+            color: var(--portfolioBlack);
+            font-weight: 600;
+        }
+
+        .custom-ol2 {
+            counter-reset: section 1;
+        }
+
+        .custom-ol2>li {
+            list-style-type: none;
+            counter-increment: section;
+        }
+
+        .custom-ol2>li:before {
+            content: counter(section) ". ";
+            display: none;
+        }
+
+        .custom-ol2>li>ol {
+            counter-reset: subsection 0;
+        }
+
+        .custom-ol2>li>ol>li {
+            list-style-type: none;
+            counter-increment: subsection;
+        }
+
+        .custom-ol2>li>ol>li:before {
+            content: counter(section) "." counter(subsection) " ";
+            color: var(--portfolioBlack);
+            font-weight: 600;
+        }
+
+
+
+        .scenario {
+            list-style-type: none;
+        }
+
+        .scenario>span {
+            color: cornsilk;
+            font-weight: 600;
+            font-style: normal !important;
+            padding-right: 10px;
+        }
+
+        .liQuestions {
+            list-style-type: none;
+            font-weight: 600;
+        }
+
+        .goal span {
+            font-style: normal !important;
+            color: black;
+            font-weight: 600;
+            padding-right: 10px;
+        }
     </style>
 
 </head>
@@ -111,7 +214,8 @@
         </div>
 
         <div class="projectTitle">
-            <h1><span class="nameHighlight">&lt;/</span>Online Portfolio Usability Test<span class="nameHighlight">></span></h1>
+            <h1><span class="nameHighlight">&lt;/</span>Online Portfolio Usability Test<span
+                    class="nameHighlight">></span></h1>
             <h4>Research</h4>
         </div>
 
@@ -119,261 +223,384 @@
         <div class="textSpace">
             <h2 class="subtitle">Projectintroductie</h2>
             <p>
-                Bij ons eerste project dit semester moesten we samenwerken in een team van studenten om een eigen
-                huisstijl te ontwikkelen voor een muziekartiest. We moeten een brandguide en een contentstrategie
-                presenteren als onderdeel van onze opdracht. Mijn team bestaat uit Artun, Danny, Thammy en natuurlijk
-                ikzelf.
+                Omdat ik tijdens mijn 2de portfolio review heb meegekregen dat de keuzes rondom mijn portfolio niet goed
+                onderbouwd zijn en dat ik testen moet uitvoeren op mijn portfolio, ben ik opnieuw onderzoek gaan doen
+                naar de UX en het design van mijn portfolio en ben ik gaan zoeken naar een manier om de
+                gebruikerservaring te testen van mijn portfolio. Ook is dit een goede kans om me meer te verdiepen in de
+                wereld van UX en UI.
             </p>
         </div>
         <!-- --- -->
 
         <div class="textSpace">
             <h2 class="subtitle">Inleiding</h2>
-            <br>
             <p>
-                De opdracht die we hebben gekregen voor het branding project als groep was om als “Media Bedrijf” een
-                artiest bekender te maken (d.m.v. social media en branding) en om een eigen stijl voor die artiest te
-                creëren. De artiest die aan onze groep was aangewezen heet Eline Wijnands. Haar artiestennaam is evi.
-                Eline is een beginnend zangeres en songwriter en wij moesten voor haar een brandguide en
-                contentstrategie maken.
+                In de verslag laat ik zien hoe mijn portfolio is getest d.m.v. Usability testing. Usability testing s
+                een evaluatiemethode waarbij gebruikers actief betrokken worden bij het testen van een product of
+                systeem, met als doel de bruikbaarheid en gebruiksvriendelijkheid te beoordelen. Tijdens deze test wordt
+                geobserveerd hoe gebruikers taken uitvoeren, problemen ondervinden en hoe gemakkelijk ze kunnen
+                interacteren met de interface, wat waardevolle inzichten oplevert om het ontwerp te verbeteren.
             </p>
             <p>
-                In dit artikel wordt en gefocust op de onderzoeken die zijn gedaan voor het maken van de brandguide en
-                contentstrategie voor evi.
+                Mijn doelgroep zijn mijn docenten, want zij gaan mijn portfolio uiteindelijk beoordelen. Ik ga dus de
+                test uitvoeren omdat ik de gebruikerservaring voor mijn docenten wil verbeteren, maar ook omdat ik dan
+                (naast het onderzoek dat ik al heb gedaan naar de UX van mijn portfolio) een goede onderbouwing heb voor
+                de keuzes die ik heb onderzocht.
             </p>
         </div>
 
         <!-- --- -->
         <div class="textSpace">
-            <h2 class="subtitle">Research</h2>
-            <h3>Stylescape evi</h3>
+            <h2 class="subtitle">Usability testing</h2>
+            <h3>Waarom Usability testing?</h3>
             <p>
-                Het eerste dat we moesten doen voor haar was een stylescape maken. Een stylescape is eigenlijk een soort
-                moodboard, maar dan wat specifieker. De stylescape is een canvas waarin je een identiteit van een
-                bedrijf of persoon in terug ziet. Het is een combinatie van visuele elementen, kleuren, typografie,
-                fotografie, illustratie en andere stijlelementen.
+                Volgens cmdmethods.nl is het onmogelijk is om een ontwerp in één keer perfect te krijgen,
+                ongeacht de hoeveelheid ervaring die je hebt. Ze moedigen aan om een klein aantal gebruikers te vragen
+                om taken uit te voeren met een (papieren) prototype van de oplossing.
             </p>
             <p>
-                We hebben als groep dus besloten dat we allemaal en eigen versie van de stylescape maken voor evi en dat
-                we samen dan achteraf beslissen welke we naar haar gaan opsturen, zodat ze niet overweldigd wordt met
-                allerlei verschillende stylescapes. Ik heb er zelf maar 1 gemaakt, maar een paar van mijn groepsgenoten
-                hadden er meer. Uiteindelijk is het mijn stylescape niet geworden helaas, maar dat had ik eigenlijk ook
-                niet verwacht, want ik weet van mezelf dat ik nog niet zo sterk ben in design. Het maken van de
-                stylescape heeft mij echter wel wat meer creativiteit toegebracht doordat ik met verschillende vormen,
-                kleuren en lettertypes kon puzzelen.
+                Tijdens deze test worden gebruikers vaak gevraagd om hardop na te denken, zodat je kunt begrijpen wat er
+                in hun hoofd omgaat. Bij een formatieve gebruikerstest is het doel om zoveel mogelijk problemen te
+                ontdekken die gebruikers tegenkomen bij het gebruik van de site.
             </p>
-            <p class="middleText">
-                Op Afbeelding 1 zie je de Stylescape die ik heb gemaakt en op Afbeelding 2 zie je de stylescape die het
-                wel is geworden.
-            </p>
-
-            <div class="imageDiv">
-                <img src="../../img/Branding evi Research/Afbeelding1.png" alt="Afbeelding1.png">
-                <p class="imageUndertitle">Afbeelding 1 Mijn stylescape voor evi</p>
-            </div>
-
-            <p>
-                Omdat ik in het voorjaar van semester 2 niet echt de kans heb gekregen om door te nemen wat een
-                stylescape nou precies is en wat de gedachte erachter is, heb ik ervoor gekozen om deze keer er wat meer
-                onderzoek naar te doen. Dit onderzoek is terug te vinden via <cite><a
-                        href="../../Linked_Files/Online Portfolio Usability Test/Online Portfolio Usability Test.pdf">deze
-                        link</a></cite>.
+            <p>>
+                Bij een gebruikerstest wordt het gedrag van gebruikers getoetst aan vooraf ingestelde doelen. Het
+                benadrukt dus het iteratieve karakter van ontwerpprocessen, waarbij feedback van gebruikers wordt
+                ingezet om voortdurende verbeteringen aan te brengen.
             </p>
             <p>
-                In het onderzoek wordt uitgelegd wat een Stylescape is en hoe het gebruikt wordt.
+                In een video op de CMD methods website <cite><a
+                        href="https://cmdmethods.nl/cards/lab/usability-testing">(https://cmdmethods.nl/cards/lab/usability-testing)</a></cite>
+                wordt de rol
+                van het usability-testteam bij de Rabobank uitgelicht. Dit team zet verschillende skills in, zoals
+                service design en interactieontwerp, maar ook gebruikersonderzoek en natuurlijk usability testen. Ze
+                leggen de nadruk op hoe belangrijk het is om usability testen te combineren met andere methoden.
+                Daarnaast is het cruciaal om objectief te blijven tijdens het testen en interviewtechnieken te gebruiken
+                om echt te snappen wat de gebruiker wil en nodig heeft.
+            </p>
+            <h3>Onderzoeksvraag:</h3>
+            <p class="researchQuestion">
+                Hoe gebruiksvriendelijk is mijn nieuwe online portfolio voor docenten en kunnen zij gemakkelijk
+                benodigde
+                informatie vinden?
             </p>
             <p>
-                Een Stylescape is een verzameling van afbeeldingen, kleuren, lettertypes en andere ontwerpelementen die
-                samen een bepaalde sfeer of stijl laten zien voor iets zoals een merk of een website. Dit helpt om
-                ideeën duidelijk te maken aan anderen, het helpt tijd en geld te besparen, inspiratie te geven en te
-                zorgen dat alle elementen bij elkaar passen. Dit onderzoek laat zien hoe belangrijk het is om de juiste
-                stijl te kiezen zodat het past bij wat je wilt uitstralen.
+                Het doel bij deze onderzoeksvraag is om erachter te komen in hoeverre mijn nieuwe portfolio
+                gebruiksvriendelijk is en of de content vindbaar is voor mijn docenten. Ook wil ik er achter komen of er
+                verbetering nodig is aan mijn online portfolio.
             </p>
             <p>
                 In het onderzoek vind je ook de verantwoording voor de stylescape die ik heb gemaakt voor evi.
             </p>
+            <h3>Testmethode</h3>
+            <p>
+                Om te bepalen mijn nieuwe portfolio beter presteert voor mijn docenten, zou ik verschillende factoren
+                moeten overwegen.
+            </p>
+            <p>
+                Ten eerste zou ik de gebruiksvriendelijkheid van de prototypes moeten evalueren, zoals de navigatie, het
+                ontwerp en de algehele ervaring voor de docenten.
+            </p>
+            <p>
+                Ten tweede zou ik ook de functionaliteit van de prototypes moeten beoordelen, zoals de snelheid,
+                betrouwbaarheid en beschikbare functies. Verder zou ik ook feedback van de docenten kunnen verzamelen om
+                te begrijpen hoe ik de optimale ervaring kan creëren.
+            </p>
+            <p>
+                Door deze factoren te overwegen, kan ik bepalen welk online prototype beter presteert voor mijn
+                docenten.
+            </p>
+            <h3>De test</h3>
+            <p>
+                De test bestaat uit 1 scenario die ik mijn docenten laat uitvoeren op mijn nieuwe verbeterde portfolio
+                prototype. Bij dit scenario zijn er wat standaard vragen, zoals “Is het makkelijk gegaan?”
+                of “Wat vond je beter gaan?”. De vragen plaats ik in een tabel schema met een schaal van 1 – 5. Dit
+                schema vult de testpersoon dan tijdens de test in, terwijl ik af en toe een vraag stel over waarom de
+                keuze is gemaakt zoals de tester hem heeft ingevuld. Op deze manier kan ik veel kwalitatieve-, maar ook
+                kwantitatieve informatie verzamelen.
+            </p>
+            <h3>Waarom een schema gebruiken?</h3>
+            <p>
+                Arjan (docent) adviseerde om bij het testen een schema te gebruiken waarbij een schaal zit van 1 – 5. De
+                schaal telt niet als puntentelling, maar is bedoeld om de gebruiker te ondersteunen in het maken van
+                zijn/ haar keuzes en om geen halve antwoorden te ontvangen waar je niet veel mee kan.
+            </p>
+            <p>
+                De gebruiker weet vaak zelf niet hoe die moet antwoorden op bepaalde vragen. Een flauw voorbeeld, maar
+                als je iemand vraagt wat hij / zij van de header op een website vindt, dan is het antwoord
+                waarschijnlijk “Goed” of “Het werkt”. Ja, maar hoe goed vind je het en waarom? Waarom werkt het voor
+                jou? Hierbij komt natuurlijk ook de manier van vraagstelling bij kijken, maar ik denk dat dit voorbeeld
+                mijn punt wel onderbouwd.
+            </p>
         </div>
 
         <div class="textSpace">
-            <h2 class="subtitle">Tone of Visual evi</h2>
+            <h2 class="subtitle">Scenario onderzoek</h2>
             <p>
-                Na het maken van de stylescape was de opdracht om aan de brandguide voor evi te beginnen. Hierin moet
-                duidelijk worden weergegeven welke kleuren, typografie illustraties, etc. moet worden gebruikt en
-                eventueel hoe het niet mag worden gebruikt. Een soort handleiding voor het gebruik van de stijl.
+                Om erachter te komen hoe ik effectieve scenario’s kan bedenken voor het testen op mijn docenten, heb ik
+                ChatGPT uitgelegd hoe mijn online portfolio in elkaar zit en heb ik gevraagd of die daar 3 scenario’s
+                bij kan bedenken. Waarom 3? Omdat ik het idee had dat ik uit 3 scenario’s voldoende informatie kon
+                verkrijgen. Uiteindelijk bleek na een gesprek met een van mijn docenten dat 2 scenario’s ook wel
+                voldoende zijn. Uiteindelijk heb ik er 1 scenario van gemaakt en wat algemene vragen.
             </p>
             <p>
-                Bij deze opdracht was ik verantwoordelijk voor het maken van een Tone of Visual voor evi.
+                Voor het opstellen van scenario’s moet ik er eerst achter komen hoe je een scenario moet opstellen? En
+                aan welke eisen deze moet voldoen. Hiervoor heb ik een Scenario onderzoek gedaan.
+            </p>
+            <h3>Conclusie scenario onderzoek</h3>
+            <p>
+                Om de vraag "Hoe moet je een scenario opstellen en aan welke eisen moet deze voldoen" in het kort te
+                beantwoorden is de conclusie dat een effectief scenario duidelijk moet zijn om de deelnemer in staat te
+                stellen de taak uit te laten voeren zonder te veel aanwijzingen te geven. Het is belangrijk om
+                deelnemers te voorzien van alle benodigde informatie voor de taak, zonder hen te vertellen waar ze
+                precies moeten klikken.
             </p>
             <p>
-                Ik heb een aantal variaties gemaakt van de Tone of Visual <cite>(Afbeelding 2)</cite>. Je kunt het
-                eindresultaat
-                vinden op <cite>Afbeelding 3</cite>.
+                Tijdens een test is het cruciaal om de echte wereld zoveel mogelijk na te bootsen, waarbij
+                representatieve gebruikers worden gerekruteerd en elke taakscenario realistisch is, typisch voor hoe
+                mensen het systeem daadwerkelijk gebruiken zonder het antwoord weg te geven.
             </p>
-            <div class="flexImages">
+            <ol>
+                <p>Een Scenario moet:</p>
+                <li>
+                    een realistische en gangbare situatie weergeven, zoals mensen het systeem doorgaans gebruiken in
+                    hun eigen tijd en tijdens hun gebruikelijke activiteiten.
+                </li>
+                <li>
+                    gebruikers aanmoedigen om actief met de interface te communiceren en taken uit te voeren, i.p.v.
+                    passief instructies te laten volgen.
+                </li>
+                <li>
+                    de gebruiker niet direct het antwoord verklappen, maar moet in plaats daarvan de nodige context
+                    en informatie verschaffen om de taak adequaat uit te voeren.
+                </li>
+            </ol>
+            <h3>Scenario en vragen</h3>
+            <p class="scenario"><span>Scenario:</span>Je wilt de bewijslast van de leeruitkomst ‘Development’ in
+                het Online
+                portfolio beoordelen.
+            </p>
+            <p>
+                Je bent een docent die de bewijslast van een student wil evalueren met betrekking tot de
+                leeruitkomst ‘Development’ via zijn online portfolio. Je wilt specifieke voorbeelden zien die zijn
+                Development vaardigheden aantonen.
+            </p>
+            <ol class="custom-ol">
+                <li>
+                    <p class="liQuestions">Vragen</p>
+                    <ol>
+                        <li>Op een schaal van 1 tot 5, hoe eenvoudig was het voor jou om de bewijslasten voor de
+                            leeruitkomst 'Development' te vinden?</li>
+                        <p class="goal"><span>Doel van vraag:</span>Er achter komen of de bewijslasten eenvoudig te
+                            vinden zijn of niet.</p>
+                        <li>Op een schaal van 1 tot 5, in hoeverre zijn de bewijslasten georganiseerd en gestructureerd,
+                            waardoor je efficiënt kon beoordelen of de leeruitkomst 'Development' werd beheerst?</li>
+                        <p class="goal"><span>Doel van vraag:</span>Er achter komen of de bewijslasten duidelijk de
+                            betreffende leeruitkomst.</p>
+                    </ol>
+                </li>
+            </ol>
 
-                <div class="imageDiv">
-                    <img src="../../img/Branding evi Research/Afbeelding2.png" alt="Afbeelding2.png">
-                    <p class="imageUndertitle">Afbeelding 2 Tone of Visual evi 1.0 – 1.3</p>
-                </div>
+            <p class="scenario"><span>Overige vragen:</span>Algemene vragen over UI en Design.</p>
+            <ol class="custom-ol2">
+                <li>
+                    <p class="liQuestions">Vragen</p>
+                    <ol>
+                        <li>Op een schaal van 1 tot 5, hoe makkelijk vond je het om te navigeren door de website?</li>
+                        <p class="goal"><span>Doel van vraag:</span>Er achter komen of de structuur en de stijl van mijn
+                            portfolio consistent is.</p>
 
-                <div class="imageDiv">
-                    <img src="../../img/Branding evi Research/Afbeelding3.png" alt="Afbeelding3.png">
-                    <p class="imageUndertitle">Afbeelding 3 T.o.V. 1.4</p>
-                </div>
+                        <li>In hoeverre vind je het portfolio consistent?</li>
+                        <p class="goal"><span>Doel van vraag:</span>Er achter komen of de bewijslasten duidelijk de
+                            betreffende leeruitkomst.</p>
 
-            </div>
-            <p>
-                Het onderzoek naar de Tone of Visual en de verantwoording naar alle andere variaties via <cite><a
-                        href="../../Linked_Files/Branding evi Research/Tone of Visual Research.pdf">deze link</a></cite>
-                bekijken.
-            </p>
-            <p>
-                In dit onderzoek heb ik onderzocht wat de Tone of Visual is en wat het doel ervan is. De Tone of Visual
-                verwijst naar hoe beelden in kunst, ontwerp en communicatie worden gebruikt om specifieke gevoelens of
-                gedachten over te brengen. Elementen zoals kleurgebruik, contrast, compositie, onderwerp, licht en
-                schaduw en typografie spelen hierbij een rol. Na veel feedback van teamgenoten en Eline zelf heb ik de
-                Tone of Visual aangepast om zonder woorden de gewenste sfeer van Eline over te brengen en zo mijn
-                bijdrage gedaan aan de brandguide die mijn groepje en ik voor haar hebben gemaakt.
-            </p>
+                        <li>Zijn de kleuren van het portfolio storend bij het gebruiken van de website?</li>
+                        <p class="goal"><span>Doel van vraag:</span>Er achter komen of de kleuren van de website de
+                            structuur en duidelijkheid van de website niet belemmeren.</p>
+
+                        <li>Is er iets aan de website dat je stoorde of dat je onprettig vond dat we nog niet hebben
+                            besproken?</li>
+                        <p class="goal"><span>Doel van vraag:</span>De deelnemer de mogelijkheid geven om zijn/haar
+                            mening te geven over iets op de website dat stoorde waar ik niet bij stil heb gestaan.</p>
+                    </ol>
+                </li>
+            </ol>
             <p class="middleText">
-                Je kunt ons volledige brandguide hieronder bekijken:
+                Je kunt de volledige scenario onderzoek hieronder bekijken:
             </p>
-            <iframe src="../../Linked_Files/Branding evi Research/Brand Guide evi (Final).pdf" width="100%"
-                height="600px"></iframe>
-            <p>Ik heb voor mijzelf nog even onderzoek gedaan naar wat brandguides nou precies zijn en waarom ze worden
-                gebruikt, omdat ik hier vorig semester niet echt de kans voor heb gekregen om me hier in te verdiepen.
-                Mijn
-                bevindingen kan je in <cite><a
-                        href="../../Linked_Files/Branding evi Research/Brand Guide Research.pdf">dit</a></cite> document
-                vinden.
-            </p>
-            <p>
-                Samengevat is de conclusie van dit onderzoek dat een Brand Guide een document is dat duidelijke
-                richtlijnen biedt voor hoe een merk moet worden behandeld en gecommuniceerd.
-            </p>
-            <p>
-                De Brand Guide omvat onder andere de verbale en visuele identiteit, een kleurenpalet, de typografie en
-                het logo-gebruik van het merk/ de artiest. Het is van strategisch belang op aspecten zoals visie en
-                merkwaarden voor creatieve doeleinden. Het biedt richtlijnen voor lettertypes, kleuren en visuals.
-            </p>
-            <p>
-                Kortom, de Brand Guide blijkt een waardevol instrument te zijn voor het bewaken en versterken van de
-                consistentie en identiteit van een merk op diverse niveaus, zowel strategisch als creatief.
-            </p>
+            <div>
+                <iframe src="../../Linked_Files/Online Portfolio Usability Test/Online Portfolio Scenario Onderzoek.pdf"
+                    width="100%" height="600px" class="pdfViewer"></iframe>
+                <button class="toggleFullscreenButton" onclick="toggleFullscreen()">Volledig scherm</button>
+            </div>
         </div>
 
         <div class="textSpace">
-            <h2 class="subtitle">Contentstrategie</h2>
+            <h2 class="subtitle">Testverloop</h2>
             <p>
-                Nadat we de eerste sprint demo presentatie hebben gehouden (Die ik overigens alleen met Thammy heb
-                gepresenteerd) is er wat groepsfeedback gekomen om te verwerken. Deze heeft Thammy in de FeedPulse
-                verwerkt <cite>(Afbeelding 4)</cite>.
+                Toen de vragen voor de test eindelijk af waren kon ik gaan beginnen met testen. Mijn eerste test was met
+                Jo-An kamp. Jo- an is gespecialiseerd in onderzoeken, maar ze was een tijdje afwezig op de campus i.v.m.
+                ziekte. Het was dus heel toevallig dat ik haar die dinsdag ben tegengekomen wanneer ik de eerste test
+                uit wilde voeren. Die eerste test was eigenlijk ook meer een proeftest. Ik had eerst andere scenario’s
+                en vragen. Het scenario en de vragen zoals die hier boven staan zijn na de test met Jo-An en na feedback
+                van andere docenten pas tot stand gekomen. Je kunt de eerste scenario’s en vragen op <cite>Afbeelding
+                    1</cite> zien.
             </p>
 
             <div class="imageDiv">
-                <img src="../../img/Branding evi Research/Afbeelding4.png" alt="Afbeelding4.png">
-                <p class="imageUndertitle">Afbeelding 4 GroepsfeedPulse na eerste Sprintdemo</p>
+                <img src="../../img/Online Portfolio Usability Test/Afbeelding1.png" alt="Afbeelding1.png">
+                <p class="imageUndertitle">Afbeelding 1 Online Portfolio Usability Test sheet (oud)</p>
             </div>
 
             <p>
-                Kort samengevat was nog het één en ander te doen aan de brandguide. Ook mij Tone of Visual moest nog
-                aangepast worden. Hij is uiteraard niet meteen op variant 1.4 uitgekomen. Omdat we dus zowel de
-                brandguide als de contentstrategie af moesten hebben binnen 2 weken tijd, hebben we besloten om de taken
-                goed te verdelen via Trello. Mijn taak was voornamelijk om te werken aan de onderzoeken van de
-                contentstrategie.
+                Via <cite><a
+                        href="../../Linked_Files/Online Portfolio Usability Test/Online Portfolio Scenario Onderzoek.pdf">deze
+                        link</a></cite> kun je hem ook als Pdf bekijken.
             </p>
             <p>
-                De contentstrategie is in het Engels, omdat we eerst het idee hadden dat evi internationaal wilde gaan.
-                Later bleek dat dat ze alleen bekend wil worden in Nederland.
+                Via <cite><a
+                        href="../../Linked_Files/Online Portfolio Usability Test/Online Portfolio Usability Proeftest Jo-An Kamp.zip">deze
+                        link</a></cite> kun je het zip mapje downloaden waarin een audio opname en het (oude) invulblad
+                vinden van tijdens de test.
+                Deze heb ik uitgesloten van de officiële testen, omdat deze test meer een leermoment was voor mij.
+            </p>
+            <p>
+                Jo-An gaf hele goede aanwijzingen en tips die ik heb meegenomen in de andere tests.
+            </p>
+            <p>
+                Zo heb ik voor elke test een aantal stappen opgeschreven in de notities van mijn telefoon voordat ik
+                begon met de test <cite>(Afbeelding 2)</cite>.
+            </p>
+
+            <div class="imageDiv">
+                <img src="../../img/Online Portfolio Usability Test/Afbeelding2.png" alt="Afbeelding2.png">
+                <p class="imageUndertitle">Afbeelding 2 Testprocedure Notities</p>
+            </div>
+        </div>
+
+        <div class="textSpace">
+            <h2 class="subtitle">Resultaten</h2>
+            <p>
+                Na de proeftest met Jo-An was het tijd om aan de echte test te beginnen. Alle testen zijn met hetzelfde
+                prototype getest, namelijk de website waar je nu surft. Met uiteraard <cite><a
+                        href="../../Linked_Files/Online Portfolio Usability Test/Online Portfolio Usability Test sheet Blank.pdf">het
+                        nieuwe invulblad</a></cite> waarin de
+                vragen en het scenario in staan zoals je die bij het scenario onderzoek hebt gelezen.
+            </p>
+            <p>
+                Nadat alle testen waren uitgevoerd, had ik een heleboel (nuttige) informatie om te verwerken in mijn
+                documentatie. Zoals je bij (bijna) alle vragen kon zien, heb ik een schaal van 1 – 5 heb ik gebruikt
+                (1 negatief – 5 positief). Dit was eerst door elkaar, namelijk sommige die een schaal hadden waar 1
+                positief was en 5 negatief. Dit is ook veranderd na de test met Jo-An. Jo-An gaf namelijk aan dat het
+                nogal verwarrend was wanneer iets wel of niet goed is om in te vullen. Daarom heb ik dat aangepast. Mijn
+                eerste intentie bij de verschillende schalen was om de aandacht van de tester (mijn docenten) bij de
+                test te houden, zodat ze niet zomaar wat invoeren. Uiteindelijk is de nieuwe aanpassing van de schaal
+                geen probleem geworden, want ik heb hele nuttige informatie ontvangen voor de gebruikerservaring.
             </p>
             <p class="middleText">
-                Je kunt de volledige contentstrategie voor evi hieronder bekijken:
+                Je kunt de volledige Usability Test hieronder bekijken:
             </p>
-            <div class="contentStrategyFrame">
-                <iframe src="../../Linked_Files/Branding evi Research/Content Strategy evi.pdf" width="100%"
-                    height="600px" id="pdfViewer"></iframe>
+            <div>
+                <iframe src="../../Linked_Files/Online Portfolio Usability Test/Online Portfolio Usability Test.pdf"
+                    width="100%" height="600px" class="pdfViewer"></iframe>
                 <button class="toggleFullscreenButton" onclick="toggleFullscreen()">Volledig scherm</button>
             </div>
             <p>
-                Ook voor de contentstrategie heb ik wat research gedaan om er achter te komen wat het is en waar het
-                voor gebruikt wordt. Je kunt mijn bevindingen via <cite><a
-                        href="../../Linked_Files/Branding evi Research/Contentstrategie Research.pdf">deze
-                        link</a></cite> bekijken. Hierin staat ook kort uitgelegd hoe we als groep de contentstrategie
-                hebben aangepakt.
+                Uit de test bleek dat mijn nieuwe online portfolio over het algemeen als gebruiksvriendelijk wordt
+                ervaren door mijn docenten. De navigatie kreeg positieve scores van 4 of hoger op een schaal van 1 tot
+                5, wat aangeeft dat docenten de website makkelijk konden doorlopen. De kleuren en consistentie van de
+                interface werden ook positief beoordeeld. Hoewel er enkele punten van aandacht zijn, met name rond de
+                organisatie van bewijslasten en enkele visuele aspecten, tonen de resultaten aan dat het portfolio goed
+                presteert volgens de doelstellingen van de test. Docenten konden overwegend gemakkelijk de benodigde
+                informatie vinden, wat aansluit bij mijn onderzoeksvraag en de gebruikerservaring van mijn docenten.
             </p>
-            <p>
-                De conclusie van dit onderzoek is dat een contentstrategie een essentieel onderdeel is voor effectieve
-                communicatie en marketing. Als deelnemer van het team heb ik ontdekt dat het samenstellen van een
-                contentstrategie, zoals die voor evi, inhoudt dat je grondig moet kijken naar de doelgroep, de inhoud
-                van het merk /artiest, het tijdstip van posten en de unieke waardepropositie van de content.
-            </p>
-            <p>
-                Hoewel mijn aanpak voor het identificeren van de doelgroep en het bepalen van het beste tijdstip om te
-                posten verbeterd kon worden, benadrukt dit wel de complexiteit en het belang van een doordachte
-                strategie. Het uiteindelijke doel van de contentstrategie is de aandacht van de juiste doelgroep trekken
-                en de zichtbaarheid en het bereik van de artiest, in dit geval evi, te vergroten.
+            <p class="middleText">
+                met <cite><a
+                        href="../../Linked_Files/Online Portfolio Usability Test/Online Portfolio Usability Tests.zip">deze
+                        link</a></cite> kun je een zip mapje downloaden met daar in de tests die ik met mijn docenten
+                heb uitgevoerd.
             </p>
         </div>
 
         <div class="textSpace">
             <h2 class="subtitle">Reflectie</h2>
             <p>
-                Tijdens dit project over branding en contentstrategie heb ik veel geleerd. Vooral over het belang van
-                onderzoek doen. Toen ik bezig was met het ontwikkelen van de stylescape en Tone of Visual voor evi,
-                realiseerde ik me hoe essentieel het is om goed onderzoek te doen voordat je iets ontwerpt. Onderzoek
-                helpt je te begrijpen wat echt past bij de persoon of het merk waarvoor je iets creëert.
+                Over het geheel genomen bood (het proces naar) de test waardevolle inzichten bij het optimaliseren van
+                mijn online portfolio. Tijdens mijn onderzoek naar de gebruikerservaring en het design van mijn online
+                portfolio heb ik waardevolle inzichten verworven.
             </p>
             <p>
-                Hoewel niet al mijn designs gekozen werden, was het onderzoeksproces heel waardevol. Ik leerde over
-                verschillende stijlelementen zoals kleuren, typografie en vormgeving en hoe deze samen een unieke
-                identiteit kunnen vormen. Dit alles heeft mijn creativiteit en begrip van branding aanzienlijk
-                verbeterd. Het heeft me ook laten zien dat goede ontwerpen beginnen met grondig onderzoek en een goed
-                begrip van de opdracht.
+                Het scenario-onderzoek heeft me geleerd hoe ik effectieve scenario's kan opstellen, waarbij
+                duidelijkheid en realistische situaties cruciaal zijn om deelnemers in staat te stellen taken uit te
+                voeren zonder te veel aanwijzingen. Deze kennis heeft bijgedragen aan het formuleren van specifieke en
+                relevante scenario’s en vragen voor mijn docenten, waardoor ik hun interactie met mijn portfolio beter
+                kon beoordelen.
+            </p>
+            <p>
+                De proeftest met Jo-An Kamp was een waardevol leermoment waar ik ontdekte dat het opstellen van
+                duidelijk stappenplan en het ontvangen van gerichte feedback essentieel zijn bij het uitvoeren van
+                usability tests. Deze inzichten heb ik toegepast in de latere tests, wat de kwaliteit van mijn onderzoek
+                heeft verbeterd. Het uitvoeren van de usability test met mijn docenten heeft me veel geleerd over de
+                gebruikerservaring van mijn online portfolio. De feedback van mijn docenten, zoals de suggesties met
+                betrekking tot het organiseren van bewijslasten en enkele andere visuele aspecten heeft bijgedragen aan
+                het verbeteren van het ontwerp en de bruikbaarheid van mijn portfolio. Dit proces heeft me niet alleen
+                meer inzicht gegeven in UX en UI, maar heeft ook mijn vermogen vergroot om de gebruikerservaring te
+                optimaliseren op basis van concrete feedback.
             </p>
         </div>
 
         <!-- --- -->
         <div class="textSpaceSources" id="srces">
-            <h2 class="subtitle">Bewijslast</h2>
-            <p class="middleTet">Je kunt de onderzoeken en meerdere bronnen die bij dit project horen hieronder vinden.
+            <h2 class="subtitle">Bewijslast en Bronnen</h2>
+            <p class="middleTet">Je kunt de onderzoeken en meerdere bronnen die bij dit project horen hieronder
+                vinden.
             </p>
             <div class="srcLinks">
 
-                <a href="../../Linked_Files/Branding evi Research/Brand Guide evi (Final).pdf" class="webLink"
-                    target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
-                        alt="pdf_Logo.png"><br><span>Brand Guide evi</span></a>
-
-                <a href="../../Linked_Files/Branding evi Research/Brand Guide Research.pdf" class="webLink"
-                    target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
-                        alt="pdf_Logo.png"><br><span>Brand Guide Research</span></a>
-
-                <a href="../../Linked_Files/Branding evi Research/Content Strategie evi.zip" target="_blank"
-                    class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/zip.png"
-                        alt="zip.png"><br><span>Content Strategie evi.zip</span></a>
-
-                <a href="../../Linked_Files/Branding evi Research/Content Strategy evi.pdf" class="webLink"
-                    target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
-                        alt="pdf_Logo.png"><br><span>Content Strategy evi</span></a>
-
-                <a href="../../Linked_Files/Branding evi Research/Contentstrategie Research.pdf" class="webLink"
-                    target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
-                        alt="pdf_Logo.png"><br><span>Contentstrategie Research</span></a>
-
-                <a href="../../Linked_Files/Branding evi Research/Stylescape Research.pdf" class="webLink"
-                    target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
-                        alt="pdf_Logo.png"><br><span>Stylescape Research</span></a>
-
-                <a href="../../Linked_Files/Branding evi Research/Tone of Visual Research.pdf" class="webLink"
-                    target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
-                        alt="pdf_Logo.png"><br><span>Tone of Visual Research</span></a>
-
-                <a href="../../Linked_Files/Branding evi Research/Tone of Visual evi.zip" target="_blank"
-                    class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/zip.png" alt="zip.png"><br><span>Tone
-                        of Visual evi.zip</span></a>
-
-                <a href="../../Linked_Files/Branding evi Research/Branding evi Research Verantwoording.pdf"
+                <a href="../../Linked_Files/Online Portfolio Usability Test/Online Portfolio Scenario Onderzoek.pdf"
                     class="webLink" target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
-                        alt="pdf_Logo.png"><br><span>Branding evi Research Verantwoording</span></a>
+                        alt="pdf_Logo.png"><br><span>Online Portfolio Scenario Onderzoek</span></a>
+
+                <a href="../../Linked_Files/Online Portfolio Usability Test/Online Portfolio Usability Proeftest Jo-An Kamp.zip"
+                    target="_blank" class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/zip.png"
+                        alt="zip.png"><br><span>Online Portfolio Usability Proeftest Jo-An Kamp.zip</span></a>
+
+                <a href="../../Linked_Files/Online Portfolio Usability Test/Online Portfolio Usability Test Resultaten Berekening.xlsx"
+                    class="webLink" target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/excelLogo.png"
+                        alt="excelLogo.png"><br><span>Online Portfolio Usability Test Resultaten Berekening</span></a>
+
+                <a href="../../Linked_Files/Online Portfolio Usability Test/Online Portfolio Usability Test sheet Blank (oud).pdf"
+                    class="webLink" target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Online Portfolio Usability Test sheet Blank (oud)</span></a>
+
+                <a href="../../Linked_Files/Online Portfolio Usability Test/Online Portfolio Usability Test sheet Blank.pdf"
+                    class="webLink" target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Online Portfolio Usability Test sheet Blank</span></a>
+
+                <a href="../../Linked_Files/Online Portfolio Usability Test/Online Portfolio Usability Test.pdf"
+                    class="webLink" target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Online Portfolio Usability Test</span></a>
+
+                <a href="../../Linked_Files/Online Portfolio Usability Test/Online Portfolio Usability Tests.zip"
+                    target="_blank" class="webLink"><img src="../../img/Algemene_Link_Afbeeldingen/zip.png"
+                        alt="zip.png"><br><span>Online Portfolio Usability Tests.zip</span></a>
+
+                <a href="../../Linked_Files/Online Portfolio Usability Test/Online Portfolio Usability Test Verantwoording.pdf"
+                    class="webLink" target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Online Portfolio Usability Test Verantwoording</span></a>
+
+                <a href="../../Linked_Files/Online Portfolio Usability Test/Usability_testing.pdf" class="webLink"
+                    target="_blank"><img src="../../img/Algemene_Link_Afbeeldingen/pdf_Logo.png"
+                        alt="pdf_Logo.png"><br><span>Usability Testing workshop</span></a>
+
+                <a href="https://cmdmethods.nl/cards/lab/usability-testing" class="webLink" target="_blank"><img
+                        src="../../img/Algemene_Link_Afbeeldingen/cmdMethodsLabImage.png"
+                        alt="cmdMethodsLabImage.png"><br><span>Usability Testing CMD Methods</span></a>
+
+                <a href="https://www.nngroup.com/articles/task-scenarios-usability-testing/" class="webLink"
+                    target="_blank"><img src="https://media.nngroup.com/static/img/logo-817x388.png"
+                        alt="logo-817x388.png"><br><span>Turn User Goals into Task Scenarios for Usability
+                        Testing</span></a>
 
             </div>
         </div>
@@ -396,30 +623,39 @@
     <script>
 
         function toggleFullscreen() {
-            var pdfViewer = document.getElementById('pdfViewer');
+            var pdfViewer = document.querySelector('.pdfViewer');
 
             if (!document.fullscreenElement) {
                 if (pdfViewer.requestFullscreen) {
                     pdfViewer.requestFullscreen();
-                } else if (pdfViewer.mozRequestFullScreen) { /* Firefox */
+                } else if (pdfViewer.mozRequestFullScreen) {
                     pdfViewer.mozRequestFullScreen();
-                } else if (pdfViewer.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                } else if (pdfViewer.webkitRequestFullscreen) {
                     pdfViewer.webkitRequestFullscreen();
-                } else if (pdfViewer.msRequestFullscreen) { /* IE/Edge */
+                } else if (pdfViewer.msRequestFullscreen) {
                     pdfViewer.msRequestFullscreen();
                 }
             } else {
                 if (document.exitFullscreen) {
                     document.exitFullscreen();
-                } else if (document.mozCancelFullScreen) { /* Firefox */
+                } else if (document.mozCancelFullScreen) {
                     document.mozCancelFullScreen();
-                } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+                } else if (document.webkitExitFullscreen) {
                     document.webkitExitFullscreen();
-                } else if (document.msExitFullscreen) { /* IE/Edge */
+                } else if (document.msExitFullscreen) {
                     document.msExitFullscreen();
                 }
             }
         }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var fullscreenButton = document.querySelector('.toggleFullscreenButton');
+
+            fullscreenButton.addEventListener('click', function () {
+                toggleFullscreen();
+            });
+        });
+
     </script>
 </body>
 
