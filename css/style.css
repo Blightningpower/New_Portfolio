@@ -18,6 +18,7 @@
   --portfolioBlue: #0598E1;
   --hyperLinkBlue: #0000FF;
   --portfolioGold: #FDC94F;
+  --headerBlue: #B9DEF0;
 }
 
 * {
@@ -177,6 +178,7 @@ header {
   z-index: 1000;
   margin: 0;
   padding: 0 5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .headerNavigation {
