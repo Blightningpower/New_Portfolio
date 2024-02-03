@@ -130,12 +130,6 @@ main {
   fill: none;
 }
 
-@media screen and (max-width: 1279px) {
-  #scrollToTopBtn {
-    padding: 2%;
-  }
-}
-
 #scrollToTopBtn:hover {
   border: 2px solid var(--portfolioOrange);
   background-color: var(--portfolioBlack);
