@@ -116,8 +116,8 @@ main {
   background-color: var(--portfolioGrey);
   color: var(--portfolioWhite);
   cursor: pointer;
-  padding: 1%;
-  border-radius: 50%;
+  padding: 0.5rem;
+  border-radius: 3.125rem;
 }
 
 .up-arrow {
