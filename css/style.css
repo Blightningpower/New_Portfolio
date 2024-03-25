@@ -167,7 +167,7 @@ header {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   margin: 0;
