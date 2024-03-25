@@ -28,7 +28,7 @@
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   min-height: 26rem;
-  min-width: 95vw;
+  min-width: 100vw;
   padding: 1rem 2rem 2rem;
 }
 
